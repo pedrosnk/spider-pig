@@ -103,7 +103,13 @@ class ResourcesController < ApplicationController
   end
   
   def search
-   
+    @resources = Resource.find(:all,:conditions =>['content LIKE ?','%'+params[:term]+'%'])
+    @term = params[:term]
+    
+    respond_to do |format|
+      format.html 
+      format.xml  { render :xml => @resources }
+    end
   end
   
   def items

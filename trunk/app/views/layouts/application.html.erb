@@ -8,7 +8,7 @@
   <%= stylesheet_link_tag 'scaffold' %>
 </head>
 <body>
-  <h1>WebCrawler</h1>
+  <h1><%= link_to 'WebCrawler', root_path %></h1>
   <% form_tag search_path do -%>
     <p><%= label_tag :term %><%= text_field_tag :term %></p>
     <p><%= submit_tag 'Search' %></p>
@@ -19,5 +19,8 @@
   <br/>
   <br/>
   <%= yield %>
+  <br/>
+  <br/>
+  <%= link_to 'Capture', capture_path %>
 </body>
 </html>

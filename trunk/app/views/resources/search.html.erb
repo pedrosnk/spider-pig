@@ -1,0 +1,32 @@
+<h2>Search for <i><%=h @term %></i></h2>
+<br/>
+<br/>
+<% @resources.each do |resource| %>
+  <%
+    text_maxlength = 256
+    if resource.title.blank? || resource.title.nil?
+      resource.title = resource.url
+    end
+    text = resource.content
+    if text.length > text_maxlength
+      term_index = text.downcase.index(@term.downcase)
+      begin_index = term_index - (text_maxlength/2)
+      end_index = text_maxlength
+      if begin_index < 0
+        begin_index = 0
+      end
+      if end_index > (text.length - term_index)
+        end_index = (text.length - term_index)
+      end
+      text = text[begin_index,end_index]
+    end
+    term_index = text.downcase.index(@term.downcase)
+    text = text.insert(term_index,'<b>')
+    text = text.insert(term_index+3+@term.length,'</b>')
+  %>
+  <div>
+  	<h3><%= link_to [resource.title], resource.url, :popup => true %></h3>
+	<p>...<%= text %>...</p>
+	<span><%=h resource.url %> - at <%=h resource.updated_at %></span>
+  </div>
+<% end %>

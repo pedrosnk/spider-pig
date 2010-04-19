@@ -361,3 +361,603 @@ Rendering template within layouts/application
 Rendering resources/index
   [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
 Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/resources]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-19 14:51:03) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined method `url_to' for #<ActionView::Base:0x5bc4c38>) on line #11 of app/views/layouts/application.html.erb:
+8:   <%= stylesheet_link_tag 'scaffold' %>
+9: </head>
+10: <body>
+11:   <a href="<%= url_to root_path %>"></a><h1>WebCrawler</h1></a>
+12:   <% form_tag search_path do -%>
+13:     <p><%= label_tag :term %><%= text_field_tag :term %></p>
+14:     <p><%= submit_tag 'Search' %></p>
+
+    app/views/layouts/application.html.erb:11
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-19 14:51:32) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 63ms (View: 63, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-19 14:51:55) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 93ms (View: 93, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-19 14:52:33) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 110ms (View: 110, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-19 14:53:31) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 46ms (View: 46, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2010-04-19 14:54:00) [GET]
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 297ms (View: 250, DB: 0) | 200 OK [http://localhost/resources]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-19 14:54:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 14:54:28) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (16.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 78ms (View: 47, DB: 16) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 14:56:12) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 46ms (View: 16, DB: 15) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:18:34) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.-) on line #11 of app/views/resources/search.html.erb:
+8:     end
+9:     text = resource.content
+10:     if text.length > 1024
+11:       begin_index = text.index(@term)- 512
+12:       end_index = text.index(@term)+ 512
+13:       if begin_index < 0
+14:         begin_index = 0
+
+    app/views/resources/search.html.erb:11
+    app/views/resources/search.html.erb:4:in `each'
+    app/views/resources/search.html.erb:4
+    app/controllers/resources_controller.rb:109:in `search'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:20:10) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.-) on line #14 of app/views/resources/search.html.erb:
+11:       puts 'aushuashuahsuh sssssssssssssssssssssssssssssssssssssssssssssssssssssss'
+12:       puts @term
+13:       puts text.index(@term)
+14:       begin_index = text.index(@term) - 512
+15:       end_index = text.index(@term)+ 512
+16:       if begin_index < 0
+17:         begin_index = 0
+
+    app/views/resources/search.html.erb:14
+    app/views/resources/search.html.erb:4:in `each'
+    app/views/resources/search.html.erb:4
+    app/controllers/resources_controller.rb:109:in `search'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:20:49) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.-) on line #15 of app/views/resources/search.html.erb:
+12:       puts @term
+13:       puts @text
+14:       puts text.index(@term)
+15:       begin_index = text.index(@term) - 512
+16:       end_index = text.index(@term)+ 512
+17:       if begin_index < 0
+18:         begin_index = 0
+
+    app/views/resources/search.html.erb:15
+    app/views/resources/search.html.erb:4:in `each'
+    app/views/resources/search.html.erb:4
+    app/controllers/resources_controller.rb:109:in `search'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-19 15:21:43) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#index (for 127.0.0.1 at 2010-04-19 15:21:48) [GET]
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` [0m
+Rendering template within layouts/application
+Rendering resources/index
+  [4;36;1mResource Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 47ms (View: 15, DB: 16) | 200 OK [http://localhost/resources]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#show (for 127.0.0.1 at 2010-04-19 15:21:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mResource Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `resources`[0m
+  [4;36;1mResource Load (0.0ms)[0m   [0;1mSELECT * FROM `resources` WHERE (`resources`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering resources/show
+Completed in 219ms (View: 188, DB: 0) | 200 OK [http://localhost/resources/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:27:47) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (16.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:28:18) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 78ms (View: 47, DB: 16) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:29:08) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (16.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 78ms (View: 62, DB: 16) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:30:12) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 110ms (View: 94, DB: 15) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:37:17) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (16.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 94ms (View: 62, DB: 16) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:37:43) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 125ms (View: 78, DB: 16) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:38:08) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (16.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 109ms (View: 47, DB: 31) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:38:24) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (16.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 141ms (View: 93, DB: 32) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:40:49) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 172ms (View: 94, DB: 16) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:41:27) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (15.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:42:58) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+
+ActionView::TemplateError (undefined local variable or method `text_index' for #<ActionView::Base:0x390745c>) on line #18 of app/views/resources/search.html.erb:
+15:       if begin_index < 0
+16:         begin_index = 0
+17:       end
+18:       if end_index > (text.length - text_index)
+19:         end_index = (text.length - text_index)
+20:       end
+21:       puts 'asuhafudhdausssssssssssssssssssssssssssss'
+
+    app/views/resources/search.html.erb:18
+    app/views/resources/search.html.erb:4:in `each'
+    app/views/resources/search.html.erb:4
+    app/controllers/resources_controller.rb:109:in `search'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (312.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:43:30) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+
+ActionView::TemplateError (no implicit conversion from nil to integer) on line #24 of app/views/resources/search.html.erb:
+21:       text = text[begin_index,end_index]
+22:     end
+23:     term_index = text.downcase.index(@term.downcase)
+24:     text = text.insert(term_index,'<b>')
+25:     text = text.insert(term_index+3+@term.length,'</b>')
+26:   %>
+27:   <div>
+
+    app/views/resources/search.html.erb:24:in `insert'
+    app/views/resources/search.html.erb:24
+    app/views/resources/search.html.erb:4:in `each'
+    app/views/resources/search.html.erb:4
+    app/controllers/resources_controller.rb:109:in `search'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:44:58) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+
+ActionView::TemplateError (no implicit conversion from nil to integer) on line #27 of app/views/resources/search.html.erb:
+24:     puts term_index
+25:     term_index = text.downcase.index(@term.downcase)
+26:     puts term_index
+27:     text = text.insert(term_index,'<b>')
+28:     text = text.insert(term_index+3+@term.length,'</b>')
+29:   %>
+30:   <div>
+
+    app/views/resources/search.html.erb:27:in `insert'
+    app/views/resources/search.html.erb:27
+    app/views/resources/search.html.erb:4:in `each'
+    app/views/resources/search.html.erb:4
+    app/controllers/resources_controller.rb:109:in `search'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (187.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:45:38) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+
+ActionView::TemplateError (no implicit conversion from nil to integer) on line #28 of app/views/resources/search.html.erb:
+25:     puts text
+26:     term_index = text.downcase.index(@term.downcase)
+27:     puts term_index
+28:     text = text.insert(term_index,'<b>')
+29:     text = text.insert(term_index+3+@term.length,'</b>')
+30:   %>
+31:   <div>
+
+    app/views/resources/search.html.erb:28:in `insert'
+    app/views/resources/search.html.erb:28
+    app/views/resources/search.html.erb:4:in `each'
+    app/views/resources/search.html.erb:4
+    app/controllers/resources_controller.rb:109:in `search'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (266.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:46:30) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+
+ActionView::TemplateError (no implicit conversion from nil to integer) on line #31 of app/views/resources/search.html.erb:
+28:     puts text
+29:     term_index = text.downcase.index(@term.downcase)
+30:     puts term_index
+31:     text = text.insert(term_index,'<b>')
+32:     text = text.insert(term_index+3+@term.length,'</b>')
+33:   %>
+34:   <div>
+
+    app/views/resources/search.html.erb:31:in `insert'
+    app/views/resources/search.html.erb:31
+    app/views/resources/search.html.erb:4:in `each'
+    app/views/resources/search.html.erb:4
+    app/controllers/resources_controller.rb:109:in `search'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (516.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:47:18) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:47:56) [POST]
+  Parameters: {"term"=>"mundo das trevas", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (16.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%mundo das trevas%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 63ms (View: 31, DB: 32) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:49:34) [POST]
+  Parameters: {"term"=>"o", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%o%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+  [4;36;1mResource Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `resources`[0m
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ResourcesController#search (for 127.0.0.1 at 2010-04-19 15:50:14) [POST]
+  Parameters: {"term"=>"comigo", "commit"=>"Search", "authenticity_token"=>"CxeU7qnyWpAoMkgMHHW/OSH16/yADEnNq00fOaQI5/k="}
+  [4;35;1mResource Load (0.0ms)[0m   [0mSELECT * FROM `resources` WHERE (content LIKE '%comigo%') [0m
+Rendering template within layouts/application
+Rendering resources/search
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://localhost/search]
