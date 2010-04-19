@@ -1,6 +1,5 @@
 <h2>Search for <i><%=h @term %></i></h2>
 <br/>
-<br/>
 <% @resources.each do |resource| %>
   <%
     text_maxlength = 256
@@ -27,6 +26,6 @@
   <div>
   	<h3><%= link_to [resource.title], resource.url, :popup => true %></h3>
 	<p>...<%= text %>...</p>
-	<span><%=h resource.url %> - at <%=h resource.updated_at %></span>
+	<span><i><%=h resource.url %> - at <%=h resource.updated_at %></i></span>
   </div>
 <% end %>

@@ -9,14 +9,12 @@
 </head>
 <body>
   <h1><%= link_to 'WebCrawler', root_path %></h1>
-  <% form_tag search_path do -%>
-    <p><%= label_tag :term %><%= text_field_tag :term %></p>
+  <% form_tag search_path do %>
+    <p><%= label_tag :term %> <%= text_field_tag :term %></p>
     <p><%= submit_tag 'Search' %></p>
   <% end %>
   <br/>
-  <br/>
   <p style="color: green"><%= flash[:notice] %></p>
-  <br/>
   <br/>
   <%= yield %>
   <br/>

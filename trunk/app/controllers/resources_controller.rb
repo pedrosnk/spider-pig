@@ -89,16 +89,20 @@ class ResourcesController < ApplicationController
   def capture
     items_array = items
     items_array.each do |url|
-      doc = Nokogiri::HTML(open(url))
-      doc.xpath('//script').remove
-      doc.xpath('//style').remove
-      attributes = {:url => url, :title => doc.xpath('//title').inner_text.strip, :content => cleanup_plain_text(doc.inner_text) }
-      old = Resource.find(:first,:conditions => ['url = ?',url])
-      if(old)
-        old.update_attributes(attributes)
-      else
-        resource = Resource.new(attributes)
-        resource.save
+      begin
+        doc = Nokogiri::HTML(open(url))
+        doc.xpath('//script').remove
+        doc.xpath('//style').remove
+        attributes = {:url => url, :title => doc.xpath('//title').inner_text.strip, :content => cleanup_plain_text(doc.inner_text) }
+        old = Resource.find(:first,:conditions => ['url = ?',url])
+        if(old)
+          old.update_attributes(attributes)
+        else
+          resource = Resource.new(attributes)
+          resource.save
+        end
+      rescue StandardError => e
+        puts e
       end
     end
     redirect_to root_path
