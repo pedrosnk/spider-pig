@@ -1,3 +1,6 @@
+require 'nokogiri'
+require 'open-uri'
+
 class ResourcesController < ApplicationController
   # GET /resources
   # GET /resources.xml
@@ -81,5 +84,42 @@ class ResourcesController < ApplicationController
       format.html { redirect_to(resources_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  def capture
+    items_array = items
+    items_array.each do |url|
+      doc = Nokogiri::HTML(open(url))
+      attributes = {:url => url, :title => doc.xpath('//title').inner_text.strip, :content => cleanup_plain_text(doc.inner_text) }
+      old = Resource.find(:first,:conditions => ['url = ?',url])
+      if(old)
+        old.update_attributes(attributes)
+      else
+        resource = Resource.new(attributes)
+        resource.save
+      end
+    end
+    redirect_to root_path
+  end
+  
+  def search
+   
+  end
+  
+  def items
+    return %w{ http://radicaos.com http://aonderaioseuvimparar.blogspot.com http://www.devir.com.br }
+  end
+  
+  def cleanup_plain_text text
+    text.gsub!('>', '> ')
+    if text.index('<')
+      text = HTML::FullSanitizer.new.sanitize(text)
+    end
+    remove_extra_whitespace(text)
+  end
+  
+  def remove_extra_whitespace text
+    text = text. gsub(/\s{2,}|\t|\n/,' ')
+    text
   end
 end
