@@ -1,0 +1,228 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: 'Hello!'
+  hello_name: "Hello, {{name}}!"
+  index: Index
+  find_me_in: 'Find me in'
+  application:
+    title: World of Darkness
+    description: Fan Site about the World of Darkness
+    keywords: World of Darkness, Vampire, Mage, Werewolf
+    author: Volmer Radicaos
+    footer_credits: Created by Volmer
+  logout: Logout
+  login: Login
+  signup_complete: 'Signup complete!'
+  thanks_for_signing_up: 'Thanks for signing up!'
+  logged_in_successfully: 'Logged in successfully'
+  wrong_login: 'Wrong login or password'
+  logged_out: You have been logged out
+  forgot_password: Forgot password?
+  signup: 'Sign up!'
+  language: 'Language'
+  en: English
+  pt: Portugues
+  location: 'Location'
+  update: 'Update'
+  male: 'Male'
+  female: 'Female'
+  messages: 'Messages'
+  no_messages: 'No messages'
+  from: 'Frome'
+  title: 'Title'
+  are_you_sure: 'Are you sure?'
+  new_message: New message
+  new_messages:
+    one: 'You have a new message'
+    other: 'You have {{count}} new messages'
+  to: To
+  remember: Remember
+  posts: News
+  my_page: My page
+  vampire: Vampire - The Requiem
+  werewolf: Werewolf - The Forsaken
+  mage: Mage - The Awakening
+  changeling: Changeling - The Lost
+  promethean: Promethean - The Created
+  hunter: Hunter - The Vigil
+  geist: Geist - The Sin-eaters
+  general: World of Darkness - General
+  add_a_comment: Add a comment
+  created_at: Created at
+  updated_at: Updated at
+  last_activity: Last activity
+  published_in: Published in
+  will_paginate:
+    next: Next 
+    prev: Previous 
+  twitter:
+    follow_us: Follow us at Twitter
+  none: None
+  upload:
+    no_media: No {{media}} uploaded yet.
+  size:
+    small: Small
+    medium: Medium
+    large: Large
+  action:
+    cancel: Cancel
+    delete: Delete
+    reset: Reset
+    create: Create
+    update: Update
+    moderate: Moderate
+    edit: Edit
+    back: Back
+    new: New
+    block: Block
+    unblock: Unblock
+    ban: Ban
+    change: Change
+    unregister: Unregister
+    register: Register
+    moderate: Moderate
+    undo_moderate: Undo moderation
+    reply: Reply
+    send: Enviar
+    search: Search
+    clean: Clean
+    publish: Publish
+    hide: Hide
+    enter: Enter
+    remember: Remember
+  reset_password: Reset password
+  change_password: Change password
+  change_email: Change e-mail
+  change_picture: Change picture
+  forgot_password: Forgot password
+  forgot_your_password: Did you forgot your password?
+  goodbye: Good bye... not!
+  message:
+    send: Send a message
+  search:
+    results: Search results
+    no_results: Your search didn't match any results
+    do_search: Search
+  forum:
+    forums: Forums
+    recent: Forums activities
+    new: New forum
+    last_topics: Last topics
+  forum_level:
+    new: New level
+    levels: Levels
+    no_levels: This forum doesn't offer levels
+    increase: Increase
+    decrease: Decrease
+    level: Level
+  post:
+    by: By
+    moderated_by: This post was moderated by
+    reason: Reason
+    in_reply_to: In reply to
+    see: See post
+    my: My posts
+    new: New post
+    hidden: Hidden posts
+  role:
+    set:
+      writer: Set as writer
+      forum_boss: Set as forum boss
+      admin: Set as admin
+    unset:
+      writer: Unset as writer
+      forum_boss: Unset as forum boss
+      admin: Unset as admin
+  topic:
+    new: New topic
+    by: Created by
+    blocked: This topic is blocked and cannot receive posts.
+  about: About
+  contact:
+    contact: Contact
+    us: Contact us!
+    person: Contact from a person!
+    visitor: Contact from a visitor!
+  notice:
+    message_sent: Your message has been sent!
+    comment_created: Your comment was posted!
+    comment_deleted: Comment deleted.
+    person_deleted: Goodbye!
+    person_updated: Profile updated!
+    person_banned: Person banned!
+    email_changed: Your e-mail was changed!
+    password_changed: Your password was changed!
+    picture_changed: Your image was changed!
+    forum_post_created: Posted!
+    forum_created: Forum created!
+    forum_updated: Forum updated!
+    confirmation_sent: A message was sent to your e-mail address with a confirmation link.
+    role_added: Privilege added!
+    role_removed: Privilege removed!
+    post_created: News posted!
+    post_updated: News updated!
+    topic_created: Topic created!
+    place_published: Place published!
+    stuff_created: Stuff published!
+  alert:
+    access_denied: Sorry, you cannot access this!
+    upload_error: Sorry, an error occurred when uploading this file.
+    error: Sorry, an error occurred!
+    invalid_confirmation: Invalid confirmation!
+    topic_blocked: This topic is blocked and cannot receive posts.
+    forum_blocked: This forum is blocked and cannot receive new topics.
+    wrong_email: Wrong e-mail.
+    email_used: This e-mail is already used by another person. Please, inform another one.
+    wrong_old_password: Old password is incorrect. Please, inform again.
+    email_doesnt_exist: There is nobody using this e-mail!
+  mailer:
+    ban: Your account was disabled by one of our admininstrators.
+    ban_comments: Some comments about this action
+    farewell: Thank you!
+    change_email: Do you really want to change your profile's e-mail address to this one ({{email}})? To confirm this action, access the link below
+    reset_password: It seems that you forgot you password, huh? All right. To change another one, access the link below
+    new_person: Thank you for join us! We hope that you have funk and enjoy all the site's stuff. But before, is necessary that you confirm your account. To do this, access the link below
+    mistake: If you don't want to do this anymore, or even if you didn't request it, please, disconsider this message.
+    unregister: Is so sad we received your request of leave our site. Are you sure you want to do this? To confirm, access the link below
+    subject:
+      new_person: Activate your account, {{name}}!
+      reset_password: Did you forgot your password, {{name}}?
+      change_email: '{{name}}, confirm your new e-mail address!'
+      ban: '{{name}}, your accouunt was disabled'
+      unregister: '{{name}}, are you sure you want to leave us?'
+  display: Display
+  hidden: Hidden
+  places: Places
+  pending_places: Pending Places
+  pending: Pending
+  stuff:
+    stuffs: Stuffs
+    ranking: Stuffs Ranking
+    my: My stuffs
+    new: New stuff
+    by: By
+    as: As
+    category:
+      ambiance: Ambiance
+      character: Character
+      antagonist: Antagonist
+      story: Story
+      house_rules: House rules
+      expansion: Expansion
+  terms: Use Terms
+  terms_agree: Registering you declare to agree our {{terms_link}}.
+  total_ratings:
+    one: 1 rating
+    other: '{{count}} ratings'
+  person:
+    people: People
+  comment:
+    comments: Comments
+    count:
+      one: 1 comment
+      other: '{{count}} comments'
+  untitled: Untitled
+  more: More
+  recommended: Recommended

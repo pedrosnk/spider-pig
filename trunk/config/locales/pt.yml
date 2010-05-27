@@ -1,0 +1,223 @@
+pt:
+  hello: 'Ol&aacute;!'
+  hello_name: "Ol&aacute;, {{name}}!"
+  index: In&iacute;cio
+  find_me_in: 'Encontre-me em'
+  application:
+    title: Mundo das Trevas
+    description: Fan site sobre o mundo das Trevas
+    keywords: Mundo das Trevas, Vampiro, Mago, Lobisomem
+    author: Volmer Radicaos
+    footer_credits: Criado por Volmer
+  logout: Sair
+  login: Entrar
+  signup_complete: 'Seu cadastro foi completado!'
+  thanks_for_signing_up: 'Obrigado por se juntar a n&oacute;s!'
+  logged_in_successfully: 'Entrou de boa'
+  wrong_login: 'Login ou senha incorretos'
+  logged_out: Voc&ecirc; saiu do sistema corretamente
+  forgot_password: Esqueceu a senha?
+  signup: 'Cadastre-se!'
+  language: 'Idioma'
+  en: English
+  pt: Portugues
+  location: Localiza&ccedil;&atilde;o
+  male: 'Masculino'
+  female: 'Feminino'
+  messages: 'Mensagens'
+  no_messages: 'Sem mensagens'
+  new_message: Nova mensagem
+  from: 'De'
+  title: T&iacute;tulo
+  are_you_sure: Voc&ecirc; tem certeza?
+  new_messages:
+    one: Voc&ecirc; tem uma nova mensagem
+    other: Voc&ecirc; tem {{count}} novas mensagens
+  to: Para
+  posts: Not&iacute;cias
+  my_page: Minha p&aacute;gina
+  vampire: Vampiro - O R&eacute;quiem
+  werewolf: Lobisomem - Os Destitu&iacute;dos
+  mage: Mago - O Despertar
+  changeling: Changeling - Os Perdidos
+  promethean: Promethean - The Created
+  hunter: Hunter - The Vigil
+  geist: Geist - The Sin-eaters
+  general: Mundo das Trevas - Geral
+  add_a_comment: Adicione um coment&aacute;rio
+  created_at: Criado em
+  updated_at: Atualizado em
+  published_in: Publicado em
+  last_activity: '&Uacute;ltima atividade'
+  will_paginate:
+    next: Pr&oacute;ximo 
+    prev: Anterior
+  twitter:
+    follow_us: Siga-nos no Twitter
+  none: Nenhum
+  upload:
+    no_media: Sem {{media}} armazenadas ainda.
+  size:
+    small: Pequeno
+    medium: M&eacute;dio
+    large: Grande
+  action:
+    cancel: Cancelar
+    delete: Excluir
+    reset: Redefinir
+    create: Criar
+    update: Atualizar
+    moderate: Moderar
+    edit: Editar
+    back: Voltar
+    new: Novo
+    block: Bloquear
+    unblock: Desbloquear
+    ban: Banir
+    change: Alterar
+    unregister: Descadastrar
+    register: Cadastrar
+    moderate: Moderar
+    undo_moderate: Desfazer modera&ccedil;&atilde;o
+    reply: Responder
+    send: Enviar
+    search: Procurar
+    clean: Limpar
+    publish: Publicar
+    hide: Ocultar
+    enter: Entrar
+    remember: Lembrar
+  reset_password: Redefinir senha
+  change_password: Alterar senha
+  change_email: Alterar e-mail
+  change_picture: Alterar imagem
+  forgot_password: Esqueci a senha
+  forgot_your_password: Esqueceu a sua senha?
+  goodbye: Adeus... ou n&atilde;o
+  message:
+    send: Enviar uma mensagem
+  search:
+    results: Resultados da pesquisa
+    no_results: Sua pesquisa n&atilde;o teve resultados
+    do_search: Pesquisar
+  forum:
+    forums: F&oacute;runs
+    recent: Rolando nos f&oacute;runs
+    new: Novo f&oacute;rum
+    last_topics: '&Uacute;ltimos t&oacute;picos'
+  forum_level:
+    new: Novo t&iacute;tulo
+    levels: T&iacute;tulos
+    no_levels: Este f&oacute;rum n&atilde;o oferece t&iacute;tulos
+    increase: Incrementa
+    decrease: Decrementa
+    level: T&iacute;tulo
+  post:
+    by: Por
+    moderated_by: Este post foi moderado por
+    reason: Motivo
+    in_reply_to: Em resposta a
+    see: Ver post
+    my: Meus posts
+    new: Novo post
+    hidden: Posts ocultos
+  role:
+    set:
+      writer: Tornar escritor
+      forum_boss: Tornar chefe do f&oacute;rum
+      admin: Tornar admin
+    unset:
+      writer: Remover escritor
+      forum_boss: Remover chefe do f&oacute;rum
+      admin: Remover admin
+  topic:
+    new: Novo t&oacute;pico
+    by: Criado por
+    blocked: Este t&oacute;pico est&aacute; bloqueado e n&atilde;o pode receber postagens.
+  about: Sobre
+  contact:
+    contact: Contato
+    us: Entre em contato conosco!
+    person: Uma pessoa entrou em contato!
+    visitor: Um visitante entrou em contato!
+  notice:
+    message_sent: Sua mensagem foi enviada!
+    comment_created: Seu coment&aacute;rio foi postado!
+    comment_deleted: Coment&aacute;rio exclu&iacute;do.
+    person_deleted: Adeus!
+    person_updated: Dados atualizados!
+    person_banned: Pessoa banida!
+    email_changed: Seu e-mail foi alterado!
+    password_changed: Sua senha foi alterada!
+    picture_changed: Sua imagem foi alterada!
+    forum_post_created: Postado!
+    forum_created: F&oacute;rum criado!
+    forum_updated: F&oacute;rum atualizado!
+    confirmation_sent: Foi enviada para seu e-mail uma mensagem com um link confirma&ccedil;&atilde;o.
+    role_added: Privil&eacute;gio concedido!
+    role_removed: Privil&eacute;gio removido!
+    post_created: Not&iacute;cia postada!
+    post_updated: Not&iacute;cia atualizada!
+    topic_created: T&oacute;pico criado!
+    place_published: Lugar publicado!
+    stuff_created: Material publicado!
+  alert:
+    access_denied: Desculpe, voc&ecirc; n&atilde;o pode acessar isso!
+    upload_error: Desculpe, ocorreu um erro no upload do arquivo.
+    error: Desculpe, ocorreu um erro!
+    invalid_confirmation: Confirma&ccedil;&atilde;o inv&aacute;lida!
+    topic_blocked: Este t&oacute;pico est&aacute; bloqueado e n&atilde;o pode receber postagens.
+    forum_blocked: Este f&oacute;rum est&aacute; bloqueado e n&atilde;o pode receber novos t&oacute;picos.
+    wrong_email: E-mail incorreto.
+    email_used: Este e-mail j&aacute; est&aacute; sendo usado por uma outra pessoa. Por favor, informe outro.
+    wrong_old_password: A senha antiga est&aacute; incorrta. Informe novamente.
+    email_doesnt_exist: N&atilde;o existe ningu&eacute;m cadastrado com este e-mail!
+  mailer:
+    ban: Sua conta foi desativada por um dos nossos administradores.
+    ban_comments: Alguns coment&aacute;rios sobre esta a&ccedil;&atilde;o
+    farewell: Abra&ccedil;os!
+    change_email: Voc&ecirc; quer mesmo alterar seu endere&ccedil;o de e-mail cadastrado para este ({{email}})? Para confirmar, acesse o link abaixo
+    reset_password: Parece que voc&ecirc; esqueceu a sua senha, hein? Tudo bem. Para escolher uma outra, acesse o link abaixo
+    new_person: Obrigado por se juntar a n&oacute;s! Esperamos que voc&ecirc; se divirta e aproveite tudo o que o nosso site tem a ofercer. Mas antes, é preciso que você ative a sua conta. Para isso, acesse o link abaixo
+    mistake: Caso voc&ecirc; n&atilde;o deseje mais realizar esta a&ccedil;&atilde;o, ou mesmo se n&atilde;o a tenha solicitado, por favor, desconsidere esta mensagem.
+    unregister: '&Eacute; com muita tristeza que recebemos sua solicita&ccedil;&atilde;o para deixar nosso site. Tem certeza que quer se descadastrar? Para confirmar isso, acesse o link abaixo'
+    subject:
+      new_person: Ative seu cadastro, {{name}}!
+      reset_password: Esqueceu a sua senha, {{name}}?
+      change_email: '{{name}}, confirme seu novo endere&ccedil;o de e-mail!'
+      ban: '{{name}}, seu cadastro foi desativado'
+      unregister: '{{name}}, tem certeza que deseja nos deixar?'
+  display: Exibir
+  hidden: Oculto
+  places: Lugares
+  pending_places: Lugares pendentes
+  pending: Pendente
+  stuff:
+    stuffs: Materiais
+    ranking: Ranking de Materiais
+    my: Meus materiais
+    new: Novo material
+    by: Por
+    as: Como
+    category:
+      ambiance: Ambienta&ccedil;&atilde;o
+      character: Personagem
+      antagonist: Antagonista
+      story: Hist&oacute;ria
+      house_rules: House rules
+      expansion: Expans&atilde;o
+  terms: Termos de Uso
+  terms_agree: Ao se registrar, voc&ecirc; declara estar de acordo com nossos {{terms_link}}.
+  total_ratings:
+    one: 1 voto
+    other: '{{count}} votos'
+  person:
+    people: Pessoas
+  comment:
+    comments: Coment&aacute;rios
+    count:
+      one: 1 coment&aacute;rio
+      other: '{{count}} coment&aacute;rios'
+  untitled: Sem t&iacute;tulo
+  more: Mais
+  recommended: Recomendados
