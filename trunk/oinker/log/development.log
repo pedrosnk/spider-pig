@@ -1,0 +1,274 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-06-03 12:23:02) [GET]
+  [4;36;1mSQL (17.0ms)[0m   [0;1mSHOW TABLES[0m
+Completed in 89ms (View: 10, DB: 17) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-03 13:46:36) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-03 13:49:19) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5606ms (View: 5604, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#insert (for 127.0.0.1 at 2010-06-03 13:51:32) [POST]
+  Parameters: {"user"=>"volmer", "commit"=>" insert ", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+
+NameError (uninitialized constant HomeController::Gracle):
+  app/controllers/home_controller.rb:8:in `insert'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#insert (for 127.0.0.1 at 2010-06-03 13:51:58) [POST]
+  Parameters: {"user"=>"volmer", "commit"=>" insert ", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+Redirected to http://localhost:3001/
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/insert]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-03 13:51:58) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#insert (for 127.0.0.1 at 2010-06-03 13:54:11) [POST]
+  Parameters: {"user"=>"volmerius", "commit"=>" insert ", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+Redirected to http://localhost:3001/
+Completed in 859ms (DB: 1) | 302 Found [http://localhost/insert]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-03 13:54:12) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (84.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (28.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (132.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTweeters (20100603170125)
+  [4;36;1mSQL (41.0ms)[0m   [0;1mCREATE TABLE `tweeters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `friends_count` int(11), `profile_image_url` varchar(255), `followers_count` int(11), `screen_name` varchar(255), `location` varchar(255), `geo_enabled` tinyint(1), `time_zone` varchar(255), `protected` tinyint(1), `description` varchar(255), `profile_background_image_url` varchar(255), `url` varchar(255), `statuses_count` int(11), `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (49.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100603170125')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mdescribe `tweeters`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW KEYS FROM `tweeters`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#insert (for 127.0.0.1 at 2010-06-03 14:06:56) [POST]
+  Parameters: {"user"=>"volmerius", "commit"=>" insert ", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+  [4;36;1mTweeter Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-03 17:06:57', 'http://radicaos.com', 'Logo, eu digo: Eä! Que essas coisas Existam! E mandarei para o meio do Vazio a Chama Imperecível; e ela estará no coração do Mundo, e o Mundo Existirá.', 0, 'volmerius', 1, 'Greenland', 142, 90, 'http://a1.twimg.com/profile_background_images/44511142/eu_menor.png', 141, '2009-10-12 15:28:41', 'http://a1.twimg.com/profile_images/466714110/DSC02731_-_C_pia_-_C_pia_normal.jpg', 'Distrito Federal')[0m
+  [4;35;1mSQL (25.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/
+Completed in 1290ms (DB: 30) | 302 Found [http://localhost/insert]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-03 14:06:57) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#insert (for 127.0.0.1 at 2010-06-03 14:11:15) [POST]
+  Parameters: {"user"=>"volmerius", "commit"=>" insert ", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/home_controller.rb:10:in `insert'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-03 14:11:55) [GET]
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x460bd10>) on line #4 of app/views/home/index.html.erb:
+1: <h1>Hello!</h1>
+2: <br/>
+3: <% form_for @tweeter, insert_path do %>
+4:   <%= f.error_messages %>
+5:   <%= f.label :screen_name %>
+6:   <%= f.text_field :screen_name %>
+7:   <%= f.submit ' insert ' %>
+
+    app/views/home/index.html.erb:4
+    app/views/home/index.html.erb:3
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-03 14:12:28) [GET]
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 94ms (View: 84, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-06-03 14:12:33) [POST]
+  Parameters: {"tweeter"=>{"screen_name"=>"volmerius"}, "commit"=>" insert ", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+  [4;36;1mTweeter Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (2.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'volmerius') LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/tweeters
+Rendering tweeters/new
+Completed in 60ms (View: 42, DB: 7) | 200 OK [http://localhost/tweeters]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 14:17:45) [GET]
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Completed in 33ms (View: 21, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#new (for 127.0.0.1 at 2010-06-03 14:17:55) [GET]
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering tweeters/new
+Completed in 26ms (View: 16, DB: 4) | 200 OK [http://localhost/tweeters/new]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-06-03 14:18:00) [POST]
+  Parameters: {"tweeter"=>{"screen_name"=>"volmerius"}, "commit"=>"Create", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+  [4;35;1mTweeter Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'volmerius') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+
+ActiveRecord::RecordInvalid (Validation failed: Screen name has already been taken):
+  app/controllers/tweeters_controller.rb:60:in `create'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 14:19:08) [GET]
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Completed in 19ms (View: 8, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#new (for 127.0.0.1 at 2010-06-03 14:19:09) [GET]
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering tweeters/new
+Completed in 23ms (View: 11, DB: 6) | 200 OK [http://localhost/tweeters/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-06-03 14:19:14) [POST]
+  Parameters: {"tweeter"=>{"screen_name"=>"volmerius"}, "commit"=>"Create", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'volmerius') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tweeters/new
+Completed in 624ms (View: 11, DB: 7) | 200 OK [http://localhost/tweeters]
