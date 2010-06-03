@@ -1,0 +1,8 @@
+<h1>Hello!</h1>
+<br/>
+<% form_for @tweeter, insert_path do |f| %>
+  <%= f.error_messages %>
+  <%= f.label :screen_name %>
+  <%= f.text_field :screen_name %>
+  <%= f.submit ' insert ' %>
+<% end %>

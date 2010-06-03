@@ -1,0 +1,68 @@
+<p>
+  <b>Created at:</b>
+  <%=h @tweeter.created_at %>
+</p>
+
+<p>
+  <b>Friends count:</b>
+  <%=h @tweeter.friends_count %>
+</p>
+
+<p>
+  <b>Profile image url:</b>
+  <%=h @tweeter.profile_image_url %>
+</p>
+
+<p>
+  <b>Followers count:</b>
+  <%=h @tweeter.followers_count %>
+</p>
+
+<p>
+  <b>Screen name:</b>
+  <%=h @tweeter.screen_name %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @tweeter.location %>
+</p>
+
+<p>
+  <b>Geo enabled:</b>
+  <%=h @tweeter.geo_enabled %>
+</p>
+
+<p>
+  <b>Time zone:</b>
+  <%=h @tweeter.time_zone %>
+</p>
+
+<p>
+  <b>Protected:</b>
+  <%=h @tweeter.protected %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @tweeter.description %>
+</p>
+
+<p>
+  <b>Profile background image url:</b>
+  <%=h @tweeter.profile_background_image_url %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @tweeter.url %>
+</p>
+
+<p>
+  <b>Statuses count:</b>
+  <%=h @tweeter.statuses_count %>
+</p>
+
+
+<%= link_to 'Edit', edit_tweeter_path(@tweeter) %> |
+<%= link_to 'Back', tweeters_path %>
