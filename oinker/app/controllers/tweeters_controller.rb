@@ -59,6 +59,8 @@ class TweetersController < ApplicationController
     @tweeter.url = tmp.url
     @tweeter.statuses_count = tmp.statuses_count
 
+
+
     if @tweeter.save
       redirect_to(@tweeter, :notice => 'Tweeter was successfully inserted.')
     else
