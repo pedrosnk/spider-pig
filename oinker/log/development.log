@@ -272,3 +272,460 @@ Processing TweetersController#create (for 127.0.0.1 at 2010-06-03 14:19:14) [POS
 Rendering template within layouts/application
 Rendering tweeters/new
 Completed in 624ms (View: 11, DB: 7) | 200 OK [http://localhost/tweeters]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 15:39:57) [GET]
+  [4;36;1mTweeter Load (2.0ms)[0m   [0;1mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;35;1mTweeter Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Completed in 50ms (View: 40, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 15:42:21) [GET]
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Completed in 27ms (View: 15, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 15:42:43) [GET]
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Completed in 27ms (View: 16, DB: 6) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-03 15:43:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 25ms (View: 13, DB: 6) | 200 OK [http://localhost/tweeters/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-03 15:46:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 31ms (View: 18, DB: 5) | 200 OK [http://localhost/tweeters/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 15:47:00) [GET]
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;35;1mTweeter Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Completed in 25ms (View: 7, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#new (for 127.0.0.1 at 2010-06-03 15:47:02) [GET]
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering tweeters/new
+Completed in 27ms (View: 16, DB: 4) | 200 OK [http://localhost/tweeters/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-06-03 15:47:05) [POST]
+  Parameters: {"tweeter"=>{"screen_name"=>"renatofq"}, "commit"=>"Create", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+  [4;35;1mTweeter Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'renatofq') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-03 18:47:06', NULL, NULL, 0, 'renatofq', 0, 'Brasilia', 46, 53, 'http://s.twimg.com/a/1274899949/images/themes/theme2/bg.gif', 159, '2009-04-08 12:40:24', 'http://a3.twimg.com/profile_images/346768073/twitterProfilePhoto_normal.jpg', NULL)[0m
+  [4;35;1mSQL (26.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/tweeters/2
+Completed in 747ms (DB: 29) | 302 Found [http://localhost/tweeters]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-03 15:47:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTweeter Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 22ms (View: 10, DB: 3) | 200 OK [http://localhost/tweeters/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-03 15:48:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 21ms (View: 9, DB: 6) | 200 OK [http://localhost/tweeters/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 15:56:54) [GET]
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Completed in 23ms (View: 10, DB: 5) | 200 OK [http://localhost/tweeters]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 15:59:41) [GET]
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Completed in 27ms (View: 16, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#new (for 127.0.0.1 at 2010-06-03 15:59:49) [GET]
+  [4;36;1mTweeter Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering tweeters/new
+Completed in 23ms (View: 12, DB: 5) | 200 OK [http://localhost/tweeters/new]
+  [4;35;1mSQL (3.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-06-03 15:59:55) [POST]
+  Parameters: {"tweeter"=>{"screen_name"=>"xgessicax"}, "commit"=>"Create", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+  [4;35;1mTweeter Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Tweeter with ID=xgessicax):
+  app/controllers/tweeters_controller.rb:46:in `create'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-06-03 16:00:39) [POST]
+  Parameters: {"tweeter"=>{"screen_name"=>"xgessicax"}, "commit"=>"Create", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'xgessicax') LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'xgessicax') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-03 19:00:40', 'http://www.myspace.com/gessicaneves', '', 0, 'xgessicax', 0, 'Santiago', 91, 67, 'http://a3.twimg.com/profile_background_images/43129713/porquinho.jpg', 203, '2009-05-12 17:20:40', 'http://a1.twimg.com/profile_images/799625646/DSC04399_normal.JPG', '')[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/tweeters/3
+Completed in 719ms (DB: 25) | 302 Found [http://localhost/tweeters]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-03 16:00:40) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTweeter Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (2.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 35ms (View: 22, DB: 6) | 200 OK [http://localhost/tweeters/3]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 16:00:53) [GET]
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;36;1mTweeter Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Completed in 24ms (View: 12, DB: 7) | 200 OK [http://localhost/tweeters]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-03 16:01:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 21ms (View: 10, DB: 7) | 200 OK [http://localhost/tweeters/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 16:02:03) [GET]
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Completed in 24ms (View: 13, DB: 4) | 200 OK [http://localhost/tweeters]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#new (for 127.0.0.1 at 2010-06-03 16:02:13) [GET]
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering tweeters/new
+Completed in 22ms (View: 11, DB: 5) | 200 OK [http://localhost/tweeters/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-06-03 16:02:21) [POST]
+  Parameters: {"tweeter"=>{"screen_name"=>"marcelotas"}, "commit"=>"Create", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'marcelotas') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'marcelotas') LIMIT 1[0m
+  [4;36;1mTweeter Create (1.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-03 19:02:22', 'http://www.blogdotas.com.br', 'Digital being, TV anchor, actor, journalist, web astronaut (www.blogdotas.com.br)', 0, 'marcelotas', 0, 'Brasilia', 478, 591534, 'http://a1.twimg.com/profile_background_images/85525256/tas_twitter_back_RG.jpg', 3857, '2007-06-11 14:13:30', 'http://a1.twimg.com/profile_images/582460050/tas_avatarVF_normal.jpg', 'Sao Paulo')[0m
+  [4;35;1mSQL (23.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/tweeters/4
+Completed in 748ms (DB: 31) | 302 Found [http://localhost/tweeters]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-03 16:02:22) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 101ms (View: 89, DB: 5) | 200 OK [http://localhost/tweeters/4]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 16:02:27) [GET]
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;35;1mTweeter Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Completed in 26ms (View: 15, DB: 6) | 200 OK [http://localhost/tweeters]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#new (for 127.0.0.1 at 2010-06-03 16:02:29) [GET]
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering tweeters/new
+Completed in 24ms (View: 13, DB: 5) | 200 OK [http://localhost/tweeters/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-06-03 16:03:03) [POST]
+  Parameters: {"tweeter"=>{"screen_name"=>"radicaos"}, "commit"=>"Create", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (2.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'radicaos') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'radicaos') LIMIT 1[0m
+  [4;35;1mTweeter Create (1.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-03 19:03:04', 'http://radicaos.com', 'Libertação humana e animal', 0, 'radicaos', 0, 'Brasilia', 132, 112, 'http://a3.twimg.com/profile_background_images/11707647/radicaos.png', 168, '2009-03-13 17:58:37', 'http://a3.twimg.com/profile_images/95150457/untitled_normal.jpg', 'Correntina-BA-Brazil')[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/tweeters/5
+Completed in 783ms (DB: 24) | 302 Found [http://localhost/tweeters]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-03 16:03:04) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 23ms (View: 10, DB: 7) | 200 OK [http://localhost/tweeters/5]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 16:03:07) [GET]
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;36;1mTweeter Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Completed in 27ms (View: 17, DB: 5) | 200 OK [http://localhost/tweeters]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#new (for 127.0.0.1 at 2010-06-03 16:03:08) [GET]
+  [4;35;1mTweeter Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering tweeters/new
+Completed in 20ms (View: 10, DB: 3) | 200 OK [http://localhost/tweeters/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-06-03 16:03:16) [POST]
+  Parameters: {"tweeter"=>{"screen_name"=>"govegbr"}, "commit"=>"Create", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'govegbr') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'govegbr') LIMIT 1[0m
+  [4;36;1mTweeter Create (1.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-03 19:03:16', 'http://www.goveg.com.br', 'Vegetarianismo e veganismo, ético e consciente. Dicas, comentários, cursos, receitas, restaurantes e cursos para vegetarianos. Go Veg Brasil!', 0, 'govegbr', 1, 'Brasilia', 2097, 2028, 'http://s.twimg.com/a/1274899949/images/themes/theme3/bg.gif', 1983, '2009-09-20 21:28:59', 'http://a1.twimg.com/profile_images/882258342/073fed17-6af5-48cd-8bfb-f023bf816a73_normal.png', 'Brazil')[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/tweeters/6
+Completed in 738ms (DB: 29) | 302 Found [http://localhost/tweeters]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-03 16:03:18) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 21ms (View: 9, DB: 4) | 200 OK [http://localhost/tweeters/6]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 16:03:23) [GET]
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Completed in 31ms (View: 20, DB: 7) | 200 OK [http://localhost/tweeters]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#new (for 127.0.0.1 at 2010-06-03 16:03:24) [GET]
+  [4;36;1mTweeter Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering tweeters/new
+Completed in 20ms (View: 10, DB: 4) | 200 OK [http://localhost/tweeters/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-06-03 16:03:29) [POST]
+  Parameters: {"tweeter"=>{"screen_name"=>"cmibrasil"}, "commit"=>"Create", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'cmibrasil') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'cmibrasil') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-03 19:03:30', 'http://www.midiaindependente.org/', 'Centro de Mídia Independende do Brasil (twitter não-oficial)', 0, 'cmibrasil', 0, 'Brasilia', 70, 972, 'http://s.twimg.com/a/1275505066/images/themes/theme9/bg.gif', 4966, '2009-08-11 16:53:09', 'http://a1.twimg.com/profile_images/357274088/Imagem1_normal.png', 'Brasil')[0m
+  [4;36;1mSQL (22.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/tweeters/7
+Completed in 698ms (DB: 31) | 302 Found [http://localhost/tweeters]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-03 16:03:30) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mTweeter Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 26ms (View: 11, DB: 5) | 200 OK [http://localhost/tweeters/7]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 16:03:33) [GET]
+  [4;35;1mTweeter Load (2.0ms)[0m   [0mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;36;1mTweeter Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Completed in 39ms (View: 27, DB: 6) | 200 OK [http://localhost/tweeters]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#new (for 127.0.0.1 at 2010-06-03 16:03:35) [GET]
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering tweeters/new
+Completed in 26ms (View: 12, DB: 5) | 200 OK [http://localhost/tweeters/new]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-06-03 16:03:44) [POST]
+  Parameters: {"tweeter"=>{"screen_name"=>"junior_fonseca"}, "commit"=>"Create", "authenticity_token"=>"KXCxAa5VQQcCz5CHhBS0V/mGynN2wY/XHHFjNpGNaxU="}
+  [4;36;1mTweeter Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'junior_fonseca') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'junior_fonseca') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-03 19:03:45', 'http://www.animepro.com.br', 'Editor da revista Neo Tokyo e do site Anime Pró, além de ser um dos responsaveis pela NewPOP Editora e gerente do departamento web da Comix Book Shop.', 0, 'junior_fonseca', 0, 'Brasilia', 101, 314, 'http://a3.twimg.com/profile_background_images/15530271/tw_junior10.jpg', 1210, '2009-05-27 16:21:17', 'http://a1.twimg.com/profile_images/856719912/orkut_normal.jpg', 'São Paulo')[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/tweeters/8
+Completed in 705ms (DB: 17) | 302 Found [http://localhost/tweeters]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-03 16:03:45) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 8) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 22ms (View: 10, DB: 5) | 200 OK [http://localhost/tweeters/8]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 16:03:56) [GET]
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;35;1mTweeter Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Completed in 35ms (View: 25, DB: 6) | 200 OK [http://localhost/tweeters]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-03 16:05:15) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mTweeter Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (1.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 8) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 22ms (View: 9, DB: 6) | 200 OK [http://localhost/tweeters/8]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-03 16:06:05) [GET]
+  [4;36;1mTweeter Load (1.0ms)[0m   [0;1mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;35;1mTweeter Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Completed in 45ms (View: 34, DB: 5) | 200 OK [http://localhost/tweeters]

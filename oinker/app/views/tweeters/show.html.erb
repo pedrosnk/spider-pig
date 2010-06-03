@@ -1,66 +1,66 @@
 <p>
   <b>Created at:</b>
-  <%=h @tweeter.created_at %>
+  <%= l  @tweeter.created_at %>
 </p>
 
 <p>
   <b>Friends count:</b>
-  <%=h @tweeter.friends_count %>
+  <%= @tweeter.friends_count %>
 </p>
 
 <p>
-  <b>Profile image url:</b>
-  <%=h @tweeter.profile_image_url %>
+  <b>Profile image:</b>
+  <%= image_tag  @tweeter.profile_image_url %>
 </p>
 
 <p>
   <b>Followers count:</b>
-  <%=h @tweeter.followers_count %>
+  <%= @tweeter.followers_count %>
 </p>
 
 <p>
   <b>Screen name:</b>
-  <%=h @tweeter.screen_name %>
+  <%= link_to @tweeter.screen_name, "http://twitter.com/#{@tweeter.screen_name}" %>
 </p>
 
 <p>
   <b>Location:</b>
-  <%=h @tweeter.location %>
+  <%= @tweeter.location %>
 </p>
 
 <p>
   <b>Geo enabled:</b>
-  <%=h @tweeter.geo_enabled %>
+  <%= @tweeter.geo_enabled %>
 </p>
 
 <p>
   <b>Time zone:</b>
-  <%=h @tweeter.time_zone %>
+  <%= @tweeter.time_zone %>
 </p>
 
 <p>
   <b>Protected:</b>
-  <%=h @tweeter.protected %>
+  <%= @tweeter.protected %>
 </p>
 
 <p>
   <b>Description:</b>
-  <%=h @tweeter.description %>
+  <%= @tweeter.description %>
 </p>
 
 <p>
-  <b>Profile background image url:</b>
-  <%=h @tweeter.profile_background_image_url %>
+  <b>Profile background image:</b>
+  <%= image_tag  @tweeter.profile_background_image_url %>
 </p>
 
 <p>
   <b>Url:</b>
-  <%=h @tweeter.url %>
+  <%= link_to @tweeter.url, @tweeter.url %>
 </p>
 
 <p>
   <b>Statuses count:</b>
-  <%=h @tweeter.statuses_count %>
+  <%= @tweeter.statuses_count %>
 </p>
 
 

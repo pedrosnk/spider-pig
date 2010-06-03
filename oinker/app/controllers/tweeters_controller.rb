@@ -1,4 +1,5 @@
 class TweetersController < ApplicationController
+  require 'grackle'
   # GET /tweeters
   # GET /tweeters.xml
   def index
@@ -42,7 +43,8 @@ class TweetersController < ApplicationController
   def create
     client = Grackle::Client.new
     tmp = client.users.show?(:screen_name => params[:tweeter][:screen_name])
-    @tweeter = Tweeter.new
+    @tweeter = Tweeter.find_by_screen_name(params[:tweeter][:screen_name])
+    @tweeter = Tweeter.new if @tweeter.nil?
     @tweeter.created_at = tmp.created_at
     @tweeter.friends_count = tmp.friends_count
     @tweeter.profile_image_url = tmp.profile_image_url
@@ -58,7 +60,7 @@ class TweetersController < ApplicationController
     @tweeter.statuses_count = tmp.statuses_count
 
     if @tweeter.save
-      redirect_to(@tweeter, :notice => 'Tweeter was successfully created.')
+      redirect_to(@tweeter, :notice => 'Tweeter was successfully inserted.')
     else
       render :action => 'new'
     end
