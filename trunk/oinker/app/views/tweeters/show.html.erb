@@ -63,6 +63,29 @@
   <%= @tweeter.statuses_count %>
 </p>
 
+<div>
+	<h2>Tweets</h2>
+	<% @tweets.each do |tweet| %>
+	  <div>
+	  	<p><%= link_to tweet.text, tweet %> - <%= time_ago_in_words tweet.created_at %></p>
+	  </div>
+	<% end %>
+</div>
+
+<div>
+	<h2>Friends</h2>
+	<% @friends.each do |friend| %>
+	  <%= link_to [image_tag  friend.profile_image_url], friend %> - <%= link_to friend.screen_name, friend %>
+	<% end %>
+</div>
+
+<div>
+	<h2>Followers</h2>
+	<% @followers.each do |friend| %>
+	  <%= link_to [image_tag  friend.profile_image_url], friend %> - <%= link_to friend.screen_name, friend %>
+	<% end %>
+</div>
+
 
 <%= link_to 'Edit', edit_tweeter_path(@tweeter) %> |
 <%= link_to 'Back', tweeters_path %>
