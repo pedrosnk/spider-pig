@@ -37,7 +37,7 @@ class TweetersController < ApplicationController
     t_friends[0..5].each do |t_id|
       friend = create_or_update_tweeter(client.users.show?(:id => t_id))
       friend.save
-      @friends = friend
+      @friends << friend
     end
     
     t_followers = client.followers.ids.json?(:screen_name => @tweeter.screen_name)
@@ -45,7 +45,7 @@ class TweetersController < ApplicationController
     t_followers[0..5].each do |t_id|
       follower = create_or_update_tweeter(client.users.show?(:id => t_id))
       follower.save
-      @followers = follower
+      @followers << follower
     end
     
     respond_to do |format|

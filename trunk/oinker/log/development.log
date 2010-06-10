@@ -2624,3 +2624,369 @@ Grackle::TwitterError (get http://twitter.com/users/show/126829579.json => 400: 
 Rendered rescues/_trace (610.0ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 18:25:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTweeter Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;36;1mTweet Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `tweets`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (15.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'terrasemlei') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'terrasemlei' AND `tweeters`.id <> 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'jehssi_ka') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'jehssi_ka' AND `tweeters`.id <> 3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'anarcopunk') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'anarcopunk' AND `tweeters`.id <> 4) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Sinval_Vasco') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Sinval_Vasco' AND `tweeters`.id <> 5) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'centralrpg') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'centralrpg' AND `tweeters`.id <> 6) LIMIT 1[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'WoDBrasil') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'WoDBrasil' AND `tweeters`.id <> 7) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'PROGRAMSYNERGIA') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'PROGRAMSYNERGIA') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 21:25:54', 'http://www.programasynergia.com.br', '', 0, 'PROGRAMSYNERGIA', 0, 'Brasilia', 408, 51, 'http://a1.twimg.com/profile_background_images/108072108/bg2.jpg', 8, '2010-01-08 12:47:59', 'http://a3.twimg.com/profile_images/956081501/SynergiaCaveira_normal.jpg', '')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'jehssi_ka') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'jehssi_ka' AND `tweeters`.id <> 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'reinanqueirozdf') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'reinanqueirozdf') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 21:25:56', 'http://www.reinanqueiroz.com.br', '', 0, 'reinanqueirozdf', 0, 'Greenland', 1994, 147, 'http://a1.twimg.com/profile_background_images/98553816/twitter.jpg', 13, '2009-11-09 13:23:46', 'http://a3.twimg.com/profile_images/874046569/01_normal.jpg', 'Brasília-DF')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Sinval_Vasco') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Sinval_Vasco' AND `tweeters`.id <> 5) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Linda_Lee') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Linda_Lee') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 21:25:57', NULL, 'Amo-sinto-falo-quero-mudo -penso-movo-brigo-exijo-sonho...AMO!', 0, 'Linda_Lee', 0, NULL, 56, 16, 'http://a1.twimg.com/profile_background_images/92815084/Beautiful_Scene_2_.jpg', 16, '2010-04-15 23:31:40', 'http://a3.twimg.com/profile_images/826355761/Orange_Flower_normal.jpg', 'Brasil - Brasília')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'cotrim149') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'cotrim149' AND `tweeters`.id <> 51) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering tweeters/show
+
+ActionView::TemplateError (undefined method `each' for #<Tweeter:0x47ed908>) on line #77 of app/views/tweeters/show.html.erb:
+74: 
+75: <div>
+76: 	<h2>Friends</h2>
+77: 	<% @friends.each do |friend| %>
+78: 	  <%= link_to [image_tag  friend.profile_image_url], friend %> - <%= link_to friend.screen_name, friend %>
+79: 	<% end %>
+80: </div>
+
+    app/views/tweeters/show.html.erb:77
+    app/controllers/tweeters_controller.rb:51:in `show'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 18:26:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTweeter Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;36;1mTweet Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `tweets`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (15.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'terrasemlei') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (16.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'terrasemlei' AND `tweeters`.id <> 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'jehssi_ka') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'jehssi_ka' AND `tweeters`.id <> 3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'anarcopunk') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'anarcopunk' AND `tweeters`.id <> 4) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Sinval_Vasco') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Sinval_Vasco' AND `tweeters`.id <> 5) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'centralrpg') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'centralrpg' AND `tweeters`.id <> 6) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'WoDBrasil') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'WoDBrasil' AND `tweeters`.id <> 7) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'PROGRAMSYNERGIA') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'PROGRAMSYNERGIA' AND `tweeters`.id <> 126) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'jehssi_ka') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'jehssi_ka' AND `tweeters`.id <> 3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'reinanqueirozdf') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'reinanqueirozdf' AND `tweeters`.id <> 127) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Sinval_Vasco') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Sinval_Vasco' AND `tweeters`.id <> 5) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Linda_Lee') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Linda_Lee' AND `tweeters`.id <> 128) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'cotrim149') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'cotrim149' AND `tweeters`.id <> 51) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 12188ms (View: 78, DB: 93) | 200 OK [http://localhost/tweeters/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 18:27:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTweeter Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;35;1mTweet Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `tweets`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'terrasemlei') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'terrasemlei' AND `tweeters`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'jehssi_ka') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (16.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'jehssi_ka' AND `tweeters`.id <> 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'anarcopunk') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'anarcopunk' AND `tweeters`.id <> 4) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Sinval_Vasco') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Sinval_Vasco' AND `tweeters`.id <> 5) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'centralrpg') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'centralrpg' AND `tweeters`.id <> 6) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'WoDBrasil') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'WoDBrasil' AND `tweeters`.id <> 7) LIMIT 1[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (16.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'PROGRAMSYNERGIA') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'PROGRAMSYNERGIA' AND `tweeters`.id <> 126) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'jehssi_ka') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'jehssi_ka' AND `tweeters`.id <> 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (15.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'reinanqueirozdf') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'reinanqueirozdf' AND `tweeters`.id <> 127) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Sinval_Vasco') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Sinval_Vasco' AND `tweeters`.id <> 5) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Linda_Lee') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Linda_Lee' AND `tweeters`.id <> 128) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'cotrim149') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'cotrim149' AND `tweeters`.id <> 51) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 11391ms (View: 235, DB: 125) | 200 OK [http://localhost/tweeters/1]
