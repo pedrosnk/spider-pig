@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  created_at: 2010-06-10 15:31:27
+  tweeter_id: 1
+  twitter_id: 1
+  text: MyString
+  source: MyString
+  in_reply_to_status_id: 1
+  in_reply_to_screen_name: MyString
+
+two:
+  created_at: 2010-06-10 15:31:27
+  tweeter_id: 1
+  twitter_id: 1
+  text: MyString
+  source: MyString
+  in_reply_to_status_id: 1
+  in_reply_to_screen_name: MyString

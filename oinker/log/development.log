@@ -1214,3 +1214,1413 @@ Rendering template within layouts/application
 Rendering tweeters/index
   [4;35;1mTweeter Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
 Completed in 47ms (View: 37, DB: 6) | 200 OK [http://localhost/tweeters]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-10 14:31:27) [GET]
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mMysql::Error: Table 'oinker_development.tweeters' doesn't exist: SELECT * FROM `tweeters` [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'oinker_development.tweeters' doesn't exist: SELECT * FROM `tweeters` ):
+  app/controllers/tweeters_controller.rb:6:in `index'
+
+Rendered rescues/_trace (266.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (109.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (250.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTweeters (20100603170125)
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE `tweeters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `friends_count` int(11), `profile_image_url` varchar(255), `followers_count` int(11), `screen_name` varchar(255), `location` varchar(255), `geo_enabled` tinyint(1), `time_zone` varchar(255), `protected` tinyint(1), `description` varchar(255), `profile_background_image_url` varchar(255), `url` varchar(255), `statuses_count` int(11), `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100603170125')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mdescribe `tweeters`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `tweeters`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-10 14:40:33) [GET]
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+Completed in 532ms (View: 516, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#new (for 127.0.0.1 at 2010-06-10 14:40:35) [GET]
+  [4;36;1mTweeter Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering tweeters/new
+Completed in 63ms (View: 31, DB: 32) | 200 OK [http://localhost/tweeters/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-06-10 14:40:40) [POST]
+  Parameters: {"tweeter"=>{"screen_name"=>"volmerius"}, "commit"=>"Create", "authenticity_token"=>"WTg0348p5dOa5JI30j4U89JV3CkoCj15mUAxThh4Dzw="}
+  [4;35;1mTweeter Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (15.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'volmerius') LIMIT 1[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'volmerius') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 17:40:44', 'http://radicaos.com', 'Logo, eu digo: Eä! Que essas coisas Existam! E mandarei para o meio do Vazio a Chama Imperecível; e ela estará no coração do Mundo, e o Mundo Existirá.', 0, 'volmerius', 1, 'Greenland', 141, 90, 'http://a1.twimg.com/profile_background_images/44511142/eu_menor.png', 143, '2009-10-12 15:28:41', 'http://a1.twimg.com/profile_images/466714110/DSC02731_-_C_pia_-_C_pia_normal.jpg', 'Distrito Federal')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/tweeters/1
+Completed in 4422ms (DB: 94) | 302 Found [http://localhost/tweeters]
+  [4;35;1mSQL (16.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 14:40:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTweeter Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 94ms (View: 32, DB: 63) | 200 OK [http://localhost/tweeters/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 15:43:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTweeter Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;35;1mTweet Columns (0.0ms)[0m   [0mMysql::Error: Table 'oinker_development.tweets' doesn't exist: SHOW FIELDS FROM `tweets`[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'oinker_development.tweets' doesn't exist: SHOW FIELDS FROM `tweets`):
+  app/controllers/tweeters_controller.rb:23:in `new'
+  app/controllers/tweeters_controller.rb:23:in `show'
+  app/controllers/tweeters_controller.rb:22:in `each'
+  app/controllers/tweeters_controller.rb:22:in `show'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTweeters (20100603170125)
+Migrating to CreateTweets (20100610183127)
+  [4;36;1mSQL (93.0ms)[0m   [0;1mCREATE TABLE `tweets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `tweeter_id` int(11), `twitter_id` int(11), `text` varchar(255), `source` varchar(255), `in_reply_to_status_id` int(11), `in_reply_to_screen_name` varchar(255), `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100610183127')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `tweeters`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `tweeters`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tweets`[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mdescribe `tweets`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `tweets`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 15:44:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTweeter Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;36;1mTweet Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `tweets`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (0.0ms)[0m   [0;1mMysql::Error: Out of range value for column 'twitter_id' at row 1: INSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:44:29', 'Como disse Paul, o Internet Explorer é ótimo para 1 coisa: baixar o firefox.', 1, 15287859627, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-06-03 00:29:59')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Out of range value for column 'twitter_id' at row 1: INSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:44:29', 'Como disse Paul, o Internet Explorer é ótimo para 1 coisa: baixar o firefox.', 1, 15287859627, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-06-03 00:29:59')):
+  app/controllers/tweeters_controller.rb:31:in `show'
+  app/controllers/tweeters_controller.rb:22:in `each'
+  app/controllers/tweeters_controller.rb:22:in `show'
+
+Rendered rescues/_trace (297.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 15:49:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTweeter Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (16.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;36;1mTweet Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `tweets`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (0.0ms)[0m   [0;1mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:49:51', 'Como disse Paul, o Internet Explorer é ótimo para 1 coisa: baixar o firefox.', 1, 15287859627, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-06-03 00:29:59')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:49:51', 'Formatando.... baixando... instalando... aguardando....', 1, 15287789057, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-06-03 00:28:47')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (0.0ms)[0m   [0;1mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:49:51', 'Seja lá quem for em quem eles votem, somos ingovernáveis http://bit.ly/aqaaTp', 1, 15265479016, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-06-02 17:17:46')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:49:51', 'Criador do Twitter é vegano!!!! http://is.gd/cw3z8', 1, 15071395333, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-30 23:39:12')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (0.0ms)[0m   [0;1mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:49:51', 'Chomsky barrado! http://aeiou.expresso.pt/israel-nega-entrada-a-noam-chomsky=f583232', 1, 14225937998, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-18 12:58:29')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:49:51', 'Rock is not The Devil\'s work, It\'s magical and rad. I\'ll never rock as long as I am stuck here with my dad. #RIPDio', 1, 14135680797, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-17 02:34:34')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (0.0ms)[0m   [0;1mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:49:51', 'I need a tight compadre who will teach me how to rock. My father thinks you\'re evil, But, man, he can suck a cock.', 1, 14135655789, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-17 02:34:04')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:49:51', 'Dio, can you hear me? I am lost and so alone. I\'m asking for your guidance. Would you come down from your throne?', 1, 14135638512, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-17 02:33:43')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (0.0ms)[0m   [0;1mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:49:51', 'Dio is not dead', 1, 14122378235, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-16 22:00:33')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mMysql::Error: Out of range value for column 'in_reply_to_status_id' at row 1: INSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:49:51', '@Victor_Neres Oi! Como vai você?', 1, 13884668544, 13883596761, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', 'Victor_Neres', '2010-05-13 01:24:00')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Out of range value for column 'in_reply_to_status_id' at row 1: INSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:49:51', '@Victor_Neres Oi! Como vai você?', 1, 13884668544, 13883596761, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', 'Victor_Neres', '2010-05-13 01:24:00')):
+  app/controllers/tweeters_controller.rb:31:in `show'
+  app/controllers/tweeters_controller.rb:22:in `each'
+  app/controllers/tweeters_controller.rb:22:in `show'
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 15:50:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTweeter Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;35;1mTweet Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `tweets`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:29', 'Como disse Paul, o Internet Explorer é ótimo para 1 coisa: baixar o firefox.', 1, 15287859627, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-06-03 00:29:59')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (0.0ms)[0m   [0;1mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:29', 'Formatando.... baixando... instalando... aguardando....', 1, 15287789057, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-06-03 00:28:47')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:29', 'Seja lá quem for em quem eles votem, somos ingovernáveis http://bit.ly/aqaaTp', 1, 15265479016, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-06-02 17:17:46')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (0.0ms)[0m   [0;1mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:29', 'Criador do Twitter é vegano!!!! http://is.gd/cw3z8', 1, 15071395333, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-30 23:39:12')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:29', 'Chomsky barrado! http://aeiou.expresso.pt/israel-nega-entrada-a-noam-chomsky=f583232', 1, 14225937998, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-18 12:58:29')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (16.0ms)[0m   [0;1mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:29', 'Rock is not The Devil\'s work, It\'s magical and rad. I\'ll never rock as long as I am stuck here with my dad. #RIPDio', 1, 14135680797, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-17 02:34:34')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:29', 'I need a tight compadre who will teach me how to rock. My father thinks you\'re evil, But, man, he can suck a cock.', 1, 14135655789, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-17 02:34:04')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (0.0ms)[0m   [0;1mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:29', 'Dio, can you hear me? I am lost and so alone. I\'m asking for your guidance. Would you come down from your throne?', 1, 14135638512, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-17 02:33:43')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:29', 'Dio is not dead', 1, 14122378235, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-16 22:00:33')[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (0.0ms)[0m   [0;1mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:29', '@Victor_Neres Oi! Como vai você?', 1, 13884668544, 13883596761, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', 'Victor_Neres', '2010-05-13 01:24:00')[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:29', 'Blog da Paula &gt;&gt; Dia das Mães &gt;&gt; http://ideiasaprovadebala.blogspot.com/2010/05/dia-das-maes.html', 1, 13849985208, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-12 13:06:34')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (0.0ms)[0m   [0;1mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:30', '@MdT_Brasil Yeah, no aguardo! Ah e o link para as previsões de lançamento ainda está incorreto... =)', 1, 13807777910, 13805678186, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', 'MdT_Brasil', '2010-05-11 20:30:05')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:30', 'NÃO VALE - Veja o trailer - http://www.youtube.com/watch?v=_SZodi4EO68', 1, 13615971440, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-08 16:06:22')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Create (0.0ms)[0m   [0;1mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:50:30', 'RT: @Victor_Neres: RT @AvaazPo Fora corruptos! Assinem o Projeto Ficha Limpa - falta pouco tempo! http://www.avaaz.org/ficha', 1, 13424823890, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-05 12:59:04')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 5828ms (View: 78, DB: 562) | 200 OK [http://localhost/tweeters/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 15:51:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTweeter Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;36;1mTweet Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tweets`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:31', 'Como disse Paul, o Internet Explorer é ótimo para 1 coisa: baixar o firefox.', 1, 15287859627, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-06-03 00:29:59')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', 'Formatando.... baixando... instalando... aguardando....', 1, 15287789057, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-06-03 00:28:47')[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', 'Seja lá quem for em quem eles votem, somos ingovernáveis http://bit.ly/aqaaTp', 1, 15265479016, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-06-02 17:17:46')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', 'Criador do Twitter é vegano!!!! http://is.gd/cw3z8', 1, 15071395333, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-30 23:39:12')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', 'Chomsky barrado! http://aeiou.expresso.pt/israel-nega-entrada-a-noam-chomsky=f583232', 1, 14225937998, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-18 12:58:29')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', 'Rock is not The Devil\'s work, It\'s magical and rad. I\'ll never rock as long as I am stuck here with my dad. #RIPDio', 1, 14135680797, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-17 02:34:34')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', 'I need a tight compadre who will teach me how to rock. My father thinks you\'re evil, But, man, he can suck a cock.', 1, 14135655789, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-17 02:34:04')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', 'Dio, can you hear me? I am lost and so alone. I\'m asking for your guidance. Would you come down from your throne?', 1, 14135638512, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-17 02:33:43')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', 'Dio is not dead', 1, 14122378235, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-16 22:00:33')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', '@Victor_Neres Oi! Como vai você?', 1, 13884668544, 13883596761, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', 'Victor_Neres', '2010-05-13 01:24:00')[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', 'Blog da Paula &gt;&gt; Dia das Mães &gt;&gt; http://ideiasaprovadebala.blogspot.com/2010/05/dia-das-maes.html', 1, 13849985208, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-12 13:06:34')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', '@MdT_Brasil Yeah, no aguardo! Ah e o link para as previsões de lançamento ainda está incorreto... =)', 1, 13807777910, 13805678186, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', 'MdT_Brasil', '2010-05-11 20:30:05')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', 'NÃO VALE - Veja o trailer - http://www.youtube.com/watch?v=_SZodi4EO68', 1, 13615971440, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-08 16:06:22')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (16.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;35;1mTweet Create (0.0ms)[0m   [0mINSERT INTO `tweets` (`updated_at`, `text`, `tweeter_id`, `twitter_id`, `in_reply_to_status_id`, `source`, `in_reply_to_screen_name`, `created_at`) VALUES('2010-06-10 18:51:32', 'RT: @Victor_Neres: RT @AvaazPo Fora corruptos! Assinem o Projeto Ficha Limpa - falta pouco tempo! http://www.avaaz.org/ficha', 1, 13424823890, NULL, '<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>', NULL, '2010-05-05 12:59:04')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 5078ms (View: 15, DB: 625) | 200 OK [http://localhost/tweeters/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#show (for 127.0.0.1 at 2010-06-10 15:51:40) [GET]
+  Parameters: {"id"=>"30"}
+  [4;35;1mTweet Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `tweets`[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`id` = 30) [0m
+Rendering template within layouts/application
+Rendering tweets/show
+Completed in 63ms (View: 32, DB: 15) | 200 OK [http://localhost/tweets/30]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 15:53:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTweeter Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (15.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;35;1mTweet Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `tweets`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+
+ActiveRecord::RecordInvalid (Validation failed: Twitter has already been taken):
+  app/controllers/tweeters_controller.rb:31:in `show'
+  app/controllers/tweeters_controller.rb:22:in `each'
+  app/controllers/tweeters_controller.rb:22:in `show'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 15:54:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTweeter Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (15.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;35;1mTweet Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `tweets`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 5500ms (View: 15, DB: 47) | 200 OK [http://localhost/tweeters/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-06-10 15:54:22) [GET]
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` [0m
+Rendering template within layouts/application
+Rendering tweets/index
+  [4;35;1mTweet Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `tweets`[0m
+Completed in 281ms (View: 249, DB: 16) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 15:55:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTweeter Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;36;1mTweet Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `tweets`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 6734ms (View: 47, DB: 64) | 200 OK [http://localhost/tweeters/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#show (for 127.0.0.1 at 2010-06-10 15:55:34) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mTweet Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `tweets`[0m
+  [4;36;1mTweet Load (15.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering tweets/show
+  [4;35;1mTweeter Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+Completed in 157ms (View: 94, DB: 47) | 200 OK [http://localhost/tweets/24]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#show (for 127.0.0.1 at 2010-06-10 15:56:45) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mTweet Columns (32.0ms)[0m   [0mSHOW FIELDS FROM `tweets`[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering tweets/show
+  [4;35;1mTweeter Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+Completed in 219ms (View: 141, DB: 47) | 200 OK [http://localhost/tweets/24]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 15:56:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTweeter Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;35;1mTweet Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `tweets`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering tweeters/show
+Completed in 3719ms (View: 156, DB: 16) | 200 OK [http://localhost/tweeters/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#show (for 127.0.0.1 at 2010-06-10 15:57:03) [GET]
+  Parameters: {"id"=>"27"}
+  [4;36;1mTweet Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `tweets`[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`id` = 27) [0m
+Rendering template within layouts/application
+Rendering tweets/show
+  [4;36;1mTweeter Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+Completed in 234ms (View: 140, DB: 31) | 200 OK [http://localhost/tweets/27]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 16:10:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTweeter Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+  [4;35;1mTweeter Load (16.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;36;1mTweet Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `tweets`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mTweet Load (0.0ms)[0m   [0;1mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'terrasemlei') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'terrasemlei') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:10:58', NULL, '', 0, 'terrasemlei', 0, NULL, 0, 3, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 12, '2010-05-29 11:28:42', 'http://a1.twimg.com/profile_images/940597170/12_normal.jpg', '')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'jehssi_ka') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'jehssi_ka') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:00', NULL, '', 0, 'jehssi_ka', 0, 'Brasilia', 81, 32, 'http://s.twimg.com/a/1276036952/images/themes/theme15/bg.png', 54, '2010-05-23 02:36:54', 'http://a3.twimg.com/profile_images/930222503/OgAAAMlnyyWK0TPLxrV-icLx3vY_mYIXxs7brlGKoIcEgGDKrheqswOwC_pU4s-jssRJjLZxnODcVvp9NSV21w8aWXIAm1T1UEpTVXljkUZW87WXJbpDyO4QucCQ_normal.jpg', 'Onde Judas perdeu o all star*')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'anarcopunk') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'anarcopunk') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:02', NULL, '', 0, 'anarcopunk', 0, 'Brasilia', 25, 40, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 11, '2009-05-27 13:07:12', 'http://s.twimg.com/a/1276063863/images/default_profile_4_normal.png', '')[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Sinval_Vasco') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Sinval_Vasco') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:04', 'http://rebornally.com', '', 0, 'Sinval_Vasco', 0, 'Brasilia', 69, 71, 'http://a3.twimg.com/profile_background_images/99025367/_drum-wallpaper_640x480.jpg', 39, '2009-04-30 16:22:12', 'http://a3.twimg.com/profile_images/822895139/me_normal.jpg', 'Brasília')[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'centralrpg') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'centralrpg') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:06', 'http://centralrpg.com.br', ' Nosso site - em formato de blog - tem como principio inicio divulgar as novidades e afins do mundo do RPG. Não deixe de visitar!', 0, 'centralrpg', 0, 'Brasilia', 5, 4, 'http://a3.twimg.com/profile_background_images/109466233/centralRPG.jpg', 5, '2010-04-05 22:15:22', 'http://a3.twimg.com/profile_images/967205405/centralrpg2_normal.jpg', 'Brasília, DF')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'WoDBrasil') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'WoDBrasil') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:08', NULL, NULL, 0, 'WoDBrasil', 0, NULL, 0, 2, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 0, '2010-04-29 23:08:35', 'http://s.twimg.com/a/1276063863/images/default_profile_5_normal.png', NULL)[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'animepro') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'animepro') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:10', 'http://www.animepro.com.br', 'Site informativo de Animê, Mangá e curiosidades do Japão', 0, 'animepro', 0, 'Brasilia', 764, 3375, 'http://a1.twimg.com/profile_background_images/15197662/Untitled-1.jpg', 1363, '2009-04-28 14:38:10', 'http://a1.twimg.com/profile_images/234444460/logosgc_normal.jpg', 'Brasil')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'vampirojonas') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'vampirojonas') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:11', NULL, 'Um impopular líder na noite, a quem os sanguessugas chamam de corifeu. Nosferatu cruel, sádico, vingativo, macabro, vil. ', 0, 'vampirojonas', 0, NULL, 9, 10, 'http://a3.twimg.com/profile_background_images/89530545/red_blood_wallpaper_1280x1024.jpg', 56, '2010-04-06 02:27:20', 'http://a1.twimg.com/profile_images/800911052/Gothic_Art_-_Female_Vampire_-_569x717_-_130_normal.jpg', 'Brasília')[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'cmwayoflife') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'cmwayoflife') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:13', 'http://classemediawayoflife.blogspot.com', 'O Classe Média Way of Life agora tem Twitter! Visite o Blog!', 0, 'cmwayoflife', 0, 'Brasilia', 7, 513, 'http://a1.twimg.com/profile_background_images/89488122/fundo_twitter.jpg', 9, '2010-04-06 00:11:56', 'http://a1.twimg.com/profile_images/800684494/Pierre2_normal.jpg', 'Brasil')[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Camiseteria') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Camiseteria') LIMIT 1[0m
+  [4;35;1mTweeter Create (15.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:15', 'http://camiseteria.com', 'Somos apaixonados por camisetas.', 0, 'Camiseteria', 0, 'Brasilia', 48484, 49133, 'http://a3.twimg.com/profile_background_images/107374329/back_twitter4.gif', 5614, '2007-06-08 13:38:47', 'http://a3.twimg.com/profile_images/949861629/selo_normal.gif', 'Brasil')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'overfunk') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'overfunk') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:17', NULL, NULL, 0, 'overfunk', 0, 'Brasilia', 1, 2, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 0, '2010-03-27 03:34:19', 'http://s.twimg.com/a/1276063863/images/default_profile_2_normal.png', NULL)[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'HaitouAnimes') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'HaitouAnimes') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:20', 'http://www.haitou.org/', '', 0, 'HaitouAnimes', 0, 'Santiago', 1, 1374, 'http://a1.twimg.com/profile_background_images/90025612/wall.jpg', 169, '2009-12-20 01:41:41', 'http://a1.twimg.com/profile_images/583038866/1_normal.jpg', '')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Liga_Hq_Online') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Liga_Hq_Online') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:22', 'http://www.ligahq.com.br', 'Site especializado em venda de Hqs. Seu quadrinho preferido em sua casa e com frete grátis!', 0, 'Liga_Hq_Online', 0, 'Santiago', 84, 1853, 'http://a3.twimg.com/profile_background_images/15066311/Marvel-character-composit.jpg', 657, '2009-05-26 21:03:41', 'http://a1.twimg.com/profile_images/232576918/ligahq_normal.jpg', 'São Paulo - Brasil')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (15.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'galinhapreta_') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'galinhapreta_') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:23', 'http://www.myspace.com/galinhapreta', 'Banda Galinha Preta de Brasíííííííííília!!!!! Só loucuraaaaaaa!', 0, 'galinhapreta_', 0, 'Santiago', 954, 598, 'http://s.twimg.com/a/1275598481/images/themes/theme9/bg.gif', 278, '2009-08-26 19:25:41', 'http://a3.twimg.com/profile_images/382987171/galinhacapa_normal.jpg', 'Brasilia, DF!')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'rpg_tweet') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'rpg_tweet') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:25', 'http://feeds.feedburner.com/RpgTweet', 'Afim de saber tudo que ta rolando no mundo do RPG? Então siga-me os bons e se prepare para muito RPG no seu twitter. ', 0, 'rpg_tweet', 0, 'Santiago', 365, 417, 'http://a1.twimg.com/profile_background_images/83115494/RPG_Tweet_Fundo.jpg', 927, '2010-03-14 15:06:38', 'http://a1.twimg.com/profile_images/752258080/RPG_Tweet_normal.jpg', '')[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'hikarianimes') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'hikarianimes') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:27', 'http://www.hikarianimes.com.br', '', 0, 'hikarianimes', 0, 'Santiago', 0, 930, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 286, '2009-05-07 00:44:52', 'http://a1.twimg.com/profile_images/201145716/Orkut_01_normal.jpg', '')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'candeeiroverde') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (16.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'candeeiroverde') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:29', NULL, '', 0, 'candeeiroverde', 0, 'Brasilia', 20, 10, 'http://s.twimg.com/a/1275428829/images/themes/theme13/bg.gif', 25, '2010-02-24 12:27:24', 'http://a1.twimg.com/profile_images/933249192/janio_normal.jpg', '')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'CCBB_DF') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'CCBB_DF') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:31', 'http://www.bb.com.br/cultura', 'Veja aqui a programação mensal do Centro Cultural Banco do Brasil Brasília. Divirta-se!', 0, 'CCBB_DF', 0, 'Brasilia', 5, 5576, 'http://a3.twimg.com/profile_background_images/4032923/propDFVetor.jpg', 361, '2009-01-23 18:42:15', 'http://a3.twimg.com/profile_images/72765873/avataDF_normal.jpg', 'Brasil - Brasília')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'veddas') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'veddas') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:34', 'http://veddas.org.br', '', 0, 'veddas', 0, 'Greenland', 3, 25, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 2, '2010-02-03 00:51:32', 'http://a3.twimg.com/profile_images/673687293/logoVEDDASsemsubtitulo_normal.jpg', 'Brazil')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'cmibrasil') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'cmibrasil') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:36', 'http://www.midiaindependente.org/', 'Centro de Mídia Independende do Brasil (twitter não-oficial)', 0, 'cmibrasil', 0, 'Brasilia', 70, 988, 'http://s.twimg.com/a/1276063863/images/themes/theme9/bg.gif', 5129, '2009-08-11 16:53:09', 'http://a1.twimg.com/profile_images/357274088/Imagem1_normal.png', 'Brasil')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'wodbrasilnews') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'wodbrasilnews') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:39', 'http://wodbrasil.wordpress.com', 'Confira também Re:Games\r\nhttp://twitter.com/regames\r\nhttp://regames.wordpress.com', 0, 'wodbrasilnews', 0, 'Brasilia', 19, 112, 'http://a3.twimg.com/profile_background_images/21325385/twitter.jpg', 561, '2009-07-04 00:07:35', 'http://a3.twimg.com/profile_images/296314407/twitterdastrevas_normal.jpg', 'São Paulo, Brazil')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'DEVIR_LIVRARIA') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'DEVIR_LIVRARIA') LIMIT 1[0m
+  [4;35;1mTweeter Create (15.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:41', 'http://www.devir.com', 'Editora e distribuidora especializada em: Quadrinhos (comics), RPG, Cards, ficção e fantasia!', 0, 'DEVIR_LIVRARIA', 0, 'Brasilia', 20, 2657, 'http://s.twimg.com/a/1275412898/images/themes/theme1/bg.png', 319, '2009-03-25 17:24:01', 'http://a3.twimg.com/profile_images/529690629/twitterProfilePhoto_normal.jpg', 'São Paulo - Brasil - Mundo')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'GovArruda') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'GovArruda') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:44', NULL, NULL, 0, 'GovArruda', 0, NULL, 0, 64, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 51, '2010-02-11 21:29:50', 'http://a3.twimg.com/profile_images/690197847/arruda_normal.jpg', NULL)[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'MdT_Brasil') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'MdT_Brasil') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:46', 'http://www.devir.com.br/mundodastrevas', 'Editora da linha Mundo das Trevas Storytelling, da Devir Livraria. Esposa e mãe. [Editor in chief of World of Darkness Storytelling in Brazil. Wife and mom.', 0, 'MdT_Brasil', 0, 'Brasilia', 64, 268, 'http://a1.twimg.com/profile_background_images/37016360/WODdesktop1024x768.jpg', 2299, '2009-09-09 13:42:27', 'http://a3.twimg.com/profile_images/938486247/banner_MdT_125x125_normal.jpg', 'Brasil')[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'biel325') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'biel325') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:48', NULL, '', 1, 'biel325', 0, 'Santiago', 11, 18, 'http://a1.twimg.com/profile_background_images/21855884/IMAG1967.JPG', 4, '2009-05-12 13:28:15', 'http://a1.twimg.com/profile_images/384818524/OgAAAJrRItaYbA2Hn-qc18k5qo0un4mvfMSx9NiS6yCWYvfUD88sleZTpTNwhPHY9E6QOfa60iQacHx36VGvyeZemlEAm1T1UJLi_nOd6kXtJOsU0k8Wl2ZhrOr6_normal.jpg', '')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Conclaveweb') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Conclaveweb') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:50', 'http://www.conclaveweb.com.br', 'A maior brasileira loja de Quadrinhos, RPGs, Cardgames, Wargames e muito mais!', 0, 'Conclaveweb', 1, 'Brasilia', 1977, 492, 'http://s.twimg.com/a/1275505066/images/themes/theme1/bg.png', 280, '2009-06-04 12:37:18', 'http://a1.twimg.com/profile_images/637284304/logotwitter_normal.jpg', 'Juiz de Fora-MG')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'segundasemcarne') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'segundasemcarne') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:52', 'http://www.svb.org.br/segundasemcarne', '', 0, 'segundasemcarne', 0, 'Santiago', 9, 197, 'http://a3.twimg.com/profile_background_images/40243295/logo-svb.jpg', 19, '2009-09-13 16:27:53', 'http://a3.twimg.com/profile_images/413010525/perfiltwitter_bigger_normal.jpg', 'Brazil')[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'dvegetarianas') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'dvegetarianas') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:11:57', 'http://deliciasvegetarianas.com.br', 'Receitas Vegetarianas - Olá pessoal estamos em pré-lançamento do site, conheçam as novidades! enviem suas receitas!', 0, 'dvegetarianas', 0, 'Hawaii', 125, 175, 'http://a1.twimg.com/profile_background_images/27217984/bg-twitter.gif', 41, '2009-08-03 02:12:51', 'http://a1.twimg.com/profile_images/345137360/logo-delicias-vegetarianas_normal.jpg', 'Brasil')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'conscienciaveg') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'conscienciaveg') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:01', NULL, '', 0, 'conscienciaveg', 0, 'Greenland', 17, 131, 'http://s.twimg.com/a/1275689140/images/themes/theme3/bg.gif', 25, '2009-05-20 16:20:45', 'http://a3.twimg.com/profile_images/559300879/logo_normal.jpg', '')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'sitioveg') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'sitioveg') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:04', 'http://www.vegetarianismo.com.br', '', 0, 'sitioveg', 0, 'Santiago', 58, 225, 'http://s.twimg.com/a/1275689140/images/themes/theme5/bg.gif', 5, '2009-06-18 01:55:48', 'http://a1.twimg.com/profile_images/268343484/logo_sitioVEG_normal.jpg', 'Florianópolis')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'centroveg') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'centroveg') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:07', 'http://www.centrovegetariano.org', 'Ao serviço do Vegetarianismo desde 2001!', 0, 'centroveg', 0, 'Lisbon', 0, 327, 'http://a1.twimg.com/profile_background_images/55799542/bg.gif', 210, '2009-11-24 22:58:32', 'http://a3.twimg.com/profile_images/542466535/avatar300_normal.png', 'Oliveira do Hospital')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Ativeg_') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Ativeg_') LIMIT 1[0m
+  [4;35;1mTweeter Create (16.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:08', 'http://www.ativeg.org', 'Ativismo vegetariano em prol da libertação animal e conscientização da sociedade.', 0, 'Ativeg_', 0, 'Santiago', 524, 805, 'http://a1.twimg.com/profile_background_images/54535326/fundo-ativeg_1_.jpg', 1108, '2009-10-17 01:06:55', 'http://a3.twimg.com/profile_images/530167879/logo_FBlack_normal.jpg', 'Brasil - SP')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'CantinhoVeg') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'CantinhoVeg') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:11', 'http://www.cantinhovegetariano.com.br', 'Receitas, artigos, vídeos e muito mais sobre vegetarianismo. Venha conferir!', 0, 'CantinhoVeg', 0, 'Brasilia', 115, 435, 'http://a1.twimg.com/profile_background_images/97930686/twitter_background.jpg', 409, '2009-08-17 04:07:32', 'http://a3.twimg.com/profile_images/625211527/twitter_cantinho_normal.JPG', 'Tupã - SP - Brasil')[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'radicaos') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'radicaos') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:13', 'http://radicaos.com', 'Libertação humana e animal', 0, 'radicaos', 0, 'Brasilia', 132, 112, 'http://a3.twimg.com/profile_background_images/11707647/radicaos.png', 168, '2009-03-13 17:58:37', 'http://a3.twimg.com/profile_images/95150457/untitled_normal.jpg', 'Correntina-BA-Brazil')[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'animalhumano') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'animalhumano') LIMIT 1[0m
+  [4;36;1mTweeter Create (15.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:15', 'http://www.rodrigoec.blogspot.com', 'primata plantador poeta violero filmmaker bicicletero yogue gremista papai da Flora e professor da EJA Floripa.', 0, 'animalhumano', 0, 'Brasilia', 105, 71, 'http://s.twimg.com/a/1274899949/images/themes/theme1/bg.png', 197, '2009-08-19 02:50:36', 'http://a3.twimg.com/profile_images/369629257/abaf1f5e-4bd3-4831-8581-afa183921d45_normal.jpg', 'Floripa SC Brasil')[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'rpgnetcombr') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'rpgnetcombr') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:17', 'http://rpgnet.com.br/', 'Atualizações do site RPGNET.com.br', 0, 'rpgnetcombr', 0, 'Greenland', 1949, 436, 'http://a3.twimg.com/profile_background_images/65130877/rpgnettwitter.jpg', 94, '2010-01-08 16:43:22', 'http://a3.twimg.com/profile_images/618453327/onlygrifo_normal.jpg', '')[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'moonshadowsrpg') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'moonshadowsrpg') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:19', 'http://www.moonshadows.com.br', 'A Moonshadows Livraria atua há 10 anos no mercado de RPG atendendo todo o público brasileiro. Estamos na Rua Treze de Maio, 966 em SP, perto da Avenida Paulista', 1, 'moonshadowsrpg', 0, 'Brasilia', 1602, 912, 'http://a3.twimg.com/profile_background_images/93795103/fundo.jpg', 245, '2009-05-14 02:59:33', 'http://a1.twimg.com/profile_images/746027124/moonICO_normal.jpg', 'São Paulo - Brasil')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'rpgblogs') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'rpgblogs') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:21', 'http://www.rpg.blog.br', 'Brazilian network of rpg blogs!', 0, 'rpgblogs', 0, 'Brasilia', 170, 421, 'http://a1.twimg.com/profile_background_images/4191228/bg6.jpg', 10330, '2008-10-26 02:04:24', 'http://a1.twimg.com/profile_images/62896796/Untitled-1_normal.jpg', 'Brazil')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'DadosLimpos') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'DadosLimpos') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:23', 'http://dadoslimpos.criandorpg.com', 'Blog sobre #RPG e #humor juntos ou não...', 0, 'DadosLimpos', 0, 'Santiago', 571, 457, 'http://a1.twimg.com/profile_background_images/20086634/dice.jpg', 3073, '2009-05-01 00:40:40', 'http://a1.twimg.com/profile_images/428524438/texugo1ue7_normal.jpg', 'Duque de Caxias / RJ')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Paragons') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Paragons') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:25', 'http://paragons.com.br/', 'Blog de RPG com resenhas, dicas de mestre, noticias e muitas nerdices', 0, 'Paragons', 0, 'Santiago', 500, 556, 'http://a1.twimg.com/profile_background_images/91372392/Prgtwitt.png', 1573, '2009-06-13 13:59:55', 'http://a1.twimg.com/profile_images/816111294/prg_copy_normal.png', 'Brasil')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'RPGMagazine') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'RPGMagazine') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:27', 'http://www.rpgmagazine.com.br', 'Revista de RPG.', 0, 'RPGMagazine', 0, 'Santiago', 139, 288, 'http://a3.twimg.com/profile_background_images/86691285/rm.jpg', 103, '2009-06-12 20:09:44', 'http://a3.twimg.com/profile_images/779436623/rm_normal.jpg', 'Brazil')[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'bejrpg') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'bejrpg') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:29', 'http://start.io/bejrpg', 'Campanha nacional de incentivo ao RPG', 0, 'bejrpg', 0, 'Brasilia', 327, 686, 'http://a1.twimg.com/profile_background_images/19159336/bejrpg_twitter.png', 685, '2009-06-07 02:06:07', 'http://a3.twimg.com/profile_images/381004903/twitterProfilePhoto_normal.jpg', 'Brazil')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'rpgbrasilorg') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'rpgbrasilorg') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:31', 'http://www.rpgbrasil.org', 'Site de RPG destinado a criação de cenários. Visite e confira.', 0, 'rpgbrasilorg', 0, 'Brasilia', 38, 165, 'http://a1.twimg.com/profile_background_images/101554132/fundo.jpg', 1766, '2009-07-29 13:09:45', 'http://a1.twimg.com/profile_images/338602202/2-98_normal.jpg', 'Varginha - MG - BR')[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'd3store') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'd3store') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:33', 'http://d3store.com.br/', 'Loja oficial da RPGCon, a d3store é uma nova opção em loja especializada de RPG, cards, romances e jogos. Venha conhecer!', 0, 'd3store', 0, 'Brasilia', 309, 292, 'http://s.twimg.com/a/1274899949/images/themes/theme9/bg.gif', 596, '2009-06-18 17:11:49', 'http://a3.twimg.com/profile_images/282050285/logo_d3store_normal.PNG', 'São Paulo')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'blogd3system') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'blogd3system') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:35', NULL, '', 0, 'blogd3system', 0, 'Brasilia', 0, 201, 'http://a1.twimg.com/profile_background_images/18202702/logo-d3system-amarelo_fundo.jpg', 280, '2009-05-19 08:25:53', 'http://a3.twimg.com/profile_images/264035885/twitter_logo_amarelo_normal.jpg', '')[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'arkanun_eshop') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'arkanun_eshop') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:36', 'http://www.arkanun.com.br', 'Loja especializada em Colecionáveis, Hobbies e RPG', 0, 'arkanun_eshop', 0, 'Santiago', 97, 261, 'http://a3.twimg.com/profile_background_images/17989875/fundo.jpg', 199, '2009-06-08 18:29:12', 'http://a3.twimg.com/profile_images/254731109/magop_normal.jpg', 'Sp Brasil')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'dot20') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'dot20') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:38', 'http://www.dot20.com.br/', '', 0, 'dot20', 0, 'Brasilia', 3, 183, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 431, '2009-04-25 21:34:50', 'http://a3.twimg.com/profile_images/183457981/dot20_normal.png', '')[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'brasiliando') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'brasiliando') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:41', NULL, '', 0, 'brasiliando', 0, 'Brasilia', 146, 164, 'http://a3.twimg.com/profile_background_images/49892769/fita.jpg', 493, '2009-04-03 13:54:01', 'http://a3.twimg.com/profile_images/119967815/DSC05295_normal.JPG', 'Brasil, Brasília')[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'desacomode_se') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'desacomode_se') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:45', NULL, 'Já que subi nesse ringue e o país do swing é o país da contradição.', 0, 'desacomode_se', 0, 'Greenland', 641, 152, 'http://a1.twimg.com/profile_background_images/63687118/Brasil.jpg', 261, '2009-12-06 17:36:22', 'http://a3.twimg.com/profile_images/561848309/practice_normal.jpg', '')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'cotrim149') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (16.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'cotrim149') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:47', NULL, NULL, 0, 'cotrim149', 0, NULL, 44, 14, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 21, '2009-12-03 11:55:10', 'http://s.twimg.com/a/1276063863/images/default_profile_2_normal.png', NULL)[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'forarrudaemafia') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'forarrudaemafia') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:49', 'http://meadiciona.com/forarrudaemafia', 'Twitter oficial do Mov. Fora Arruda e Toda a Máfia,q ocupou a velha CL-DF,e a nova superfaturada CL-DF,agora ocupa as ruas pela ida de toda essa mafia à prisão', 0, 'forarrudaemafia', 1, 'Brasilia', 634, 1216, 'http://a3.twimg.com/profile_background_images/85375637/dejoelhoseaPM.jpg', 1929, '2009-12-03 00:50:04', 'http://a3.twimg.com/profile_images/809851993/tony_normal.jpg', 'Brasília - DF')[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'SeaShepherd_br') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'SeaShepherd_br') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:51', 'http://www.seashepherd.org.br', 'O Instituto Sea Shepherd Brasil integra a Sea Shepherd Conservation Society nos EUA e é considerada a ONG de proteção dos mares mais ativista do mundo.', 0, 'SeaShepherd_br', 0, 'Brasilia', 21, 1444, 'http://a1.twimg.com/profile_background_images/93992736/Fundo_Sea_big1_copy.jpg', 427, '2009-05-27 18:21:56', 'http://a1.twimg.com/profile_images/318788784/C_pia_de_log_peq_normal.jpg', 'Planeta Terra')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'ahaembrasilia') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'ahaembrasilia') LIMIT 1[0m
+  [4;36;1mTweeter Create (15.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:52', NULL, 'Perfil criado para divulgar as novidades do show do a-ha em Brasília. ', 0, 'ahaembrasilia', 0, 'Santiago', 0, 175, 'http://a1.twimg.com/profile_background_images/64664234/twitter2.jpg', 15, '2010-01-05 17:25:27', 'http://a3.twimg.com/profile_images/614743979/aha_normal.jpg', '')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'LayaneNeves') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'LayaneNeves') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:54', NULL, '', 0, 'LayaneNeves', 0, NULL, 28, 46, 'http://a3.twimg.com/profile_background_images/92288035/psyco.jpg', 14, '2009-07-17 16:18:47', 'http://a1.twimg.com/profile_images/824232788/12-09-09_1851_normal.jpg', '')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'ninarosabrasil') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'ninarosabrasil') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:56', 'http://www.institutoninarosa.org.br/', 'O INR é uma organização independente, que promove o conhecimento sobre defesa animal, consumo sem crueldade e vegetarianismo.', 0, 'ninarosabrasil', 0, 'Brasilia', 869, 902, 'http://a1.twimg.com/profile_background_images/90322972/abril_zoom.jpg', 250, '2009-12-16 20:26:45', 'http://a1.twimg.com/profile_images/644046572/logo_p_twitter_normal.PNG', '')[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'KingdomComicsdf') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'KingdomComicsdf') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:58', 'http://www.kingdomcomics.com.br', '', 0, 'KingdomComicsdf', 0, 'Brasilia', 86, 450, 'http://a1.twimg.com/profile_background_images/10037726/fundotweeter.jpg', 98, '2009-04-24 18:34:06', 'http://a1.twimg.com/profile_images/576361172/LOGOPEQUENA_normal.jpg', '')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'vegetarianismo') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'vegetarianismo') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:12:59', 'http://meadiciona.com/vegetarianismo', 'pílulas de vegetarianismo', 0, 'vegetarianismo', 0, 'Brasilia', 462, 689, 'http://s.twimg.com/a/1275689140/images/themes/theme13/bg.gif', 50, '2008-06-13 14:35:26', 'http://a3.twimg.com/profile_images/55417475/vvv_normal.png', '')[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'ana_bernardi') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'ana_bernardi') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:01', NULL, NULL, 0, 'ana_bernardi', 0, NULL, 44, 15, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 0, '2009-12-04 20:28:19', 'http://s.twimg.com/a/1276063863/images/default_profile_1_normal.png', NULL)[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'pokeevonet') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'pokeevonet') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:02', 'http://www.pokeevo.net', '', 0, 'pokeevonet', 0, 'Brasilia', 0, 42, 'http://a3.twimg.com/profile_background_images/37284339/bg.png', 22, '2009-09-16 11:40:21', 'http://a1.twimg.com/profile_images/418173370/apple-touch-icon_normal.png', 'Brasil')[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'pokemonbrasil') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'pokemonbrasil') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:04', NULL, NULL, 0, 'pokemonbrasil', 0, NULL, 0, 117, 'http://s.twimg.com/a/1274899949/images/themes/theme1/bg.png', 5, '2009-06-27 01:45:07', 'http://a3.twimg.com/profile_images/284837533/Foto_normal.jpg', NULL)[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'lunothael') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'lunothael') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:06', NULL, '', 0, 'lunothael', 0, 'Brasilia', 52, 24, 'http://a3.twimg.com/profile_background_images/109190455/x7f3b1cc5161d0603e0e07654c1254c4.png', 11, '2009-12-02 13:13:45', 'http://a3.twimg.com/profile_images/554966925/luno_normal.JPG', 'Goiania-Go')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (15.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'govegbr') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'govegbr') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:07', 'http://www.goveg.com.br', 'Vegetarianismo e veganismo, ético e consciente. Dicas, comentários, cursos, receitas, restaurantes e cursos para vegetarianos. Go Veg Brasil!', 0, 'govegbr', 1, 'Brasilia', 2096, 2039, 'http://s.twimg.com/a/1274899949/images/themes/theme3/bg.gif', 1998, '2009-09-20 21:28:59', 'http://a1.twimg.com/profile_images/882258342/073fed17-6af5-48cd-8bfb-f023bf816a73_normal.png', 'Brazil')[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'edulobo') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'edulobo') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:09', NULL, '', 1, 'edulobo', 0, 'Brasilia', 89, 55, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 6, '2009-04-16 18:03:43', 'http://s.twimg.com/a/1276063863/images/default_profile_0_normal.png', '')[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'gafsel') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (15.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'gafsel') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:10', NULL, NULL, 0, 'gafsel', 0, NULL, 63, 58, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 5, '2009-05-18 02:10:20', 'http://a3.twimg.com/profile_images/222327875/gafs_normal.jpg', NULL)[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'rodrigosbcc') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'rodrigosbcc') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:12', NULL, 'Vivendo vida de Escraviario', 0, 'rodrigosbcc', 0, 'Santiago', 35, 33, 'http://a1.twimg.com/profile_background_images/47287590/murcielago-02.jpg', 4, '2009-05-06 16:19:49', 'http://a3.twimg.com/profile_images/375102049/815780_1_normal.JPG', '')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'c4m1l0') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'c4m1l0') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:12', NULL, '', 0, 'c4m1l0', 0, NULL, 42, 47, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 0, '2009-04-23 19:09:20', 'http://s.twimg.com/a/1276063863/images/default_profile_2_normal.png', '')[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'proza') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'proza') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:14', NULL, NULL, 0, 'proza', 0, 'Santiago', 0, 79, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 3, '2008-05-31 16:17:25', 'http://s.twimg.com/a/1276063863/images/default_profile_6_normal.png', NULL)[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Jassysilva') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Jassysilva') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:16', NULL, NULL, 0, 'Jassysilva', 0, NULL, 130, 75, 'http://a1.twimg.com/profile_background_images/31063366/Jassitaaaa.bmp', 2, '2009-08-21 23:00:59', 'http://a1.twimg.com/profile_images/374844370/Jassitaaaa_normal.bmp', NULL)[0m
+  [4;36;1mSQL (93.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'mholanda') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'mholanda') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:17', NULL, NULL, 0, 'mholanda', 0, NULL, 8, 62, 'http://s.twimg.com/a/1275598481/images/themes/theme1/bg.png', 4, '2009-03-16 18:09:31', 'http://s.twimg.com/a/1275505066/images/default_profile_5_normal.png', NULL)[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'moresi') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'moresi') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:20', NULL, NULL, 0, 'moresi', 0, NULL, 2, 103, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 0, '2008-10-10 11:04:51', 'http://s.twimg.com/a/1276063863/images/default_profile_6_normal.png', NULL)[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'BISMARCKBTT') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'BISMARCKBTT') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:22', NULL, NULL, 0, 'BISMARCKBTT', 0, NULL, 0, 4, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 0, '2009-11-02 20:19:27', 'http://s.twimg.com/a/1276063863/images/default_profile_3_normal.png', NULL)[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (15.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'XVitra') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'XVitra') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:24', NULL, NULL, 0, 'XVitra', 0, NULL, 1, 4, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 0, '2009-10-25 19:14:39', 'http://s.twimg.com/a/1276063863/images/default_profile_6_normal.png', NULL)[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'gualeve') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'gualeve') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:26', 'http://gualeve.blogspot.com/', 'Professor - Arquitetura de Computadores - Sistemas Operacionais, Coordenador de Curso Desenvolvimento de Sistemas em Software Livre - UCB Virtual', 0, 'gualeve', 0, 'Brasilia', 10, 32, 'http://s.twimg.com/a/1276063863/images/themes/theme14/bg.gif', 0, '2009-05-19 17:53:57', 'http://a3.twimg.com/profile_images/321929741/coruja_normal.jpg', 'Brasília, Brazil')[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'aspaango') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'aspaango') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:27', 'http://www.aspaan.org.br', 'Associação Protetora e Amiga dos Animais (twitter criado p/ disciplina Comunicação Comunitária e Terceiro Setor)', 0, 'aspaango', 0, 'Brasilia', 1927, 743, 'http://a3.twimg.com/profile_background_images/54154801/img.gif', 67, '2009-11-16 14:12:22', 'http://a3.twimg.com/profile_images/529449091/img_normal.gif', 'Goiânia')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'PLS480de2007') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'PLS480de2007') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:29', NULL, NULL, 0, 'PLS480de2007', 0, NULL, 1328, 467, 'http://s.twimg.com/a/1275505066/images/themes/theme6/bg.gif', 10, '2009-11-19 19:00:49', 'http://a1.twimg.com/profile_images/534420840/educacao_normal.jpg', NULL)[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'lpgeoanarco') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'lpgeoanarco') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:31', NULL, '', 0, 'lpgeoanarco', 0, NULL, 21, 9, 'http://s.twimg.com/a/1276063863/images/themes/theme14/bg.gif', 5, '2009-11-13 21:37:49', 'http://a3.twimg.com/profile_images/529325079/DSC02861_normal.JPG', '')[0m
+  [4;36;1mSQL (157.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'andersoncorrent') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'andersoncorrent') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:34', NULL, NULL, 0, 'andersoncorrent', 0, NULL, 12, 12, 'http://a3.twimg.com/profile_background_images/53609533/cor.jpg', 9, '2009-11-12 20:06:39', 'http://a1.twimg.com/profile_images/523673534/OQAAALS1WEWnEf_kCtXrClVtkgquukDsC-YXOP9E4I7ileRZseHQ4TAMMHGN7IEBkjbvJyHiVCYKXnUmueybXWfuY1kAm1T1UKeor9NOxmAaM5doqzW3W5i-trk6_normal.jpg', NULL)[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'moshprod') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'moshprod') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:35', NULL, NULL, 0, 'moshprod', 0, NULL, 148, 149, 'http://s.twimg.com/a/1275689140/images/themes/theme1/bg.png', 8, '2009-08-23 17:07:31', 'http://a3.twimg.com/profile_images/377591329/TWITER_normal.JPG', NULL)[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'xLostInHatex') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'xLostInHatex') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:38', 'http://www.myspace.com/xlostinhatex', 'Banda SxE brasileira!\n\nwww.myspace.com/xlostinhatex', 0, 'xLostInHatex', 0, 'Brasilia', 975, 438, 'http://a1.twimg.com/profile_background_images/35402392/lost.jpg', 164, '2009-08-01 03:56:37', 'http://a3.twimg.com/profile_images/405253857/lost_normal.jpg', 'DISTRITO FEDERAL')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (16.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Paulethi') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Paulethi') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:40', NULL, 'i\'m a light that never goes out', 0, 'Paulethi', 0, 'Greenland', 90, 31, 'http://a3.twimg.com/profile_background_images/49892545/capricho_blog3.jpg', 75, '2009-10-31 17:29:04', 'http://a1.twimg.com/profile_images/501116178/irm__normal.jpg', 'Correntina - Bahia')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'najlapassos') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'najlapassos') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:41', NULL, 'É jornalista. Mestre em Linguagens. Mãe do Juan ', 0, 'najlapassos', 0, 'Brasilia', 116, 160, 'http://s.twimg.com/a/1276063863/images/themes/theme5/bg.gif', 118, '2009-07-03 21:23:36', 'http://a3.twimg.com/profile_images/333435085/najla_editada_normal.jpg', 'Brasília (DF)')[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'skatebrasilia') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'skatebrasilia') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:43', 'http://www.skatebrasilia.com.br', 'Somos o laço de união dos skatistas do Brasil.', 0, 'skatebrasilia', 0, 'Santiago', 133, 284, 'http://a1.twimg.com/profile_background_images/35311792/bg.jpg', 26, '2009-09-08 15:23:47', 'http://a1.twimg.com/profile_images/404676884/logo_normal.jpg', 'Brasília')[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (16.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'madeinbrasilia') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'madeinbrasilia') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:45', 'http://www.madeinbrasilia.com.br', 'Tudo sobre a tradição Brasiliense', 0, 'madeinbrasilia', 0, 'Brasilia', 8, 10, 'http://a3.twimg.com/profile_background_images/48354443/colagem-brasilia.jpg', 13, '2009-10-27 20:02:38', 'http://a3.twimg.com/profile_images/493711657/images_normal.jpg', 'Brasil, Brasilia')[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'slipquestao') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'slipquestao') LIMIT 1[0m
+  [4;35;1mTweeter Create (15.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:47', NULL, '', 0, 'slipquestao', 0, 'Santiago', 12, 56, 'http://a3.twimg.com/profile_background_images/98296701/w22.jpg', 54, '2009-08-09 15:07:36', 'http://a3.twimg.com/profile_images/871958121/avatar_normal.png', 'Rio de Janeiro - RJ - BRA')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Gyamoreninha') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (15.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Gyamoreninha') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:49', NULL, '', 0, 'Gyamoreninha', 0, 'Santiago', 22, 10, 'http://s.twimg.com/a/1276063863/images/themes/theme11/bg.gif', 7, '2009-10-13 14:23:49', 'http://a3.twimg.com/profile_images/553031437/lindona_normal.jpg', 'bahia')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'bingandgrab') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'bingandgrab') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:50', NULL, NULL, 0, 'bingandgrab', 0, NULL, 8, 8, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 0, '2009-06-16 00:31:39', 'http://s.twimg.com/a/1276063863/images/default_profile_4_normal.png', NULL)[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Hugo301') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (15.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Hugo301') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:52', NULL, NULL, 0, 'Hugo301', 0, NULL, 15, 10, 'http://a1.twimg.com/profile_background_images/33057054/OgAAAHy3jJznZAGdSgcq_9Gv5rGFdmMsSzqUhW7z5M4D5b3nWE6NSVBjw5WXkxVAClBr-NQwtNn6IAbS4bLBIIP_2OAAm1T1ULHz4ODQ3Rfnuu_eg4UTCHZgs-P_.jpg', 1, '2009-08-29 23:26:55', 'http://a1.twimg.com/profile_images/388601114/OAAAAEExAbxhHnZu5Frk5a2oG3Um9NP1cjqqljYPLr5mXMMfkdYcgdfvP0Fwq7QynTpVecCWcnYVtvzrQ2d6MbFDwvQAm1T1UDyJvdwB6qKxO5spqZT1AXOTcjY__normal.jpg', NULL)[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'boroldir') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'boroldir') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:54', NULL, NULL, 0, 'boroldir', 0, 'Santiago', 1, 12, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 0, '2008-03-02 14:44:20', 'http://s.twimg.com/a/1276063863/images/default_profile_0_normal.png', NULL)[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'pafansub') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'pafansub') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:56', 'http://www.pa-fansub.tk/', 'http://www.pa-fansub.tk/', 0, 'pafansub', 0, 'Brasilia', 130, 207, 'http://s.twimg.com/a/1274899949/images/themes/theme2/bg.gif', 59, '2009-05-17 02:07:08', 'http://a1.twimg.com/profile_images/215305964/pa_normal.jpg', '')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'animabrasilia') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'animabrasilia') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:13:58', 'http://www.orkut.com.br/Main#Community?rl=cpp&cmm=93703490', 'Um novo evento da cidade de Brasília que tem como propósito abordar as várias formas de entretenimento da atualidade e do passado.', 0, 'animabrasilia', 0, 'Brasilia', 30, 79, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 1, '2009-10-20 13:35:20', 'http://s.twimg.com/a/1276063863/images/default_profile_2_normal.png', 'Brasília, DF - 2009')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'espacootaku') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'espacootaku') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:00', 'http://www.espacootaku.com/', 'Seja bem vindo ao Twitter oficial do evento Espaço Otaku UP. ', 0, 'espacootaku', 0, 'Brasilia', 37, 319, 'http://a3.twimg.com/profile_background_images/35746171/japao2.jpg', 69, '2009-06-22 06:00:31', 'http://a1.twimg.com/profile_images/407584514/EOUP_normal.jpg', 'Brasília')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'JavaFree') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'JavaFree') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:01', 'http://www.infoblogs.com.br', 'Twitter of Infoblogs.com.br', 0, 'JavaFree', 0, 'Quito', 6, 1872, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 4846, '2009-07-16 15:06:08', 'http://a1.twimg.com/profile_images/748286922/i_normal.gif', '')[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'ARpgista') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'ARpgista') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:03', 'http://arpgista.blogspot.com/', 'Autora, mestra e jogadora de RPG', 0, 'ARpgista', 0, 'Santiago', 127, 100, 'http://a3.twimg.com/profile_background_images/34122781/bg.jpg', 355, '2009-09-03 01:51:52', 'http://a3.twimg.com/profile_images/398833341/A_Princess_Lana__normal.jpg', 'Brasil')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'pokemontcgbr') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'pokemontcgbr') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:04', NULL, 'Pokemon Trading Card Game - Brasil', 0, 'pokemontcgbr', 0, 'Brasilia', 3, 22, 'http://a3.twimg.com/profile_background_images/43827091/PokemonGiratinaMovie_01_1024x768.jpg', 93, '2009-09-28 11:07:00', 'http://a1.twimg.com/profile_images/440690678/poke_normal.jpg', 'Brasil')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (16.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'BrisaLGE') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'BrisaLGE') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:05', 'http://www.brisa.org.br/', 'Empresa brasileira na area de tecnologia ', 0, 'BrisaLGE', 0, 'Brasilia', 22, 9, 'http://a3.twimg.com/profile_background_images/23832291/Twitter_Brisa.JPG', 116, '2009-07-17 12:22:30', 'http://a1.twimg.com/profile_images/318062526/brisa_normal.JPG', 'São Paulo | Brasilia')[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'arcabrasil') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'arcabrasil') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:06', 'http://www.arcabrasil.org.br', 'Entidade sem fins lucrativos, vínculos partidários ou religiosos, criada em 1993 com o objetivo de promover o bem-estar e o respeito aos direitos dos animais.', 0, 'arcabrasil', 0, 'Brasilia', 1134, 1423, 'http://a3.twimg.com/profile_background_images/19371493/twitter_2.jpg', 145, '2009-06-22 19:00:10', 'http://a3.twimg.com/profile_images/276959899/logo_arca_-_verde_-_OFICIAL_-_pequeno_-_quadrado_normal.jpg', 'São Paulo - Vila Madalena')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'OsubversivOzine') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'OsubversivOzine') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:08', 'http://www.osubversivozine.com', 'Editor do blog OsubversivO zine e produtor cultural em Brasilía.Cidadão do Mundo No masters, No Rules.', 0, 'OsubversivOzine', 0, 'Brasilia', 1627, 1757, 'http://a3.twimg.com/profile_background_images/30532833/twiter_osub2.jpg', 157, '2009-05-09 21:50:55', 'http://a3.twimg.com/profile_images/358015423/DSC01231_normal.jpg', 'Brasilia DF')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'gatonegrovegano') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'gatonegrovegano') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:09', 'http://www.gato-negro.org', 'Grupo de Direitos Animais e educação vegana. Quer ser vegana(o)? pergunte-nos como... :P', 0, 'gatonegrovegano', 1, 'Brasilia', 1962, 1483, 'http://a1.twimg.com/profile_background_images/57439106/black-cat.jpg', 692, '2008-10-31 00:21:27', 'http://a1.twimg.com/profile_images/66995322/gato_normal.jpg', 'Belo Horizonte . MG')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'silasfiorotti') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'silasfiorotti') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:11', 'http://disturbiossociais.blogspot.com', 'silas fiorotti, 28 anos, cristão libertário, namora com a Gabi, estuda teologia. - Contato: C.P. # 1771 - SP/SP - 01032 970', 0, 'silasfiorotti', 0, 'Santiago', 1999, 524, 'http://a1.twimg.com/profile_background_images/40473974/cidadesp_pb.jpg', 372, '2009-09-27 17:52:26', 'http://a3.twimg.com/profile_images/439319717/itu_normal.JPG', 'São Paulo')[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'andessn') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'andessn') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:12', 'http://www.andes.org.br', 'Sindicato Nacional dos Docentes das Instituições de Ensino Superior', 0, 'andessn', 0, 'Brasilia', 389, 596, 'http://a1.twimg.com/profile_background_images/41732754/logos_corel.jpg', 205, '2009-09-30 12:11:33', 'http://a1.twimg.com/profile_images/444805136/ANDESConlutasMENOR_normal.jpg', 'Brasília - BR')[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (16.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'guiavegano') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'guiavegano') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:14', 'http://www.guiavegano.com.br', 'Web Designer', 0, 'guiavegano', 0, 'Santiago', 53, 889, 'http://a3.twimg.com/profile_background_images/18787287/twitter.jpg', 426, '2009-06-02 12:43:43', 'http://a1.twimg.com/profile_images/248233688/cueiomsn_normal.jpg', 'Brasil')[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'animecast') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'animecast') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:16', 'http://www.animecast.info', '', 0, 'animecast', 0, 'Santiago', 63, 462, 'http://a3.twimg.com/profile_background_images/3112945/fundo.jpg', 1035, '2008-08-14 17:21:02', 'http://a1.twimg.com/profile_images/289442188/avatarAC_normal.jpg', '')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'RB_790') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'RB_790') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:18', 'http://www.rb.am.br', 'A Primeira do Oeste - Jornalismo com Credibilidade', 0, 'RB_790', 0, 'Santiago', 18, 85, 'http://a1.twimg.com/profile_background_images/33878552/logorb.jpg', 255, '2009-07-31 13:27:47', 'http://a3.twimg.com/profile_images/394490897/logorb_normal.jpg', 'Barreiras, Bahia, Brasil.')[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'RockBrasilia') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'RockBrasilia') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:19', 'http://www.rockbrasilia.com.br', '', 0, 'RockBrasilia', 0, 'Brasilia', 1462, 1688, 'http://a1.twimg.com/profile_background_images/39896192/teatro_nacional.jpg', 213, '2009-07-12 14:21:49', 'http://a1.twimg.com/profile_images/309876946/LogoRockBrasilia_normal.bmp', 'www.rockbrasilia.com.br')[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'kousenmangas') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'kousenmangas') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:21', 'http://www.kousen.com.br', 'Qualidade e credibilidade. Kousen há mais de 6 anos levando mangás até você!', 0, 'kousenmangas', 0, 'Brasilia', 59, 4950, 'http://a3.twimg.com/profile_background_images/16366427/twitter-kousen-bg.jpg', 744, '2009-03-12 13:02:23', 'http://a1.twimg.com/profile_images/281093714/logo-kousen-twitter2_normal.jpg', 'Curitiba, Brasil')[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'YtaloCDC') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'YtaloCDC') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:23', NULL, '', 0, 'YtaloCDC', 0, 'Brasilia', 44, 42, 'http://a1.twimg.com/profile_background_images/57776068/joker.jpg', 104, '2009-06-19 19:18:05', 'http://a3.twimg.com/profile_images/313199899/30_normal.jpg', '')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (15.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'ANDAnews') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'ANDAnews') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:25', 'http://www.anda.jor.br', 'agência de notícias de direitos animais', 0, 'ANDAnews', 0, 'Brasilia', 100, 1471, 'http://a3.twimg.com/profile_background_images/17646665/LOGO_ANDA.jpg', 4271, '2009-06-11 18:17:27', 'http://a1.twimg.com/profile_images/299979682/anda_banner_normal.jpg', '')[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Sayto') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Sayto') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:26', 'http://www.sayto.com.br', 'Sayto - Tudo que você precisa saber!\r\n\r\n WWW.SAYTO.COM.BR', 0, 'Sayto', 0, 'Brasilia', 963, 700, 'http://a3.twimg.com/profile_background_images/90955429/Twitter.jpg', 728, '2009-08-25 00:39:37', 'http://a3.twimg.com/profile_images/798278257/Sorrizo_normal.png', 'Brasil')[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'BandaEstamira') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'BandaEstamira') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:28', 'http://www.girlsmusiczone.com.br/banda.php?n_id=119', '', 1, 'BandaEstamira', 0, 'Santiago', 130, 135, 'http://s.twimg.com/a/1275689140/images/themes/theme9/bg.gif', 76, '2009-08-19 03:30:08', 'http://a3.twimg.com/profile_images/369717051/ESTAMIRA_normal.jpg', 'Brasília/Brasil')[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'aninhathael') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'aninhathael') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:29', NULL, NULL, 0, 'aninhathael', 0, NULL, 18, 9, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 0, '2009-07-01 16:46:51', 'http://s.twimg.com/a/1276063863/images/default_profile_1_normal.png', NULL)[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'veganprideshop') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'veganprideshop') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:30', 'http://www.veganpride.com ', 'A brand of clothing and accessories vegans since 2001. São Paulo, Brazil. Welcome! (http://www.myspace.com/veganprideclothing)', 0, 'veganprideshop', 0, 'London', 88, 498, 'http://a1.twimg.com/profile_background_images/7543684/veganpride_por_caroline_bittencourt_007_OK.JPG', 79, '2009-04-05 12:59:07', 'http://a1.twimg.com/profile_images/856166506/vp2010kool_normal.jpg', 'Centro - São Paulo - Brazil')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'xgessicax') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'xgessicax') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:32', 'http://www.myspace.com/gessicaneves', '', 0, 'xgessicax', 0, 'Santiago', 90, 67, 'http://a3.twimg.com/profile_background_images/43129713/porquinho.jpg', 221, '2009-05-12 17:20:40', 'http://a1.twimg.com/profile_images/799625646/DSC04399_normal.JPG', '')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'xNEGRETCHENx') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'xNEGRETCHENx') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:34', 'http://www.myspace.com/xnegretex', 'Não somos estes corpos. ', 0, 'xNEGRETCHENx', 0, 'Brasilia', 159, 135, 'http://a3.twimg.com/profile_background_images/46288535/meufundosart.jpg', 48, '2009-07-14 05:06:14', 'http://a3.twimg.com/profile_images/529328491/eu_normal.JPG', 'Brasília ')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'fabiochaves') LIMIT 1[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'fabiochaves') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:36', 'http://www.meadiciona.com/fabiochaves', 'Vegano, diretor de arte interativo, curioso!\r\nAtualmente na Locaweb.\r\nwww.fabiochaves.net', 0, 'fabiochaves', 1, 'Brasilia', 2417, 2296, 'http://a3.twimg.com/profile_background_images/83672605/bg.gif', 1701, '2007-06-05 03:04:31', 'http://a1.twimg.com/profile_images/933143548/fabio_chaves_normal.jpg', 'Campinas e Sampa, SP, Brasil.')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'cimabrasil') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'cimabrasil') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:38', 'http://emcima.wordpress.com/', 'Coletivo Independente de Manifestação e Ativismo', 0, 'cimabrasil', 0, 'Santiago', 4, 39, 'http://s.twimg.com/a/1274899949/images/themes/theme1/bg.png', 39, '2009-08-18 13:33:10', 'http://a1.twimg.com/profile_images/368316248/Logo_normal.jpg', '')[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'edsongolen') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (15.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'edsongolen') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:40', 'http://www.orkut.com.br/Main#Profile?rl=mp&uid=12637154067695582365', 'Parkour&Girl&Magic&Game&Infor : Grandes poderes ... Tem grandes responsabilidades...', 0, 'edsongolen', 0, 'Brasilia', 27, 17, 'http://a1.twimg.com/profile_background_images/39106102/Imag013.jpg', 36, '2009-07-31 14:55:46', 'http://a1.twimg.com/profile_images/430671410/Avatar_Golen_normal.JPG', 'Distrito Federal - BR')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Karollkarvalho') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Karollkarvalho') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:42', NULL, '', 0, 'Karollkarvalho', 0, 'Santiago', 20, 19, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 1, '2009-08-20 23:38:39', 'http://s.twimg.com/a/1276063863/images/default_profile_1_normal.png', '')[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'RosanaTrindade') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'RosanaTrindade') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:47', NULL, '', 0, 'RosanaTrindade', 0, NULL, 12, 11, 'http://a1.twimg.com/profile_background_images/35184642/DSC09053.JPG', 12, '2009-09-04 01:01:14', 'http://a3.twimg.com/profile_images/403701657/DSC09066_normal.JPG', '')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'junioma') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'junioma') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:50', NULL, NULL, 0, 'junioma', 0, NULL, 4, 60, 'http://s.twimg.com/a/1275437761/images/themes/theme1/bg.png', 2, '2009-06-30 12:11:05', 'http://a3.twimg.com/profile_images/290172057/Rosto_normal.jpg', NULL)[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'pbao') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'pbao') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:52', NULL, '', 0, 'pbao', 0, 'Brasilia', 70, 80, 'http://a1.twimg.com/profile_background_images/15511286/S6000689.JPG', 6, '2009-05-30 01:48:22', 'http://a1.twimg.com/profile_images/238978708/S6000687_normal.JPG', '')[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'assisv') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'assisv') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:54', NULL, NULL, 0, 'assisv', 0, NULL, 2, 13, 'http://s.twimg.com/a/1276063863/images/themes/theme5/bg.gif', 0, '2009-08-24 00:26:28', 'http://s.twimg.com/a/1276063863/images/default_profile_2_normal.png', NULL)[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'juliosantana') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (16.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'juliosantana') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:56', NULL, NULL, 0, 'juliosantana', 0, NULL, 39, 44, 'http://a1.twimg.com/profile_background_images/9322856/7055planetas.jpg', 4, '2009-03-25 22:38:53', 'http://a1.twimg.com/profile_images/149146760/myYearbookPhoto_1_normal.jpeg', NULL)[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'felipelopess') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'felipelopess') LIMIT 1[0m
+  [4;36;1mTweeter Create (0.0ms)[0m   [0;1mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:14:59', NULL, '', 0, 'felipelopess', 0, NULL, 7, 50, 'http://s.twimg.com/a/1276063863/images/themes/theme1/bg.png', 2, '2009-05-16 11:58:04', 'http://a3.twimg.com/profile_images/219678619/ATgAAACe8LPlkhCRP2Y57d8UVCciBxvAJo92shl8VsIqswoycXgIrq7TkvfoHo6xaDikeH8PzkVMagqlc7lsdaKtMrqKAJtU9VAJ1U_0NEunG3AP4-mH8oafAB1WmA_normal.jpg', 'Gama - DF')[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (15.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'lucas_gbp') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'lucas_gbp') LIMIT 1[0m
+  [4;35;1mTweeter Create (0.0ms)[0m   [0mINSERT INTO `tweeters` (`updated_at`, `url`, `description`, `protected`, `screen_name`, `geo_enabled`, `time_zone`, `friends_count`, `followers_count`, `profile_background_image_url`, `statuses_count`, `created_at`, `profile_image_url`, `location`) VALUES('2010-06-10 19:15:01', NULL, '', 0, 'lucas_gbp', 0, 'Santiago', 41, 29, 'http://a1.twimg.com/profile_background_images/38924642/ss.bmp', 3, '2009-06-19 20:52:10', 'http://a3.twimg.com/profile_images/271889901/Lucas_normal.jpg', '')[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+
+Grackle::TwitterError (Unable to decode response: 705: unexpected token at '<script>
+function getIP(){return '136.166.98.139';}
+function getURL(){return 'twitter.com/users';}
+function getCategory(){return '���� ����Ʈ(24�ð�����)';}
+</script>
+<html><body bgcolor=#fffff><br><br><br>
+<center><size=4 color=black><b><br>
+<font color=blue size=5>"NOW LG Electronics needs your hands for Global top 3"</font>
+<br><hr color=#0000ff" width=90%><br><br>
+<font color=red size=6>LG Electronics restricts</font>
+<font color=red size=6>access of this web site for wor):
+  grackle (0.1.9) lib/grackle/client.rb:256:in `process_response'
+  grackle (0.1.9) lib/grackle/client.rb:224:in `call_with_format'
+  grackle (0.1.9) lib/grackle/client.rb:206:in `append'
+  grackle (0.1.9) lib/grackle/client.rb:144:in `method_missing'
+  app/controllers/tweeters_controller.rb:38:in `show'
+  app/controllers/tweeters_controller.rb:37:in `each'
+  app/controllers/tweeters_controller.rb:37:in `show'
+
+Rendered rescues/_trace (281.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-06-10 16:15:22) [GET]
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;36;1mTweeter Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Completed in 1343ms (View: 1265, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-06-10 16:16:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTweeter Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+  [4;35;1mTweet Columns (32.0ms)[0m   [0mSHOW FIELDS FROM `tweets`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (15.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287859627) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15287789057) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15265479016) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 15071395333) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14225937998) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135680797) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135655789) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14135638512) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 14122378235) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13884668544) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13849985208) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13807777910) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13615971440) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT `tweets`.id FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mTweet Load (0.0ms)[0m   [0mSELECT * FROM `tweets` WHERE (`tweets`.`twitter_id` = 13424823890) LIMIT 1[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'terrasemlei') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'terrasemlei' AND `tweeters`.id <> 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'jehssi_ka') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'jehssi_ka' AND `tweeters`.id <> 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'anarcopunk') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'anarcopunk' AND `tweeters`.id <> 4) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Sinval_Vasco') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Sinval_Vasco' AND `tweeters`.id <> 5) LIMIT 1[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'centralrpg') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'centralrpg' AND `tweeters`.id <> 6) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'WoDBrasil') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'WoDBrasil' AND `tweeters`.id <> 7) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'animepro') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTweeter Load (0.0ms)[0m   [0;1mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'animepro' AND `tweeters`.id <> 8) LIMIT 1[0m
+  [4;35;1mTweeter Update (0.0ms)[0m   [0mUPDATE `tweeters` SET `statuses_count` = 1366, `updated_at` = '2010-06-10 19:16:33' WHERE `id` = 8[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'vampirojonas') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'vampirojonas' AND `tweeters`.id <> 9) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'cmwayoflife') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (15.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'cmwayoflife' AND `tweeters`.id <> 10) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT * FROM `tweeters` WHERE (`tweeters`.`screen_name` = 'Camiseteria') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTweeter Load (0.0ms)[0m   [0mSELECT `tweeters`.id FROM `tweeters` WHERE (`tweeters`.`screen_name` = BINARY 'Camiseteria' AND `tweeters`.id <> 11) LIMIT 1[0m
+  [4;36;1mTweeter Update (0.0ms)[0m   [0;1mUPDATE `tweeters` SET `followers_count` = 49132, `updated_at` = '2010-06-10 19:16:35' WHERE `id` = 11[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+
+Grackle::TwitterError (get http://twitter.com/users/show/126829579.json => 400: {"request":"/users/show/126829579.json","error":"Rate limit exceeded. Clients may not make more than 150 requests per hour."}):
+  grackle (0.1.9) lib/grackle/client.rb:271:in `handle_error_response'
+  grackle (0.1.9) lib/grackle/client.rb:249:in `process_response'
+  grackle (0.1.9) lib/grackle/client.rb:224:in `call_with_format'
+  grackle (0.1.9) lib/grackle/client.rb:206:in `append'
+  grackle (0.1.9) lib/grackle/client.rb:144:in `method_missing'
+  app/controllers/tweeters_controller.rb:38:in `show'
+  app/controllers/tweeters_controller.rb:37:in `each'
+  app/controllers/tweeters_controller.rb:37:in `show'
+
+Rendered rescues/_trace (610.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
