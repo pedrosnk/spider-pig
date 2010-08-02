@@ -10,10 +10,11 @@
     <th>Created at</th>
   </tr>
 
-<% @tweeters.each do |tweeter| %>
+
+<% @tweeters.each { |tweeter| %>
   <tr>
-    <td><%= link_to [image_tag tweeter.profile_image_url], tweeter %></td>
-    <td><%= link_to [tweeter.screen_name], tweeter %></td>
+    <td><%= link_to(image_tag(tweeter.profile_image_url), tweeter)%></td>
+    <td><%= link_to tweeter.screen_name, tweeter %></td>
     <td><%= tweeter.friends_count %></td>
     <td><%= tweeter.followers_count %></td>
     <td><%= tweeter.statuses_count %></td>
@@ -21,7 +22,7 @@
     <td><%= link_to 'Edit', edit_tweeter_path(tweeter) %></td>
     <td><%= link_to 'Destroy', tweeter, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
-<% end %>
+<% } %>
 </table>
 
 <br />
