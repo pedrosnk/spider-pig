@@ -59,7 +59,7 @@ class BigShotsController < ApplicationController
   # PUT /big_shots/1.xml
   def update
     user = params[:screen_name]
-    client = Grackle::Client.new(:auth=>{:type=>:basic,:username=>'renatofq',:password=>'raskolnikov'})
+    client = Grackle::Client.new(:auth=>{:type=>:basic,:username=>'renatofq',:password=>''})
     client.statuses.update! :status=> user 
 #    @big_shot = BigShot.find(params[:id])
 #
