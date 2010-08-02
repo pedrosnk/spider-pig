@@ -1,20 +1,29 @@
-<h1>Editando Pessoa Influente</h1>
+<h1>Disparar Mensagem</h1>
 
-<% form_for(@big_shot) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :screen_name %><br />
-    <%= f.text_field :screen_name %>
-  </p>
-  <p>
-    <%= f.label :tags %><br />
-    <%= f.text_area :tags %>
-  </p>
-  <p>
-    <%= f.submit 'Atualizar' %>
-  </p>
+<%form_tag '/big_shots/update', :method => :put do -%>
+  <%= label_tag'Usuario: ' %>
+  <%= text_field_tag 'screen_name' %>
+  <%= submit_tag 'Enviar' %>
 <% end %>
 
-<%= link_to 'Mostrar', @big_shot %> |
+
+<%#*<h1>Editando Pessoa Influente</h1>%>
+
+<%# form_for(@big_shot) do |f| %>
+  <%#= f.error_messages %>
+
+  <%#*<p>%>
+    <%#= f.label :screen_name %><br />
+    <%#= f.text_field :screen_name %>
+  <%#*</p>%>
+  <%#*<p>%>
+    <%#= f.label :tags %><br />
+    <%#= f.text_area :tags %>
+  <%#*</p>%>
+  <%#*<p>%>
+    <%#= f.submit 'Atualizar' %>
+  <%#*</p>%>
+<%# end %>
+
+<%#= link_to 'Mostrar', @big_shot %> |
 <%= link_to 'Voltar', big_shots_path %>

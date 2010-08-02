@@ -11,7 +11,8 @@ ActionController::Routing::Routes.draw do |map|
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
   # Keep in mind you can assign values other than :controller and :action
   #map.connect 'big_shots/message', :collection => {:message => :get, :send => :post }
-  map.connect 'big_shots/:action', :controller => 'big_shots', :action => /[a-z]+/i
+  #map.connect 'big_shots/:action', :controller => :big_shots, :action => /[a-z]+/i, :collection => { :message => :get, :send=> :post}
+  #map.resource :big_shot, :collection => { :message => :get, :send => :post}
 
   # Sample of named route:
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'

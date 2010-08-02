@@ -1,3 +1,5 @@
+require 'grackle'
+
 class BigShotsController < ApplicationController
   # GET /big_shots
   # GET /big_shots.xml
@@ -34,7 +36,7 @@ class BigShotsController < ApplicationController
 
   # GET /big_shots/1/edit
   def edit
-    @big_shot = BigShot.find(params[:id])
+#    @big_shot = BigShot.find(params[:id])
   end
 
   # POST /big_shots
@@ -56,17 +58,20 @@ class BigShotsController < ApplicationController
   # PUT /big_shots/1
   # PUT /big_shots/1.xml
   def update
-    @big_shot = BigShot.find(params[:id])
-
-    respond_to do |format|
-      if @big_shot.update_attributes(params[:big_shot])
-        format.html { redirect_to(@big_shot, :notice => 'BigShot was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @big_shot.errors, :status => :unprocessable_entity }
-      end
-    end
+    user = params[:screen_name]
+    client = Grackle::Client.new(:auth=>{:type=>:basic,:username=>'renatofq',:password=>'raskolnikov'})
+    client.statuses.update! :status=> user 
+#    @big_shot = BigShot.find(params[:id])
+#
+#    respond_to do |format|
+#      if @big_shot.update_attributes(params[:big_shot])
+#        format.html { redirect_to(@big_shot, :notice => 'BigShot was successfully updated.') }
+#        format.xml  { head :ok }
+#      else
+#        format.html { render :action => "edit" }
+#        format.xml  { render :xml => @big_shot.errors, :status => :unprocessable_entity }
+#      end
+#    end
   end
 
   # DELETE /big_shots/1
@@ -81,9 +86,9 @@ class BigShotsController < ApplicationController
     end
   end
 
-  def message
-  end
-
-  def send
-  end
+#  def message
+#  end
+#
+#  def send
+#  end
 end
