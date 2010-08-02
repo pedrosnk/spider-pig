@@ -1,0 +1,22 @@
+<h1>Listando Pessoas Influentes cadastradas</h1>
+
+<table>
+  <tr>
+    <th>Screen name</th>
+    <th>Tags</th>
+  </tr>
+
+<% @big_shots.each do |big_shot| %>
+  <tr>
+    <td><%=h big_shot.screen_name %></td>
+    <td><%=h big_shot.tags %></td>
+    <td><%= link_to 'Mostrar', big_shot %></td>
+    <td><%= link_to 'Edita', edit_big_shot_path(big_shot) %></td>
+    <td><%= link_to 'Apagar', big_shot, :confirm => 'Confirma?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Cirar nova', new_big_shot_path %>

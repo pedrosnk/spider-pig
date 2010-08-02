@@ -75,7 +75,7 @@
 <div>
 	<h2>Friends</h2>
 	<% @friends.each do |friend| %>
-	  <%= link_to [image_tag  friend.profile_image_url], friend %> - <%= link_to friend.screen_name, friend %>
+	  <%= link_to [image_tag(friend.profile_image_url)], friend %> - <%= link_to friend.screen_name, friend %>
 	  <br/>
 	<% end %>
 </div>
@@ -83,7 +83,8 @@
 <div>
 	<h2>Followers</h2>
 	<% @followers.each do |friend| %>
-	  <%= link_to [image_tag  friend.profile_image_url], friend %> - <%= link_to friend.screen_name, friend %>
+	  <%= link_to [image_tag(friend.profile_image_url)], friend %>
+        - <%= link_to(friend.screen_name, friend) %>
 	  <br/>
 	<% end %>
 </div>

@@ -1,0 +1,19 @@
+<h1>Nova Pessoa Influente</h1>
+
+<% form_for(@big_shot) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :screen_name %><br />
+    <%= f.text_field :screen_name %>
+  </p>
+  <p>
+    <%= f.label :tags %><br />
+    <%= f.text_area :tags %>
+  </p>
+  <p>
+    <%= f.submit 'Criar' %>
+  </p>
+<% end %>
+
+<%= link_to 'Voltar', big_shots_path %>

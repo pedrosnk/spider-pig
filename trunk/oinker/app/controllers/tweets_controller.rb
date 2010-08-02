@@ -2,12 +2,13 @@ class TweetsController < ApplicationController
   # GET /tweets
   # GET /tweets.xml
   def index
-    @tweets = Tweet.all
+    #@tweets = Tweet.new
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @tweets }
-    end
+    #respond_to do |format|
+    #  format.html # index.html.erb
+    #  format.xml  { render :xml => @tweets }
+    #end
+    redirect_to :action => 'new'
   end
 
   # GET /tweets/1

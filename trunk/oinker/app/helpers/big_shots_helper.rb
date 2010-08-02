@@ -1,0 +1,2 @@
+module BigShotsHelper
+end

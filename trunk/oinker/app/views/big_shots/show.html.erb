@@ -1,0 +1,13 @@
+<p>
+  <b>Screen name:</b>
+  <%=h @big_shot.screen_name %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%=h @big_shot.tags %>
+</p>
+
+
+<%= link_to 'Editar', edit_big_shot_path(@big_shot) %> |
+<%= link_to 'Voltar', big_shots_path %>
