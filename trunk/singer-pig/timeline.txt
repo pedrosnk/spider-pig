@@ -1,0 +1,35 @@
+[  
+
+#<geo=nil, created_at="Mon Aug 16 19:50:29 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=39546509, in_reply_to_status_id=21340019407, source="<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>", place=nil, in_reply_to_screen_name="xgessicax", user= , retweet_count=nil, truncated=false, text="@xgessicax sim, basta não ter fé!">, 
+
+#<geo=nil, created_at="Mon Aug 16 19:41:43 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=81867407, in_reply_to_status_id=nil, source="<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>", place=nil, in_reply_to_screen_name="volmerius", user= , retweet_count=nil, truncated=false, text="@volmerius @xgessicax vai pra outra empresa!">, 
+
+#<geo=nil, created_at="Sun Aug 15 20:23:36 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=nil, in_reply_to_status_id=nil, source="<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>", place=nil, in_reply_to_screen_name=nil, user= , retweet_count=nil, truncated=false, text="alguém ai tem um leitor de DVD externo?">, 
+
+#<geo=nil, created_at="Fri Aug 13 19:56:34 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=22760802, in_reply_to_status_id=21064455271, source="<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>", place=nil, in_reply_to_screen_name="Thaysraujo", user= , retweet_count=nil, truncated=false, text="@Thaysraujo o que é \"gengiba\"? e Buteqs Negads não é uma piada, é um aviso.">, 
+
+#<geo=nil, created_at="Wed Aug 11 13:06:45 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=47422150, in_reply_to_status_id=nil, source="<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>", place=nil, in_reply_to_screen_name="tiagoemerick", user= , retweet_count=nil, truncated=false, text="@tiagoemerick não tem como comprar Apache, que não é uma empresa.">, 
+
+#<geo=nil, created_at="Mon Aug 02 10:11:45 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=nil, in_reply_to_status_id=nil, source="<a href=\"http://dev.twitter.com/\" rel=\"nofollow\">API</a>", place=nil, in_reply_to_screen_name=nil, user= , retweet_count=nil, truncated=false, text="teste">, 
+
+#<geo=nil, created_at="Wed Jul 07 14:11:15 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=61003528, in_reply_to_status_id=nil, source="<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>", place=nil, in_reply_to_screen_name="ZoranDavi", user= , retweet_count=nil, truncated=false, text="@zoranDavi foi ontem.">, 
+
+#<geo=nil, created_at="Mon Jul 05 11:51:14 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=23973257, in_reply_to_status_id=nil, source="<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>", place=nil, in_reply_to_screen_name="pesnk", user= , retweet_count=nil, truncated=false, text="@pesnk ainda que reclama por eu não te seguir.">, 
+
+#<geo=nil, created_at="Fri Jun 25 21:35:15 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=62139060, in_reply_to_status_id=17045166649, source="web", place=nil, in_reply_to_screen_name="HugoNathan", user= , retweet_count=nil, truncated=false, text="@HugoNathan Eu também 2/2 resto 0.">, 
+
+#<geo=nil, created_at="Fri Jun 25 13:49:40 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=nil, in_reply_to_status_id=nil, source="<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>", place=nil, in_reply_to_screen_name=nil, user= , retweet_count=nil, truncated=false, text="pra quem é RPGista tem p @WoDBrasil com cronicas legais e o @JoseCorrupto fake nº 2 que serve de teste pra mim e pro @volmerius">, 
+
+#<geo=nil, created_at="Fri Jun 25 13:46:33 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=81867407, in_reply_to_status_id=nil, source="<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>", place=nil, in_reply_to_screen_name="volmerius", user= , retweet_count=nil, truncated=false, text="@volmerius o que eu posso fazer, só ele escrevr coisa que valem o RT... falando em #FF não sigam o @pesnk">, 
+
+#<geo=nil, created_at="Thu Jun 24 20:11:03 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=94217678, in_reply_to_status_id=nil, source="web", place=nil, in_reply_to_screen_name="forarrudaemafia", user= , retweet_count=nil, truncated=false, text="@forarrudaemafia acho que já está fujindo do foco">, 
+
+#<geo=nil, created_at="Thu Jun 24 18:46:15 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=nil, in_reply_to_status_id=nil, source="web", place=nil, in_reply_to_screen_name=nil, user= , retweet_count=nil, truncated=false, text="A Globo já manipulou debate presidencial, aliou-se aos milicos além das mazelas diárias. Nunca falou-se nada, mas mexeu com a seleção...">, 
+
+#<geo=nil, created_at="Mon Jun 21 22:59:41 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=157973567, in_reply_to_status_id=nil, source="web", place=nil, in_reply_to_screen_name="DungaRei", user= , retweet_count=nil, truncated=false, text="@DungaRei ta na hora de rolar os #DungaFacts">, 
+
+
+#<geo=nil, created_at="Sat Jun 19 16:24:39 +0000 2010", contributors=nil, coordinates=nil, retweeted=false, favorited=false, in_reply_to_user_id=81867407, in_reply_to_status_id=nil, source="<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>", place=nil, in_reply_to_screen_name="volmerius", user= , retweet_count=nil, truncated=false, text="@volmerius puff, ação ridícula do GDF pra chamar atenção em período eleitoral. A fiscalização ja chegou junto com a Record.">
+
+]
+

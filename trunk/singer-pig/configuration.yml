@@ -1,0 +1,9 @@
+## YAML Template.
+---
+
+twitter:
+  deep_level: 3
+  seeds:
+    - renatofq
+    - josecorrupto
+

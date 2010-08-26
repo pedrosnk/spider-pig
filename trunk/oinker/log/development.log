@@ -12420,3 +12420,432 @@ ActionView::MissingTemplate (Missing template big_shots/update.erb in view path 
   /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
 
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#index (for 127.0.0.1 at 2010-08-02 12:52:41) [GET]
+  [4;36;1mBigShot Load (0.5ms)[0m   [0;1mSELECT * FROM `big_shots` [0m
+Rendering template within layouts/big_shots
+Rendering big_shots/index
+  [4;35;1mBigShot Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `big_shots`[0m
+
+ActionView::TemplateError (undefined local variable or method `big_shot' for #<ActionView::Base:0xad00ac0>) on line #20 of app/views/big_shots/index.html.erb:
+17: </table>
+18: 
+19: <br />
+20: <td><%= link_to 'Postar', edit_big_shot_path(big_shot) %></td>
+21: <%= link_to 'Cirar nova', new_big_shot_path %>
+
+    app/views/big_shots/index.html.erb:20
+    app/controllers/big_shots_controller.rb:9:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (108.5ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#index (for 127.0.0.1 at 2010-08-02 12:53:54) [GET]
+  [4;36;1mBigShot Load (0.4ms)[0m   [0;1mSELECT * FROM `big_shots` [0m
+Rendering template within layouts/big_shots
+Rendering big_shots/index
+  [4;35;1mBigShot Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `big_shots`[0m
+  [4;36;1mBigShot Load (13.3ms)[0m   [0;1mSELECT * FROM `big_shots` WHERE (`big_shots`.`id` = 1) [0m
+Completed in 65ms (View: 43, DB: 15) | 200 OK [http://localhost/big_shots]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#edit (for 127.0.0.1 at 2010-08-02 12:53:58) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/big_shots
+Rendering big_shots/edit
+Completed in 83ms (View: 18, DB: 0) | 200 OK [http://localhost/big_shots/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#index (for 127.0.0.1 at 2010-08-02 12:54:02) [GET]
+  [4;35;1mBigShot Load (0.4ms)[0m   [0mSELECT * FROM `big_shots` [0m
+Rendering template within layouts/big_shots
+Rendering big_shots/index
+  [4;36;1mBigShot Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `big_shots`[0m
+  [4;35;1mBigShot Load (0.4ms)[0m   [0mSELECT * FROM `big_shots` WHERE (`big_shots`.`id` = 1) [0m
+Completed in 16ms (View: 8, DB: 2) | 200 OK [http://localhost/big_shots]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#edit (for 127.0.0.1 at 2010-08-02 12:54:07) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/big_shots
+Rendering big_shots/edit
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/big_shots/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#update (for 127.0.0.1 at 2010-08-02 12:54:16) [PUT]
+  Parameters: {"authenticity_token"=>"0aV0wOA1eTFohgh+GjvHxoBCvg0+cVgSGq5GREIJ0z0=", "mensagem"=>"teste 2", "tag"=>"esporte", "commit"=>"Enviar", "id"=>"update"}
+  [4;36;1mBigShot Load (0.4ms)[0m   [0;1mSELECT * FROM `big_shots` WHERE (tags like '%esporte%') [0m
+  [4;35;1mBigShot Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `big_shots`[0m
+
+Grackle::TwitterError (Unexpected failure making request: getaddrinfo: Temporary failure in name resolution):
+  grackle (0.1.10) lib/grackle/client.rb:240:in `rescue in send_request'
+  grackle (0.1.10) lib/grackle/client.rb:229:in `send_request'
+  grackle (0.1.10) lib/grackle/client.rb:222:in `call_with_format'
+  grackle (0.1.10) lib/grackle/client.rb:205:in `append'
+  grackle (0.1.10) lib/grackle/client.rb:143:in `method_missing'
+  app/controllers/big_shots_controller.rb:68:in `block in update'
+  app/controllers/big_shots_controller.rb:66:in `each'
+  app/controllers/big_shots_controller.rb:66:in `update'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (83.6ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#update (for 127.0.0.1 at 2010-08-02 12:55:21) [PUT]
+  Parameters: {"authenticity_token"=>"0aV0wOA1eTFohgh+GjvHxoBCvg0+cVgSGq5GREIJ0z0=", "mensagem"=>"teste 2", "tag"=>"esporte", "commit"=>"Enviar", "id"=>"update"}
+  [4;36;1mBigShot Load (0.4ms)[0m   [0;1mSELECT * FROM `big_shots` WHERE (tags like '%esporte%') [0m
+  [4;35;1mBigShot Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `big_shots`[0m
+
+NoMethodError (undefined method `echo' for #<BigShotsController:0xaf8e178>):
+  app/controllers/big_shots_controller.rb:67:in `block in update'
+  app/controllers/big_shots_controller.rb:66:in `each'
+  app/controllers/big_shots_controller.rb:66:in `update'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (74.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#index (for 127.0.0.1 at 2010-08-02 12:55:38) [GET]
+  [4;36;1mBigShot Load (0.5ms)[0m   [0;1mSELECT * FROM `big_shots` [0m
+Rendering template within layouts/big_shots
+Rendering big_shots/index
+  [4;35;1mBigShot Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `big_shots`[0m
+  [4;36;1mBigShot Load (0.4ms)[0m   [0;1mSELECT * FROM `big_shots` WHERE (`big_shots`.`id` = 1) [0m
+Completed in 19ms (View: 9, DB: 2) | 200 OK [http://localhost/big_shots/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#edit (for 127.0.0.1 at 2010-08-02 12:55:40) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/big_shots
+Rendering big_shots/edit
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/big_shots/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#update (for 127.0.0.1 at 2010-08-02 12:55:47) [PUT]
+  Parameters: {"authenticity_token"=>"0aV0wOA1eTFohgh+GjvHxoBCvg0+cVgSGq5GREIJ0z0=", "mensagem"=>"tese ", "tag"=>"esporte", "commit"=>"Enviar", "id"=>"update"}
+  [4;35;1mBigShot Load (0.4ms)[0m   [0mSELECT * FROM `big_shots` WHERE (tags like '%esporte%') [0m
+  [4;36;1mBigShot Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `big_shots`[0m
+
+NoMethodError (undefined method `echo' for #<BigShotsController:0xa69eb64>):
+  app/controllers/big_shots_controller.rb:67:in `block in update'
+  app/controllers/big_shots_controller.rb:66:in `each'
+  app/controllers/big_shots_controller.rb:66:in `update'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (81.2ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#update (for 127.0.0.1 at 2010-08-02 12:56:26) [PUT]
+  Parameters: {"authenticity_token"=>"0aV0wOA1eTFohgh+GjvHxoBCvg0+cVgSGq5GREIJ0z0=", "mensagem"=>"tese ", "tag"=>"esporte", "commit"=>"Enviar", "id"=>"update"}
+  [4;35;1mBigShot Load (0.4ms)[0m   [0mSELECT * FROM `big_shots` WHERE (tags like '%esporte%') [0m
+  [4;36;1mBigShot Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `big_shots`[0m
+
+ActionView::MissingTemplate (Missing template big_shots/update.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#update (for 127.0.0.1 at 2010-08-02 12:59:39) [PUT]
+  Parameters: {"authenticity_token"=>"0aV0wOA1eTFohgh+GjvHxoBCvg0+cVgSGq5GREIJ0z0=", "mensagem"=>"tese ", "tag"=>"esporte", "commit"=>"Enviar", "id"=>"update"}
+
+SyntaxError (/home/renato/workspace/spider-pig/oinker/app/controllers/big_shots_controller.rb:105: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (71.3ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-02 12:59:55) [GET]
+
+SyntaxError (/home/renato/workspace/spider-pig/oinker/app/controllers/big_shots_controller.rb:105: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (71.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-02 13:00:01) [GET]
+
+SyntaxError (/home/renato/workspace/spider-pig/oinker/app/controllers/big_shots_controller.rb:105: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (141.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#index (for 127.0.0.1 at 2010-08-02 13:00:20) [GET]
+  [4;35;1mBigShot Load (0.4ms)[0m   [0mSELECT * FROM `big_shots` [0m
+Rendering template within layouts/big_shots
+Rendering big_shots/index
+  [4;36;1mBigShot Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `big_shots`[0m
+  [4;35;1mBigShot Load (0.4ms)[0m   [0mSELECT * FROM `big_shots` WHERE (`big_shots`.`id` = 1) [0m
+Completed in 15ms (View: 7, DB: 2) | 200 OK [http://localhost/big_shots/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#edit (for 127.0.0.1 at 2010-08-02 13:00:22) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/big_shots
+Rendering big_shots/edit
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/big_shots/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#update (for 127.0.0.1 at 2010-08-02 13:00:32) [PUT]
+  Parameters: {"authenticity_token"=>"0aV0wOA1eTFohgh+GjvHxoBCvg0+cVgSGq5GREIJ0z0=", "mensagem"=>"teste", "tag"=>"esporte", "commit"=>"Enviar", "id"=>"update"}
+  [4;36;1mBigShot Load (0.4ms)[0m   [0;1mSELECT * FROM `big_shots` WHERE (tags like '%esporte%') [0m
+
+NameError (undefined local variable or method `saida' for #<BigShotsController:0xa983220>):
+  app/controllers/big_shots_controller.rb:66:in `update'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (71.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#update (for 127.0.0.1 at 2010-08-02 13:00:57) [PUT]
+  Parameters: {"authenticity_token"=>"0aV0wOA1eTFohgh+GjvHxoBCvg0+cVgSGq5GREIJ0z0=", "mensagem"=>"teste", "tag"=>"esporte", "commit"=>"Enviar", "id"=>"update"}
+  [4;35;1mBigShot Load (0.4ms)[0m   [0mSELECT * FROM `big_shots` WHERE (tags like '%esporte%') [0m
+  [4;36;1mBigShot Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `big_shots`[0m
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/big_shots_controller.rb:72:in `block (2 levels) in update'
+  app/controllers/big_shots_controller.rb:71:in `update'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (104.2ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#update (for 127.0.0.1 at 2010-08-02 13:03:02) [PUT]
+  Parameters: {"authenticity_token"=>"0aV0wOA1eTFohgh+GjvHxoBCvg0+cVgSGq5GREIJ0z0=", "mensagem"=>"teste", "tag"=>"esporte", "commit"=>"Enviar", "id"=>"update"}
+  [4;35;1mBigShot Load (0.4ms)[0m   [0mSELECT * FROM `big_shots` WHERE (tags like '%esporte%') [0m
+  [4;36;1mBigShot Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `big_shots`[0m
+Redirected to http://localhost:3000/big_shots?notice=%40renatofq+teste
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/big_shots/update]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#index (for 127.0.0.1 at 2010-08-02 13:03:02) [GET]
+  Parameters: {"notice"=>"@renatofq teste"}
+  [4;35;1mBigShot Load (0.4ms)[0m   [0mSELECT * FROM `big_shots` [0m
+Rendering template within layouts/big_shots
+Rendering big_shots/index
+  [4;36;1mBigShot Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `big_shots`[0m
+  [4;35;1mBigShot Load (0.4ms)[0m   [0mSELECT * FROM `big_shots` WHERE (`big_shots`.`id` = 1) [0m
+Completed in 16ms (View: 9, DB: 2) | 200 OK [http://localhost/big_shots?notice=%40renatofq+teste]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-08-02 13:06:43) [GET]
+  [4;36;1mTweeter Load (0.8ms)[0m   [0;1mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;35;1mTweeter Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+Completed in 369ms (View: 203, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#new (for 127.0.0.1 at 2010-08-02 13:06:53) [GET]
+  [4;36;1mTweeter Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Rendering template within layouts/application
+Rendering tweeters/new
+Completed in 55ms (View: 46, DB: 2) | 200 OK [http://localhost/tweeters/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-08-02 13:07:03) [POST]
+  Parameters: {"authenticity_token"=>"0aV0wOA1eTFohgh+GjvHxoBCvg0+cVgSGq5GREIJ0z0=", "tweeter"=>{"screen_name"=>"andrebarboz"}, "commit"=>"Create"}
+
+Grackle::TwitterError (Unexpected failure making request: getaddrinfo: Temporary failure in name resolution):
+  grackle (0.1.10) lib/grackle/client.rb:240:in `rescue in send_request'
+  grackle (0.1.10) lib/grackle/client.rb:229:in `send_request'
+  grackle (0.1.10) lib/grackle/client.rb:222:in `call_with_format'
+  grackle (0.1.10) lib/grackle/client.rb:205:in `append'
+  grackle (0.1.10) lib/grackle/client.rb:143:in `method_missing'
+  app/controllers/tweeters_controller.rb:77:in `create'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (81.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#create (for 127.0.0.1 at 2010-08-02 13:07:49) [POST]
+  Parameters: {"authenticity_token"=>"0aV0wOA1eTFohgh+GjvHxoBCvg0+cVgSGq5GREIJ0z0=", "tweeter"=>{"screen_name"=>"andrebarboz"}, "commit"=>"Create"}
+
+Grackle::TwitterError (Unexpected failure making request: getaddrinfo: Temporary failure in name resolution):
+  grackle (0.1.10) lib/grackle/client.rb:240:in `rescue in send_request'
+  grackle (0.1.10) lib/grackle/client.rb:229:in `send_request'
+  grackle (0.1.10) lib/grackle/client.rb:222:in `call_with_format'
+  grackle (0.1.10) lib/grackle/client.rb:205:in `append'
+  grackle (0.1.10) lib/grackle/client.rb:143:in `method_missing'
+  app/controllers/tweeters_controller.rb:77:in `create'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (79.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-08-02 13:08:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTweeter Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.5ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+
+Grackle::TwitterError (Unexpected failure making request: getaddrinfo: Temporary failure in name resolution):
+  grackle (0.1.10) lib/grackle/client.rb:240:in `rescue in send_request'
+  grackle (0.1.10) lib/grackle/client.rb:229:in `send_request'
+  grackle (0.1.10) lib/grackle/client.rb:222:in `call_with_format'
+  grackle (0.1.10) lib/grackle/client.rb:202:in `append'
+  grackle (0.1.10) lib/grackle/client.rb:143:in `method_missing'
+  app/controllers/tweeters_controller.rb:21:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (162.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#index (for 127.0.0.1 at 2010-08-02 19:29:38) [GET]
+  [4;35;1mTweeter Load (0.9ms)[0m   [0mSELECT * FROM `tweeters` [0m
+Rendering template within layouts/application
+Rendering tweeters/index
+  [4;36;1mTweeter Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `tweeters`[0m
+Completed in 116ms (View: 103, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetersController#show (for 127.0.0.1 at 2010-08-02 19:29:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTweeter Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `tweeters`[0m
+  [4;36;1mTweeter Load (0.4ms)[0m   [0;1mSELECT * FROM `tweeters` WHERE (`tweeters`.`id` = 1) [0m
+
+Grackle::TwitterError (Unexpected failure making request: getaddrinfo: Temporary failure in name resolution):
+  grackle (0.1.10) lib/grackle/client.rb:240:in `rescue in send_request'
+  grackle (0.1.10) lib/grackle/client.rb:229:in `send_request'
+  grackle (0.1.10) lib/grackle/client.rb:222:in `call_with_format'
+  grackle (0.1.10) lib/grackle/client.rb:202:in `append'
+  grackle (0.1.10) lib/grackle/client.rb:143:in `method_missing'
+  app/controllers/tweeters_controller.rb:21:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (156.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BigShotsController#index (for 127.0.0.1 at 2010-08-02 19:36:36) [GET]
+  [4;35;1mBigShot Load (0.6ms)[0m   [0mSELECT * FROM `big_shots` [0m
+Rendering template within layouts/big_shots
+Rendering big_shots/index
+  [4;36;1mBigShot Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `big_shots`[0m
+  [4;35;1mBigShot Load (0.5ms)[0m   [0mSELECT * FROM `big_shots` WHERE (`big_shots`.`id` = 1) [0m
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://localhost/big_shots]

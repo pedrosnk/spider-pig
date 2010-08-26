@@ -11,12 +11,12 @@
     <td><%=h big_shot.screen_name %></td>
     <td><%=h big_shot.tags %></td>
     <td><%= link_to 'Mostrar', big_shot %></td>
-    <td><%= link_to 'Editar', edit_big_shot_path(big_shot) %></td>
     <td><%= link_to 'Apagar', big_shot, :confirm => 'Confirma?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
-
+<% big_shot =  BigShot.find(1) %>
+<td><%= link_to 'Postar', edit_big_shot_path(big_shot) %></td>
 <%= link_to 'Cirar nova', new_big_shot_path %>
