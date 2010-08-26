@@ -46,7 +46,7 @@ class BigShotsController < ApplicationController
 
     respond_to do |format|
       if @big_shot.save
-        format.html { redirect_to(@big_shot, :notice => 'BigShot was successfully created.') }
+        format.html { redirect_to(@big_shot, :notice => 'Pessoa Influente foi cadastrada') }
         format.xml  { render :xml => @big_shot, :status => :created, :location => @big_shot }
       else
         format.html { render :action => "new" }
@@ -58,9 +58,20 @@ class BigShotsController < ApplicationController
   # PUT /big_shots/1
   # PUT /big_shots/1.xml
   def update
-    user = params[:screen_name]
-    client = Grackle::Client.new(:auth=>{:type=>:basic,:username=>'renatofq',:password=>''})
-    client.statuses.update! :status=> user 
+    mensagem = params[:mensagem]
+    tag = params[:tag]
+    client = Grackle::Client.new(:auth=>{:type=>:basic,:username=>'renatofq',:password=>'raskolnikov'})
+    big_shots = BigShot.find(:all, :conditions => "tags like '%#{tag}%'")
+
+    big_shots.each { |big_shot|
+      print "@#{big_shot.screen_name} #{mensagem}"
+      client.statuses.update! :status=> "@#{big_shot.screen_name} #{mensagem} "
+    }
+    respond_to do |format|
+        format.html { redirect_to(:action => 'index', :notice => 'Mensagens postadas') }
+        format.xml  { head :ok }
+    end
+
 #    @big_shot = BigShot.find(params[:id])
 #
 #    respond_to do |format|

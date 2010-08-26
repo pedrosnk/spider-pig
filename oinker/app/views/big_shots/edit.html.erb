@@ -1,8 +1,10 @@
 <h1>Disparar Mensagem</h1>
 
 <%form_tag '/big_shots/update', :method => :put do -%>
-  <%= label_tag'Usuario: ' %>
-  <%= text_field_tag 'screen_name' %>
+  <%= label_tag'Mensagem: ' %>
+  <%= text_field_tag 'mensagem' %> <br/>
+  <%= label_tag 'Tag:' %>
+  <%= text_field_tag 'tag' %> <br/>
   <%= submit_tag 'Enviar' %>
 <% end %>
 
