@@ -1,0 +1,6 @@
+<h1>Type the use you wanna to search info about</h1>
+
+<% form_tag gaga_search_path, :method => :get  do%>
+    <p><%= text_field_tag :search_name %></p>
+    <p><%= submit_tag 'Submit', :name => nil %></p>
+<% end %>

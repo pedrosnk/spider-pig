@@ -1,5 +1,5 @@
 #require 'twitter_adapter'
-require 'tweeter'
+require './tweeter'
 
 twitter_seed = ['renatofq', 'volmerius']
 
