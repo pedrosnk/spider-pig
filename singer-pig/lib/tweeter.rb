@@ -1,4 +1,4 @@
-require 'twitter_model'
+require './twitter_model'
 
 
 class Tweeter < TwitterModel

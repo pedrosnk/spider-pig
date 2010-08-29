@@ -1,0 +1,1837 @@
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:17:32 -0300
+  Processing by GagaController#search as HTML
+Rendered gaga/search.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:17:36 -0300
+  Processing by GagaController#search as HTML
+Rendered gaga/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:17:37 -0300
+  Processing by GagaController#search as HTML
+Rendered gaga/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:17:37 -0300
+  Processing by GagaController#search as HTML
+Rendered gaga/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:17:37 -0300
+  Processing by GagaController#search as HTML
+Rendered gaga/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:17:38 -0300
+  Processing by GagaController#search as HTML
+Rendered gaga/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:17:38 -0300
+  Processing by GagaController#search as HTML
+Rendered gaga/search.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:22:29 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177498240_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gaga/search" for 127.0.0.1 at 2010-08-29 00:22:32 -0300
+
+ActionController::RoutingError (No route matches "/gaga/search"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:22:57 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177727260_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:22:57 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2176962560_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:22:58 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2154851480_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gaga/search" for 127.0.0.1 at 2010-08-29 00:23:01 -0300
+
+ActionController::RoutingError (No route matches "/gaga/search"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:23:02 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2159353880_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?search_name=adas" for 127.0.0.1 at 2010-08-29 00:23:17 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"search_name"=>"adas"}
+Rendered gaga/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search" for 127.0.0.1 at 2010-08-29 00:23:21 -0300
+  Processing by GagaController#search as HTML
+Rendered gaga/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?search_name=adas" for 127.0.0.1 at 2010-08-29 00:23:22 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"search_name"=>"adas"}
+Rendered gaga/search.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:23:23 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177567420_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:24:05 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2159560320_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk&commit=Submit" for 127.0.0.1 at 2010-08-29 00:24:07 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk", "commit"=>"Submit"}
+Rendered gaga/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk&commit=Submit" for 127.0.0.1 at 2010-08-29 00:24:30 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk", "commit"=>"Submit"}
+Rendered gaga/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:24:32 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2154891200_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk&commit=Submit" for 127.0.0.1 at 2010-08-29 00:24:33 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk", "commit"=>"Submit"}
+Rendered gaga/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk&commit=Submit" for 127.0.0.1 at 2010-08-29 00:24:43 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk", "commit"=>"Submit"}
+Rendered gaga/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:24:44 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177544240_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk&commit=Enviar" for 127.0.0.1 at 2010-08-29 00:24:46 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk", "commit"=>"Enviar"}
+Rendered gaga/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:24:48 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2155187780_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk&commit=Enviar" for 127.0.0.1 at 2010-08-29 00:24:52 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk", "commit"=>"Enviar"}
+Rendered gaga/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:25:14 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2159404420_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk&commit=Submit" for 127.0.0.1 at 2010-08-29 00:25:16 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk", "commit"=>"Submit"}
+Rendered gaga/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:27:38 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177232200_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (45.7ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:27:39 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2159046980_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 00:27:43 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:28:52 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2159405260_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:28:53 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2154734800_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk&_snowman=%7B%3Aname%3D%3Enil%7D" for 127.0.0.1 at 2010-08-29 00:28:55 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"{:name=>nil}", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:29:39 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2156862300_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:30:52 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177407300_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 33ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 00:30:55 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Completed   in 0ms
+
+NoMethodError (undefined method `params' for "@":String):
+  app/controllers/gaga_controller.rb:4:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:31:01 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177429700_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 00:31:03 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:31:04 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2154852280_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:36:35 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177249680_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 00:36:38 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:36:40 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177469360_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:36:45 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2159452980_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 00:36:47 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:36:48 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2159602940_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:37:31 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2155756940_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 00:37:35 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:37:36 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2158786820_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 00:37:58 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 00:40:39 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2159600460_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 37ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 00:40:43 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 00:48:33 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 01:08:04 -0300
+
+LoadError (no such file to load -- mechanize):
+  app/controllers/gaga_controller.rb:3:in `<class:GagaController>'
+  app/controllers/gaga_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:08:28 -0300
+
+LoadError (no such file to load -- mechanize):
+  app/controllers/gaga_controller.rb:3:in `<class:GagaController>'
+  app/controllers/gaga_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:08:31 -0300
+
+LoadError (no such file to load -- mechanize):
+  app/controllers/gaga_controller.rb:3:in `<class:GagaController>'
+  app/controllers/gaga_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:08:50 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177794880_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 01:08:54 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Completed   in 44ms
+
+NameError (uninitialized constant GagaController::Mechanize):
+  app/controllers/gaga_controller.rb:22:in `information_about_user'
+  app/controllers/gaga_controller.rb:7:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 01:09:06 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 01:09:27 -0300
+
+LoadError (no such file to load -- mechanize):
+  app/controllers/gaga_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 01:09:34 -0300
+
+LoadError (no such file to load -- mechanize):
+  app/controllers/gaga_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:10:27 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177380220_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:10:28 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2159396360_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:10:29 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177560780_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:10:40 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2159343260_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:10:41 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177459500_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 01:10:44 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Completed   in 5ms
+
+NameError (uninitialized constant GagaController::Mechanize):
+  app/controllers/gaga_controller.rb:24:in `information_about_user'
+  app/controllers/gaga_controller.rb:9:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 01:10:47 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 01:10:54 -0300
+
+LoadError (no such file to load -- mechanize):
+  app/controllers/gaga_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:11:09 -0300
+
+LoadError (no such file to load -- mechanize):
+  app/controllers/gaga_controller.rb:2:in `<top (required)>'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:11:10 -0300
+
+LoadError (no such file to load -- mechanize):
+  app/controllers/gaga_controller.rb:2:in `<top (required)>'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:11:11 -0300
+
+LoadError (no such file to load -- mechanize):
+  app/controllers/gaga_controller.rb:2:in `<top (required)>'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:11:20 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2979493590271824736_2177614900_3429299601751265500 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:11:57 -0300
+
+LoadError (no such file to load -- sqlite3):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (24.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:11:59 -0300
+
+LoadError (no such file to load -- sqlite3):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:12:00 -0300
+
+LoadError (no such file to load -- sqlite3):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:12:00 -0300
+
+LoadError (no such file to load -- sqlite3):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (42.2ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.6ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:13:29 -0300
+
+NoMethodError (undefined method `[]' for false:FalseClass):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:15:46 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2155734360__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:16:06 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2163859760__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 44ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 01:16:10 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 01:22:32 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Completed   in 1ms
+
+NoMethodError (undefined method `information_about_user' for #<GagaController:0x00000101ac9d18>):
+  app/controllers/gaga_controller.rb:10:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:25:27 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173599520__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 01:25:29 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Completed   in 1ms
+
+RuntimeError (need absolute URL):
+  app/controllers/gaga_controller.rb:29:in `information_about_user_klout'
+  app/controllers/gaga_controller.rb:10:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:26:08 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173828920__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:26:09 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2163870340__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 01:26:13 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1074ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:54:58 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2163916520__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 01:55:02 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1189ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:56:42 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2163626720__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:56:44 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173867620__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 01:56:48 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Completed   in 826ms
+
+NoMethodError (undefined method `gsub' for #<Nokogiri::XML::NodeSet:0x00000101e7f840>):
+  app/controllers/gaga_controller.rb:31:in `information_about_user_klout'
+  app/controllers/gaga_controller.rb:10:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (20.1ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:57:25 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173711800__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:57:26 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2163504920__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 01:57:31 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Completed   in 920ms
+
+NoMethodError (undefined method `gsub' for #<Nokogiri::XML::NodeSet:0x0000010322b8f8>):
+  app/controllers/gaga_controller.rb:32:in `information_about_user_klout'
+  app/controllers/gaga_controller.rb:10:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:57:58 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2162665360__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:57:58 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173916060__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 01:58:02 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Completed   in 60277ms
+
+Timeout::Error (Timeout::Error):
+  app/controllers/gaga_controller.rb:29:in `information_about_user_klout'
+  app/controllers/gaga_controller.rb:10:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 01:59:03 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 930ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 01:59:04 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 886ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 01:59:05 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 845ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 01:59:06 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173017880__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 01:59:11 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 850ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 01:59:22 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1427ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 01:59:32 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1255ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 01:59:45 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 967ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 02:03:48 -0300
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/gaga_controller.rb:38: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 02:04:00 -0300
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/gaga_controller.rb:38: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 02:04:27 -0300
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/gaga_controller.rb:38: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 02:04:28 -0300
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/gaga_controller.rb:38: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 02:04:30 -0300
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/gaga_controller.rb:38: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 02:04:31 -0300
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/gaga_controller.rb:38: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (38.1ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (43.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 02:04:49 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173231900__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 02:04:55 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1355ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 04:27:09 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2161098520__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 31ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 04:27:10 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173721800__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:27:14 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Completed   in 912ms
+
+NameError (undefined local variable or method `en' for #<GagaController:0x00000101a0ba98>):
+  app/controllers/gaga_controller.rb:36:in `block in information_about_user_klout'
+  app/controllers/gaga_controller.rb:34:in `times'
+  app/controllers/gaga_controller.rb:34:in `information_about_user_klout'
+  app/controllers/gaga_controller.rb:10:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (42.3ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 04:28:05 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173152640__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 04:28:06 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2155822500__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:28:11 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Completed   in 699ms
+
+NameError (undefined local variable or method `en' for #<GagaController:0x0000010319a380>):
+  app/controllers/gaga_controller.rb:36:in `block in information_about_user_klout'
+  app/controllers/gaga_controller.rb:34:in `times'
+  app/controllers/gaga_controller.rb:34:in `information_about_user_klout'
+  app/controllers/gaga_controller.rb:10:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:28:29 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 763ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:28:50 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 860ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:28:58 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 705ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 04:29:08 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173885820__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 04:29:12 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 715ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 04:29:14 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2155463920__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:29:19 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 939ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:35:24 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 715ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:37:31 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 794ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:38:01 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Completed   in 771ms
+
+NoMethodError (undefined method `<<' for {}:Hash):
+  app/controllers/gaga_controller.rb:36:in `block in information_about_user_klout'
+  app/controllers/gaga_controller.rb:35:in `times'
+  app/controllers/gaga_controller.rb:35:in `information_about_user_klout'
+  app/controllers/gaga_controller.rb:10:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:38:19 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Completed   in 949ms
+
+NoMethodError (undefined method `<' for {}:Hash):
+  app/controllers/gaga_controller.rb:36:in `block in information_about_user_klout'
+  app/controllers/gaga_controller.rb:35:in `times'
+  app/controllers/gaga_controller.rb:35:in `information_about_user_klout'
+  app/controllers/gaga_controller.rb:10:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:41:20 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 2073ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:42:58 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 695ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:43:12 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 738ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:44:21 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 687ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:45:04 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 814ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:45:13 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 663ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:52:17 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Completed   in 1887ms
+
+NameError (undefined local variable or method `search_name' for #<GagaController:0x000001019c5688>):
+  app/controllers/gaga_controller.rb:12:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 04:52:33 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1235ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 05:14:06 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (50.5ms)
+Completed 200 OK in 1644ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 05:14:41 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1274ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 05:14:50 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1286ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 05:19:25 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Completed   in 60277ms
+
+Timeout::Error (Timeout::Error):
+  app/controllers/gaga_controller.rb:31:in `information_about_user_klout'
+  app/controllers/gaga_controller.rb:10:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 05:20:47 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1960ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 05:21:28 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1123ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 05:21:46 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 3900ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 05:23:39 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173548380__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=barackobama" for 127.0.0.1 at 2010-08-29 05:23:44 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"barackobama"}
+Rendered gaga/search.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 13021ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 05:24:11 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173535940__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 05:24:14 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 3433ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=barackobama" for 127.0.0.1 at 2010-08-29 05:25:09 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"barackobama"}
+Rendered gaga/search.html.erb within layouts/application (57.6ms)
+Completed 200 OK in 4367ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=barackobama" for 127.0.0.1 at 2010-08-29 05:25:57 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"barackobama"}
+Rendered gaga/search.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 4127ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 05:26:05 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2242ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 05:28:39 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 2813ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 05:43:25 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (52.5ms)
+Completed 200 OK in 2017ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 05:44:17 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1400ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 05:46:14 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (43.1ms)
+Completed 200 OK in 1567ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 05:46:20 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1452ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 05:47:47 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+Rendered gaga/search.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 1365ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 05:47:56 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 3298ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 05:48:10 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+Rendered gaga/search.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1438ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 05:49:05 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+Rendered gaga/search.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1481ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 05:49:50 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Completed   in 60277ms
+
+Timeout::Error (Timeout::Error):
+  app/controllers/gaga_controller.rb:31:in `information_about_user_klout'
+  app/controllers/gaga_controller.rb:10:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.4ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 05:54:21 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 1961ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 05:54:45 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+Rendered gaga/search.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 1799ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 05:54:52 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1151ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=barackobama" for 127.0.0.1 at 2010-08-29 05:55:03 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"barackobama"}
+Rendered gaga/search.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1134ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 06:40:06 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173820280__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 37ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=renatofq" for 127.0.0.1 at 2010-08-29 06:40:51 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"renatofq"}
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5242ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=nerddetpm" for 127.0.0.1 at 2010-08-29 06:46:21 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"nerddetpm"}
+Rendered gaga/search.html.erb within layouts/application (54.8ms)
+Completed 200 OK in 1619ms (Views: 101.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=nerddetpm" for 127.0.0.1 at 2010-08-29 06:46:27 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"nerddetpm"}
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1002ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=nerddetpm" for 127.0.0.1 at 2010-08-29 06:46:58 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"nerddetpm"}
+Rendered gaga/search.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1097ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=barackobama" for 127.0.0.1 at 2010-08-29 06:47:08 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"barackobama"}
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1389ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 06:47:13 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1482ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=sen_cristovam" for 127.0.0.1 at 2010-08-29 06:47:22 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"sen_cristovam"}
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1289ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 07:26:27 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2155784920__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 07:26:31 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a35d9f32c1e104c000001'), "screen_name"=>"pesnk", "klout"=>{"_id"=>BSON::ObjectID('4c7a35d9f32c1e104c000002'), "classification"=>13}, "created_at"=>2010-08-29 10:26:33 UTC, "updated_at"=>2010-08-29 10:26:33 UTC}])
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1695ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=renatofq" for 127.0.0.1 at 2010-08-29 07:34:57 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"renatofq"}
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a37d2f32c1e104c000003'), "screen_name"=>"renatofq", "klout"=>{"_id"=>BSON::ObjectID('4c7a37d2f32c1e104c000004'), "classification"=>10}, "created_at"=>2010-08-29 10:34:58 UTC, "updated_at"=>2010-08-29 10:34:58 UTC}])
+Rendered gaga/search.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 1269ms (Views: 118.9ms | ActiveRecord: 0.0ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB gaga_pig_development['system.indexes'].insert([{:name=>"screen_name_1", :ns=>"gaga_pig_development.tweets", :key=>{"screen_name"=>1}, :unique=>true, :background=>true}])
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=renatofq" for 127.0.0.1 at 2010-08-29 07:40:33 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"renatofq"}
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a3923f32c1e104c000005'), "screen_name"=>"renatofq", "klout"=>{"_id"=>BSON::ObjectID('4c7a3923f32c1e104c000006'), "classification"=>10}, "created_at"=>2010-08-29 10:40:35 UTC, "updated_at"=>2010-08-29 10:40:35 UTC}])
+Rendered gaga/search.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1729ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=renatofq" for 127.0.0.1 at 2010-08-29 07:41:10 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"renatofq"}
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a3948f32c1e104c000007'), "screen_name"=>"renatofq", "klout"=>{"_id"=>BSON::ObjectID('4c7a3948f32c1e104c000008'), "classification"=>12}, "created_at"=>2010-08-29 10:41:12 UTC, "updated_at"=>2010-08-29 10:41:12 UTC}])
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1193ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=renatofq" for 127.0.0.1 at 2010-08-29 07:41:59 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"renatofq"}
+Completed   in 1464ms
+
+NoMethodError (undefined method `save?' for #<Tweet:0x0000010326b070>):
+  app/controllers/gaga_controller.rb:39:in `save_tweet'
+  app/controllers/gaga_controller.rb:14:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=renatofq" for 127.0.0.1 at 2010-08-29 07:42:06 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"renatofq"}
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a397ff32c1e104c00000b'), "screen_name"=>"renatofq", "klout"=>{"_id"=>BSON::ObjectID('4c7a397ff32c1e104c00000c'), "classification"=>12}, "created_at"=>2010-08-29 10:42:07 UTC, "updated_at"=>2010-08-29 10:42:07 UTC}])
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1075ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=renatofq" for 127.0.0.1 at 2010-08-29 07:42:08 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"renatofq"}
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a3981f32c1e104c00000d'), "screen_name"=>"renatofq", "klout"=>{"_id"=>BSON::ObjectID('4c7a3981f32c1e104c00000e'), "classification"=>12}, "created_at"=>2010-08-29 10:42:09 UTC, "updated_at"=>2010-08-29 10:42:09 UTC}])
+Rendered gaga/search.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1110ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=renatofq" for 127.0.0.1 at 2010-08-29 07:42:15 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"renatofq"}
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a3989f32c1e104c00000f'), "screen_name"=>"renatofq", "klout"=>{"_id"=>BSON::ObjectID('4c7a3989f32c1e104c000010'), "classification"=>12}, "created_at"=>2010-08-29 10:42:17 UTC, "updated_at"=>2010-08-29 10:42:17 UTC}])
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1124ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 07:42:22 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a398ff32c1e104c000011'), "screen_name"=>"cardoso", "klout"=>{"_id"=>BSON::ObjectID('4c7a398ff32c1e104c000012'), "classification"=>12}, "created_at"=>2010-08-29 10:42:23 UTC, "updated_at"=>2010-08-29 10:42:23 UTC}])
+Rendered gaga/search.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1165ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 07:42:42 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a39a3f32c1e104c000013'), "screen_name"=>"cardoso", "klout"=>{"_id"=>BSON::ObjectID('4c7a39a3f32c1e104c000014'), "classification"=>12}, "created_at"=>2010-08-29 10:42:43 UTC, "updated_at"=>2010-08-29 10:42:43 UTC}])
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1180ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 07:42:44 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a39a7f32c1e104c000015'), "screen_name"=>"cardoso", "klout"=>{"_id"=>BSON::ObjectID('4c7a39a7f32c1e104c000016'), "classification"=>12}, "created_at"=>2010-08-29 10:42:47 UTC, "updated_at"=>2010-08-29 10:42:47 UTC}])
+Rendered gaga/search.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 2558ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 07:43:09 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+Completed   in 60277ms
+
+Timeout::Error (Timeout::Error):
+  app/controllers/gaga_controller.rb:50:in `information_about_user_klout'
+  app/controllers/gaga_controller.rb:10:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 07:44:34 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a3a13f32c1e104c000017'), "screen_name"=>"cardoso", "klout"=>{"_id"=>BSON::ObjectID('4c7a3a13f32c1e104c000018'), "classification"=>79}, "created_at"=>2010-08-29 10:44:35 UTC, "updated_at"=>2010-08-29 10:44:35 UTC}])
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1485ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 07:45:16 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1676ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 07:45:34 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+Rendered gaga/search.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1277ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 07:45:46 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+Rendered gaga/search.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 1263ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 07:45:53 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1411ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=garotasemfio" for 127.0.0.1 at 2010-08-29 07:46:50 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"garotasemfio"}
+Rendered gaga/search.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 16643ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=barackobama" for 127.0.0.1 at 2010-08-29 07:47:32 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"barackobama"}
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1104ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=barackobama" for 127.0.0.1 at 2010-08-29 07:48:39 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"barackobama"}
+Rendered gaga/search.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1202ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=jimlee00" for 127.0.0.1 at 2010-08-29 07:49:11 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"jimlee00"}
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1641ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=jimlee00" for 127.0.0.1 at 2010-08-29 07:49:22 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"jimlee00"}
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1179ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=jimlee00" for 127.0.0.1 at 2010-08-29 07:50:13 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"jimlee00"}
+Rendered gaga/search.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1217ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=jimlee00" for 127.0.0.1 at 2010-08-29 07:50:15 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"jimlee00"}
+Rendered gaga/search.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1379ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=ladygaga" for 127.0.0.1 at 2010-08-29 07:50:34 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"ladygaga"}
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1300ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=ladygaga" for 127.0.0.1 at 2010-08-29 07:57:32 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"ladygaga"}
+Rendered gaga/search.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 1443ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=ladygaga" for 127.0.0.1 at 2010-08-29 07:57:41 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"ladygaga"}
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 2391ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 07:58:51 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"cardoso"}, {})
+Completed   in 1503ms
+
+NoMethodError (undefined method `screen_name=' for #<Array:0x000001031c0fd0>):
+  app/controllers/gaga_controller.rb:44:in `save_tweet'
+  app/controllers/gaga_controller.rb:14:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 07:59:47 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"cardoso"}, {})
+Completed   in 1215ms
+
+NoMethodError (undefined method `klout=' for #<Array:0x00000101f42b88>):
+  app/controllers/gaga_controller.rb:46:in `save_tweet'
+  app/controllers/gaga_controller.rb:14:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.6ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=ladygaga" for 127.0.0.1 at 2010-08-29 08:00:09 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"ladygaga"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"ladygaga"}, {})
+Completed   in 1662ms
+
+NoMethodError (undefined method `klout=' for []:Array):
+  app/controllers/gaga_controller.rb:46:in `save_tweet'
+  app/controllers/gaga_controller.rb:14:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=ladygaga" for 127.0.0.1 at 2010-08-29 08:01:45 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"ladygaga"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"ladygaga"}, {})
+Completed   in 1198ms
+
+NoMethodError (undefined method `destroy' for []:Array):
+  app/controllers/gaga_controller.rb:37:in `save_tweet'
+  app/controllers/gaga_controller.rb:14:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=ladygaga" for 127.0.0.1 at 2010-08-29 08:02:45 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"ladygaga"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"ladygaga"}, {}).limit(-1)
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a3e58f32c1e104c000037'), "screen_name"=>"ladygaga", "klout"=>{"_id"=>BSON::ObjectID('4c7a3e58f32c1e104c000038'), "classification"=>81}, "created_at"=>2010-08-29 11:02:48 UTC, "updated_at"=>2010-08-29 11:02:48 UTC}])
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2751ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 08:03:02 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"cardoso"}, {}).limit(-1)
+  MONGODB gaga_pig_development['tweets'].update({"_id"=>BSON::ObjectID('4c7a398ff32c1e104c000011')}, {"$set"=>{"updated_at"=>2010-08-29 11:03:04 UTC, "klout"=>{"_id"=>BSON::ObjectID('4c7a3e68f32c1e104c000039'), "classification"=>79}}})
+Rendered gaga/search.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 2283ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=cardoso" for 127.0.0.1 at 2010-08-29 08:04:32 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"cardoso"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"cardoso"}, {}).limit(-1)
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1603ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=michaelsheen" for 127.0.0.1 at 2010-08-29 08:05:08 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"michaelsheen"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"michaelsheen"}, {}).limit(-1)
+Completed   in 3127ms
+
+NoMethodError (undefined method `screen_name=' for nil:NilClass):
+  app/controllers/gaga_controller.rb:41:in `save_tweet'
+  app/controllers/gaga_controller.rb:14:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=michaelsheen" for 127.0.0.1 at 2010-08-29 08:05:42 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"michaelsheen"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"michaelsheen"}, {}).limit(-1)
+  MONGODB gaga_pig_development['tweets'].insert([{"_id"=>BSON::ObjectID('4c7a3f07f32c1e104c00003b'), "screen_name"=>"michaelsheen", "klout"=>{"_id"=>BSON::ObjectID('4c7a3f07f32c1e104c00003c'), "classification"=>48}, "created_at"=>2010-08-29 11:05:43 UTC, "updated_at"=>2010-08-29 11:05:43 UTC}])
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1121ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 08:09:06 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"pesnk"}, {}).limit(-1)
+Completed   in 1603ms
+
+NoMethodError (undefined method `followers=' for nil:NilClass):
+  app/controllers/gaga_controller.rb:43:in `save_tweet'
+  app/controllers/gaga_controller.rb:14:in `search'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=pesnk" for 127.0.0.1 at 2010-08-29 08:09:37 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"pesnk"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"pesnk"}, {}).limit(-1)
+  MONGODB gaga_pig_development['tweets'].update({"_id"=>BSON::ObjectID('4c7a35d9f32c1e104c000001')}, {"$set"=>{"updated_at"=>2010-08-29 11:09:39 UTC, "klout"=>{"_id"=>BSON::ObjectID('4c7a3ff3f32c1e104c00003e'), "classification"=>13}, "twittercounter"=>{"_id"=>BSON::ObjectID('4c7a3ff3f32c1e104c00003f'), "followers"=>"186", "followers_yesterday"=>"+13", "followers_average"=>"+27", "following"=>"220", "following_yesterday"=>"+26", "following_average"=>"+31", "tweets"=>"1,681", "tweets_yesterday"=>"+308", "tweets_average"=>"+240"}}})
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1329ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-08-29 12:14:42 -0300
+  Processing by GagaController#salvar_tweet as HTML
+  Parameters: {"id_or_slug"=>"renatofq"}
+Rendered gaga/salvar_tweet.html.erb within layouts/application (51.6ms)
+Completed 200 OK in 96ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eaasdas" for 127.0.0.1 at 2010-08-29 12:14:52 -0300
+  Processing by GagaController#salvar_tweet as HTML
+  Parameters: {"id_or_slug"=>"eaasdas"}
+Rendered gaga/salvar_tweet.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-29 12:15:05 -0300
+  Processing by GagaController#index as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_index_html_erb__2285066902895167422_2173762280__3735149112966370340 at /desenv/spider-pig/gaga-pig/app/views/gaga/index.html.erb:3)
+Rendered gaga/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 59ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=renatofq" for 127.0.0.1 at 2010-08-29 12:15:12 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"renatofq"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+  MONGODB gaga_pig_development['tweets'].update({"_id"=>BSON::ObjectID('4c7a37d2f32c1e104c000003')}, {"$set"=>{"updated_at"=>2010-08-29 15:15:14 UTC, "klout"=>{"_id"=>BSON::ObjectID('4c7a7982f32c1e104c000040'), "classification"=>10}, "twittercounter"=>{"_id"=>BSON::ObjectID('4c7a7982f32c1e104c000041'), "followers"=>"53", "followers_yesterday"=>"+53", "followers_average"=>"+8", "following"=>"38", "following_yesterday"=>"+38", "following_average"=>"+5", "tweets"=>"184", "tweets_yesterday"=>"+184", "tweets_average"=>"+26"}}})
+Rendered gaga/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1873ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gaga/search?_snowman=%E2%98%83&search_name=renatofq" for 127.0.0.1 at 2010-08-29 12:31:47 -0300
+  Processing by GagaController#search as HTML
+  Parameters: {"_snowman"=>"☃", "search_name"=>"renatofq"}
+  MONGODB gaga_pig_development['tweets'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+  MONGODB gaga_pig_development['tweets'].update({"_id"=>BSON::ObjectID('4c7a37d2f32c1e104c000003')}, {"$set"=>{"updated_at"=>2010-08-29 15:31:49 UTC, "klout"=>{"_id"=>BSON::ObjectID('4c7a7d65f32c1e104c000042'), "classification"=>10}, "twittercounter"=>{"_id"=>BSON::ObjectID('4c7a7d65f32c1e104c000043'), "followers"=>"53", "followers_yesterday"=>"+53", "followers_average"=>"+8", "following"=>"38", "following_yesterday"=>"+38", "following_average"=>"+5", "tweets"=>"184", "tweets_yesterday"=>"+184", "tweets_average"=>"+26"}}})
+Rendered gaga/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1713ms (Views: 6.4ms | ActiveRecord: 0.0ms)
