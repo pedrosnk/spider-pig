@@ -1,20 +1,18 @@
-#require 'twitter_adapter'
-require './tweeter'
+# Author: Renato Fernandes de Queiroz
 
-twitter_seed = ['renatofq', 'volmerius']
+$: << File.expand_path(File.dirname('main.rb') + '/../lib')
 
+require 'yaml'
+require 'oinker'
 
-#twitter_seed.each do |seed|
-#  twits = Twitter.new(seed, seed)
-#  twits.bind
-#end
+config = YAML.load_file('oinker.yml')
+seeds = YAML.load_file('seeds.yml')
 
+oinker = Oinker.new(config['oinker']['database'])
 
-home = Tweeter.new
+seeds.each { |seed|  oinker.syncronize({:screen_name => seed}, 1) }
 
-
-home.load!(:screen_name => 'renatofq')
-
-puts home.screen_name
+puts 'terminou'
+  
 
 
