@@ -1,0 +1,8 @@
+## Oinker Configuration file
+---
+
+oinker:
+  deep_level: 3
+  database: spider-pig
+  
+
