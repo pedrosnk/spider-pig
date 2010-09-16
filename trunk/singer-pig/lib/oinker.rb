@@ -41,7 +41,7 @@ class Oinker
         mongoId = syncronize({:id => id}, deep - 1)
         @relation_coll.insert({:friend => user['_id'], :follower => mongoId}) if mongoId
       rescue 
-        puts "Falha na colta de informacoes de " + id
+        puts "Falha na colta de informacoes de " + id.to_s
       end
     end
     user['_id']
