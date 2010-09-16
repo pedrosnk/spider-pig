@@ -1,9 +1,11 @@
 class Klout
   include Mongoid::Document
 
-  field :classification, :type => Integer
+  field :info
+  field :influencedby
+  field :influencerof
 
-  embedded_in :tweet, :inverse_of => :klout
+  embedded_in :tweeters, :inverse_of => :klout
 
 
 end

@@ -8,7 +8,7 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  database: gaga_pig_development
+  database: spider-pig
 
 test:
   <<: *defaults

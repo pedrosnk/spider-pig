@@ -13,6 +13,6 @@ class Twittercounter
   field :tweets_yesterday
   field :tweets_average
 
-  embedded_in :tweet, :inverse_of => :twittercounter
+  embedded_in :tweeters, :inverse_of => :twittercounter
 
 end
