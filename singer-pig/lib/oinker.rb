@@ -17,10 +17,10 @@ class Oinker
 
     twitter = Twitter.new(hash)
     user = twitter.user
-    user_mongo = @user_coll.find_one(:screen_name => user.screen_name)
+    user_mongo = @user_coll.find_one(:screen_name => user['screen_name'])
     if (user_mongo)
       update_user(user_mongo['_id'], user)
-      return user._id
+      return user['_id']
     else
       save_user(user)
     end
@@ -30,29 +30,33 @@ class Oinker
     timeline = twitter.timeline
 
     timeline.each do |status|
-      status.user = user._id
+      status.user = user['_id']
       @status_coll.insert(status.marshal_dump())
     end
 
 
     friends = twitter.friends
     friends.each do |id|
-      mongoId = syncronize({:id => id}, deep-1)
-      @relation_coll.insert({:friend => user._id, :follower => mongoId}) if mongoId
+      begin
+        mongoId = syncronize({:id => id}, deep - 1)
+        @relation_coll.insert({:friend => user['_id'], :follower => mongoId}) if mongoId
+      rescue 
+        puts "Falha na colta de informacoes de " + id
+      end
     end
-    user._id
+    user['_id']
   end
 
 
   private
 
     def update_user(id, user)
-      @user_coll.update({:_id => id}, user.marshal_dump())
-      user._id = id
+      @user_coll.update({:_id => id}, user)
+      user['_id'] = id
       user
     end
 
     def save_user(user)
-      user._id =  @user_coll.insert(user.marshal_dump())
+      user['_id'] =  @user_coll.insert(user)
     end
 end

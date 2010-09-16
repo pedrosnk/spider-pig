@@ -10,7 +10,7 @@ seeds = YAML.load_file('seeds.yml')
 
 oinker = Oinker.new(config['oinker']['database'])
 
-seeds.each { |seed|  oinker.syncronize({:screen_name => seed}, config['oinker']['deep']) }
+seeds.each { |seed|  oinker.syncronize({:screen_name => seed}, config['oinker']['deep_level']) }
 
 puts 'terminou'
   

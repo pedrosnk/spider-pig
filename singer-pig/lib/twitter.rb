@@ -18,6 +18,7 @@ class Twitter
 
     ret_hash = user_data.marshal_dump()
     ret_hash['tweeter_id'] = user_data.id
+    ret_hash
   end
 
   def timeline
