@@ -10,6 +10,4 @@ class Tweet
   embeds_one :klout
   embeds_one :twittercounter
 
-  
-
 end

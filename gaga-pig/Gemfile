@@ -5,6 +5,7 @@ gem 'rails', '3.0.0.rc'
 gem 'mongoid',      :git => 'git://github.com/mongoid/mongoid.git'
 gem 'bson_ext', '>=1.0'
 gem 'mechanize'
+gem 'grackle'
 
 
 # Bundle edge Rails instead:
