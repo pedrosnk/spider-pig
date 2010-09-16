@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="506a21c5-6753-473e-9cd4-3ab0682ab4ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/gaga_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/gaga_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/tweet.rb" afterPath="$PROJECT_DIR$/app/models/tweet.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweeters" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweet/_tweet.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/tweet_following.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/tweeters.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/tweet_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweeters/_tweeters.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweeters/_tweet_status.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/tweet_status.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/relationships.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/tweeters_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/gaga/new_gaga.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/gaga_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/gaga_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/pedrosnk.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/pedrosnk.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/klout.rb" afterPath="$PROJECT_DIR$/app/models/klout.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/twittercounter.rb" afterPath="$PROJECT_DIR$/app/models/twittercounter.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mongoid.yml" afterPath="$PROJECT_DIR$/config/mongoid.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gaga-pig.iml" afterPath="$PROJECT_DIR$/.idea/gaga-pig.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweet/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweeters/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweet" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/statuses.rb" />
     </list>
     <ignored path="gaga-pig.iws" />
     <ignored path=".idea/workspace.xml" />

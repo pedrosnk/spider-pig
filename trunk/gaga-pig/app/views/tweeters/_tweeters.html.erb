@@ -1,0 +1,59 @@
+<h1><%= @tweeters.screen_name %></h1>
+
+  <p>time_zone: <%= @tweeters.time_zone  %></p>
+  <p>description: <%= @tweeters.description %></p>
+  <p>friends_count: <%= @tweeters.friends_count %></p>
+  <p>profile_sidebar_fill_color: <%= @tweeters.profile_sidebar_fill_color %></p>
+  <p>show_all_inline_media: <%= @tweeters.show_all_inline_media %></p>
+  <p>follow_request_sent: <%= @tweeters.follow_request_sent %></p>
+  <p>lang: <%= @tweeters.lang %></p>
+  <p>url: <%= @tweeters.url %></p>
+  <p>verified: <%= @tweeters.verified %></p>
+  <p>profile_use_background_image: <%= @tweeters.profile_use_background_image %></p>
+  <p>favourites_count: <%= @tweeters.favourites_count %></p>
+  <p>created_at: <%= @tweeters.created_at %></p>
+  <p>profile_sidebar_border_color: <%= @tweeters.profile_sidebar_border_color %></p>
+  <p>location: <%= @tweeters.location %></p>
+  <p>profile_background_image_url: <%= @tweeters.profile_background_image_url %></p>
+  <p>profile_image_url: <%= @tweeters.profile_image_url %></p>
+  <p>listed_count: <%= @tweeters.listed_count %></p>
+  <p>following: <%= @tweeters.following %></p>
+  <p>profile_background_color: <%= @tweeters.profile_background_color %></p>
+  <p>statuses_count: <%= @tweeters.statuses_count %></p>
+  <p>profile_background_tile: <%= @tweeters.profile_background_tile %></p>
+  <p>protected: <%= @tweeters.protected %></p>
+  <p>profile_text_color: <%= @tweeters.profile_text_color %></p>
+  <p>followers_count: <%= @tweeters.followers_count %></p>
+  <p>name: <%= @tweeters.name %></p>
+  <p>contributors_enabled: <%= @tweeters.contributors_enabled %></p>
+  <p>geo_enabled: <%= @tweeters.geo_enabled %></p>
+  <p>notifications: <%= @tweeters.notifications %></p>
+  <p>utc_offset: <%= @tweeters.utc_offset %></p>
+  <p>profile_link_color: <%= @tweeters.profile_link_color %></p>
+
+<h1>Klout:</h1>
+<p>  Klout Classification: <%= @tweeters.klout.info %></p>
+
+
+<p>
+  <h1>Twitter Counter</h1>
+</p>
+
+<p>
+  Followers: <%= @tweeters.twittercounter.followers %><br />
+  Yesterday: <%= @tweeters.twittercounter.followers_yesterday %> <br />
+  Average:   <%= @tweeters.twittercounter.followers_average %>
+
+</p>
+
+<p>
+  Following: <%= @tweeters.twittercounter.following %><br />
+  Yesterday: <%= @tweeters.twittercounter.following_yesterday %> <br />
+  Average:   <%= @tweeters.twittercounter.following_average %>
+</p>
+
+<p>
+  Tweets: <%= @tweeters.twittercounter.tweets %><br />
+  Yesterday: <%= @tweeters.twittercounter.tweets_yesterday %> <br />
+  Average:   <%= @tweeters.twittercounter.tweets_average %>
+</p>
