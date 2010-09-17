@@ -1,2 +1,6 @@
-<h1>Tweet Status for <%= @tweet_status.first.tweeted_by %></h1>
+<% @tweet_status.each do |status| %>
+
+    <h1>Tweet Status for <%= status.text %></h1>
+
+<% end %>
 
