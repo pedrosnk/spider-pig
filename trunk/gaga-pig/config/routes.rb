@@ -12,11 +12,10 @@ GagaPig::Application.routes.draw do
 
   root :to => 'gaga#new_gaga'
 
-  match "/:tweet_url" => 'tweeters#index', :as => "tweeters_index" do
+  match "/:tweet_url" => 'tweeters#index', :as => "tweeters_index"
 
-    get ":tweet_url/status", :as => "tweeters#status"
 
-  end
+  match '/:tweet_url/status' => "tweeters#status", :as => "tweeters_status"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

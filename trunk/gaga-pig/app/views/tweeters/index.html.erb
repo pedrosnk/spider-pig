@@ -1,5 +1,8 @@
 <% if not @tweeters.nil? %>
 
+    <%= link_to 'Status' , tweeters_status_path(@tweeters.screen_name) %>
+
     <%= render :partial => 'tweeters' %>
+
 
 <% end %>

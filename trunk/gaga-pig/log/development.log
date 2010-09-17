@@ -5297,3 +5297,1455 @@ DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>
   MONGODB spider-pig['tweeters'].find({}, {})
 Rendered gaga/new_gaga.html.erb within layouts/application (22.6ms)
 Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/CCBB_DF" for 127.0.0.1 at 2010-09-16 09:50:26 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"CCBB_DF"}
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.4ms)
+Rendered tweeters/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/CCBB_DF/status" for 127.0.0.1 at 2010-09-16 09:50:30 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"CCBB_DF"}
+Rendered tweeters/status.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/CCBB_DF/status" for 127.0.0.1 at 2010-09-16 09:51:08 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"CCBB_DF"}
+Rendered tweeters/status.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/CCBB_DF" for 127.0.0.1 at 2010-09-16 09:53:11 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"CCBB_DF"}
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.1ms)
+Rendered tweeters/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 09:53:17 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+Rendered tweeters/status.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/CCBB_DF" for 127.0.0.1 at 2010-09-16 09:53:19 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"CCBB_DF"}
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.1ms)
+Rendered tweeters/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 09:53:20 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2181736440__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 09:53:23 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 09:53:24 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+Rendered tweeters/status.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 09:53:27 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 09:53:29 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2181765600__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tiagoalx85" for 127.0.0.1 at 2010-09-16 09:53:31 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"tiagoalx85"}
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 09:53:35 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2181582140__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/verdazzo" for 127.0.0.1 at 2010-09-16 09:53:38 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"verdazzo"}
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.3ms)
+Rendered tweeters/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 09:54:17 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2182587860__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/goleiroverde" for 127.0.0.1 at 2010-09-16 09:54:24 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.3ms)
+Rendered tweeters/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/goleiroverde" for 127.0.0.1 at 2010-09-16 09:56:43 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+Completed   in 1ms
+
+NoMethodError (undefined method `Tweeters' for #<TweetersController:0x000001042a5b98>):
+  app/controllers/tweeters_controller.rb:3:in `index'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started GET "/goleiroverde" for 127.0.0.1 at 2010-09-16 09:57:12 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+Completed   in 1ms
+
+NoMethodError (undefined method `Tweeters' for #<TweetersController:0x000001041ac570>):
+  app/controllers/tweeters_controller.rb:3:in `index'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/goleiroverde" for 127.0.0.1 at 2010-09-16 09:58:30 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.1ms)
+Rendered tweeters/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/goleiroverde" for 127.0.0.1 at 2010-09-16 10:00:10 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.3ms)
+Rendered tweeters/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/goleiroverde/status" for 127.0.0.1 at 2010-09-16 10:00:12 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+Rendered tweeters/_tweet_status.erb (0.9ms)
+Rendered tweeters/status.html.erb within layouts/application (2.7ms)
+Completed   in 8ms
+
+ActionView::Template::Error (undefined method `tweeted_by' for #<Tweeters:0x00000104284998>):
+    1: <h1>Tweet Status for <%= @tweeters.tweeted_by %></h1>
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2182311560_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2182335060__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/goleiroverde/status" for 127.0.0.1 at 2010-09-16 10:03:38 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+Completed   in 3ms
+
+NoMethodError (undefined method `Statuses' for #<TweetersController:0x0000010419e2e0>):
+  app/controllers/tweeters_controller.rb:8:in `status'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/goleiroverde/status" for 127.0.0.1 at 2010-09-16 10:03:40 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+Completed   in 3ms
+
+NoMethodError (undefined method `Statuses' for #<TweetersController:0x000001042aae40>):
+  app/controllers/tweeters_controller.rb:8:in `status'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started GET "/goleiroverde/status" for 127.0.0.1 at 2010-09-16 10:03:51 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a601f32c1e1123000014"}, {}).limit(-1)
+Rendered tweeters/_tweet_status.erb (0.6ms)
+Rendered tweeters/status.html.erb within layouts/application (2.1ms)
+Completed   in 8ms
+
+ActionView::Template::Error (undefined method `tweeted_by' for nil:NilClass):
+    1: <h1>Tweet Status for <%= @tweet_status.tweeted_by %></h1>
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2181747240_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2181769960__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/goleiroverde/status" for 127.0.0.1 at 2010-09-16 10:04:19 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a601f32c1e1123000014"}, {}).limit(-1)
+Rendered tweeters/_tweet_status.erb (0.7ms)
+Rendered tweeters/status.html.erb within layouts/application (2.2ms)
+Completed   in 8ms
+
+ActionView::Template::Error (undefined method `text' for nil:NilClass):
+    1: <h1>Tweet Status for <%= @tweet_status.text %></h1>
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2182216160_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2182320240__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/goleiroverde/status" for 127.0.0.1 at 2010-09-16 10:04:20 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a601f32c1e1123000014"}, {}).limit(-1)
+Rendered tweeters/_tweet_status.erb (0.6ms)
+Rendered tweeters/status.html.erb within layouts/application (2.2ms)
+Completed   in 8ms
+
+ActionView::Template::Error (undefined method `text' for nil:NilClass):
+    1: <h1>Tweet Status for <%= @tweet_status.text %></h1>
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2181748040_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2181770200__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/goleiroverde/status" for 127.0.0.1 at 2010-09-16 10:04:21 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a601f32c1e1123000014"}, {}).limit(-1)
+Rendered tweeters/_tweet_status.erb (0.6ms)
+Rendered tweeters/status.html.erb within layouts/application (2.2ms)
+Completed   in 8ms
+
+ActionView::Template::Error (undefined method `text' for nil:NilClass):
+    1: <h1>Tweet Status for <%= @tweet_status.text %></h1>
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2182215660_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2182315160__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/goleiroverde/status" for 127.0.0.1 at 2010-09-16 10:04:34 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a601f32c1e1123000014"}, {}).limit(-1)
+Rendered tweeters/status.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/goleiroverde/status" for 127.0.0.1 at 2010-09-16 10:04:45 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a601f32c1e1123000014"}, {}).limit(-1)
+Rendered tweeters/status.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/goleiroverde/status" for 127.0.0.1 at 2010-09-16 10:04:56 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+  MONGODB spider-pig['statuses'].find({:user=>"#<Tweeters:0x00000104171038>"}, {}).limit(-1)
+Rendered tweeters/status.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/goleiroverde/status" for 127.0.0.1 at 2010-09-16 10:05:07 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+  MONGODB spider-pig['statuses'].find({}, {}).limit(-1)
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+  MONGODB spider-pig['statuses'].find({:user=>"4c8eea21e138231bc0000001"}, {}).limit(-1)
+
+
+Started GET "/goleiroverde" for 127.0.0.1 at 2010-09-16 10:08:44 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"goleiroverde"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"goleiroverde"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 20:50:58 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2181734480__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 20:51:14 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2182466400__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 20:51:26 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 20:51:33 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+  MONGODB spider-pig['statuses'].find({}, {}).limit(-1)
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 20:51:47 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 20:53:55 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.3ms)
+Rendered tweeters/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 20:54:21 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.3ms)
+Rendered tweeters/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 20:54:23 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.4ms)
+Rendered tweeters/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 20:54:46 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 20:54:47 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.6ms)
+Rendered tweeters/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 21:14:19 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2181746860__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (59.2ms)
+Completed 200 OK in 110ms (Views: 109.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:14:20 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.4ms)
+Rendered tweeters/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:14:22 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['statuses'].find({}, {}).limit(-1)
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:20:22 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+Rendered tweeters/_tweet_status.erb (0.7ms)
+Rendered tweeters/status.html.erb within layouts/application (2.4ms)
+Completed   in 64ms
+
+ActionView::Template::Error (undefined method `text' for []:Array):
+    1: <h1>Tweet Status for <%= @tweet_status.text %></h1>
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2181884440_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2181924060__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:21:16 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+Rendered tweeters/_tweet_status.erb (0.6ms)
+Rendered tweeters/status.html.erb within layouts/application (2.2ms)
+Completed   in 18ms
+
+ActionView::Template::Error (undefined method `text' for []:Array):
+    1: <h1>Tweet Status for <%= @tweet_status.text %></h1>
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2181456640_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2181483460__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (42.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (47.9ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:21:17 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.5ms)
+Rendered tweeters/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 92ms (Views: 90.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:21:18 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:21:20 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+Rendered tweeters/_tweet_status.erb (0.6ms)
+Rendered tweeters/status.html.erb within layouts/application (2.2ms)
+Completed   in 17ms
+
+ActionView::Template::Error (undefined method `text' for []:Array):
+    1: <h1>Tweet Status for <%= @tweet_status.text %></h1>
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2181715340_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2181742440__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:22:01 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+Rendered tweeters/_tweet_status.erb (1.3ms)
+Rendered tweeters/status.html.erb within layouts/application (4.1ms)
+Completed   in 23ms
+
+ActionView::Template::Error (undefined method `text' for []:Array):
+    1: <h1>Tweet Status for <%= @tweet_status.text %></h1>
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2181452400_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2181469220__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.8ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:22:02 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:22:03 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:22:04 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+Rendered tweeters/_tweet_status.erb (0.7ms)
+Rendered tweeters/status.html.erb within layouts/application (2.2ms)
+Completed   in 18ms
+
+ActionView::Template::Error (undefined method `text' for []:Array):
+    1: <h1>Tweet Status for <%= @tweet_status.text %></h1>
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2181495060_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2181517860__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:23:44 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 55ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:23:46 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 19ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:23:47 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 21:23:48 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2181737580__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/VIOMUNDO" for 127.0.0.1 at 2010-09-16 21:23:51 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"VIOMUNDO"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"VIOMUNDO"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.3ms)
+Rendered tweeters/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/VIOMUNDO/status" for 127.0.0.1 at 2010-09-16 21:23:53 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"VIOMUNDO"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"VIOMUNDO"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"VIOMUNDO"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"VIOMUNDO"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/VIOMUNDO" for 127.0.0.1 at 2010-09-16 21:23:55 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"VIOMUNDO"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"VIOMUNDO"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.3ms)
+Rendered tweeters/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 21:23:56 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2182068720__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:24:00 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:24:02 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 19ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:24:03 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:24:23 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 19ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:24:24 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 19ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:24:25 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 18ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:24:35 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:screen_name=>"renatofq"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 19ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:25:40 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c8eea21e138231bc0000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a49df32c1e1115000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a506f32c1e1117000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a547f32c1e111b000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a560f32c1e111d000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a579f32c1e111e000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a587f32c1e111f000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a5b4f32c1e1120000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a5e5f32c1e1123000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a688f32c1e1126000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91ab4ef32c1e114c000001')}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 62ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:25:42 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c8eea21e138231bc0000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a49df32c1e1115000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a506f32c1e1117000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a547f32c1e111b000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a560f32c1e111d000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a579f32c1e111e000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a587f32c1e111f000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a5b4f32c1e1120000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a5e5f32c1e1123000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a688f32c1e1126000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91ab4ef32c1e114c000001')}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 52ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:25:42 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 21:25:44 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2181732360__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (55.9ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:25:47 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.1ms)
+Rendered tweeters/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:25:48 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c8eea21e138231bc0000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a49df32c1e1115000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a506f32c1e1117000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a547f32c1e111b000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a560f32c1e111d000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a579f32c1e111e000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a587f32c1e111f000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a5b4f32c1e1120000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a5e5f32c1e1123000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91a688f32c1e1126000001')}, {})
+  MONGODB spider-pig['statuses'].find({:_id=>BSON::ObjectID('4c91ab4ef32c1e114c000001')}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 54ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:26:05 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c8eea21e138231bc0000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a49df32c1e1115000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a506f32c1e1117000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a547f32c1e111b000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a560f32c1e111d000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a579f32c1e111e000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a587f32c1e111f000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5b4f32c1e1120000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5e5f32c1e1123000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a688f32c1e1126000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91ab4ef32c1e114c000001"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 19ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:26:06 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c8eea21e138231bc0000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a49df32c1e1115000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a506f32c1e1117000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a547f32c1e111b000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a560f32c1e111d000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a579f32c1e111e000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a587f32c1e111f000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5b4f32c1e1120000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5e5f32c1e1123000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a688f32c1e1126000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91ab4ef32c1e114c000001"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 55ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:26:08 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.1ms)
+Rendered tweeters/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 21:26:09 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2181731960__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (62.9ms)
+Completed 200 OK in 67ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:26:11 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.3ms)
+Rendered tweeters/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:26:13 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c8eea21e138231bc0000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a49df32c1e1115000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a506f32c1e1117000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a547f32c1e111b000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a560f32c1e111d000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a579f32c1e111e000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a587f32c1e111f000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5b4f32c1e1120000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5e5f32c1e1123000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a688f32c1e1126000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91ab4ef32c1e114c000001"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 19ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:26:35 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c8eea21e138231bc0000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a49df32c1e1115000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a506f32c1e1117000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a547f32c1e111b000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a560f32c1e111d000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a579f32c1e111e000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a587f32c1e111f000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5b4f32c1e1120000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5e5f32c1e1123000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a688f32c1e1126000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91ab4ef32c1e114c000001"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 30ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:26:36 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c8eea21e138231bc0000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a49df32c1e1115000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a506f32c1e1117000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a547f32c1e111b000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a560f32c1e111d000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a579f32c1e111e000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a587f32c1e111f000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5b4f32c1e1120000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5e5f32c1e1123000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a688f32c1e1126000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91ab4ef32c1e114c000001"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 18ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:26:48 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c8eea21e138231bc0000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a49df32c1e1115000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a506f32c1e1117000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a547f32c1e111b000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a560f32c1e111d000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a579f32c1e111e000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a587f32c1e111f000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5b4f32c1e1120000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5e5f32c1e1123000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a688f32c1e1126000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91ab4ef32c1e114c000001"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 19ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:27:57 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c8eea21e138231bc0000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a49df32c1e1115000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a506f32c1e1117000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a547f32c1e111b000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a560f32c1e111d000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a579f32c1e111e000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a587f32c1e111f000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5b4f32c1e1120000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5e5f32c1e1123000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a688f32c1e1126000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91ab4ef32c1e114c000001"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 19ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:27:58 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c8eea21e138231bc0000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a49df32c1e1115000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a506f32c1e1117000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a547f32c1e111b000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a560f32c1e111d000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a579f32c1e111e000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a587f32c1e111f000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5b4f32c1e1120000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5e5f32c1e1123000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a688f32c1e1126000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91ab4ef32c1e114c000001"}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 18ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:28:27 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (70.3ms)
+Rendered tweeters/status.html.erb within layouts/application (73.7ms)
+Completed 200 OK in 77ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:29:56 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (41.9ms)
+Rendered tweeters/status.html.erb within layouts/application (85.4ms)
+Completed   in 89ms
+
+ActionView::Template::Error (undefined method `text' for #<Array:0x000001042aba20>):
+    1: <% @tweet_status.each do |status| %>
+    2: 
+    3:     <h1>Tweet Status for <%= status.text %></h1>
+    4: 
+    5: <% end %>
+  app/views/tweeters/_tweet_status.erb:3:in `block in _app_views_tweeters__tweet_status_erb___243049139906053393_2182448820_819796528592706627'
+  app/views/tweeters/_tweet_status.erb:1:in `each'
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2182448820_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2182472920__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:30:23 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (47.7ms)
+Rendered tweeters/status.html.erb within layouts/application (50.3ms)
+Completed   in 55ms
+
+ActionView::Template::Error (undefined method `text' for #<Array:0x000001042f7d08>):
+    1: <% @tweet_status.each do |status| %>
+    2: 
+    3:     <h1>Tweet Status for <%= status.text %></h1>
+    4: 
+    5: <% end %>
+  app/views/tweeters/_tweet_status.erb:3:in `block in _app_views_tweeters__tweet_status_erb___243049139906053393_2182623520_819796528592706627'
+  app/views/tweeters/_tweet_status.erb:1:in `each'
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2182623520_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2182639260__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:30:25 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (41.0ms)
+Rendered tweeters/status.html.erb within layouts/application (42.7ms)
+Completed   in 47ms
+
+ActionView::Template::Error (undefined method `text' for #<Array:0x000001043adb08>):
+    1: <% @tweet_status.each do |status| %>
+    2: 
+    3:     <h1>Tweet Status for <%= status.text %></h1>
+    4: 
+    5: <% end %>
+  app/views/tweeters/_tweet_status.erb:3:in `block in _app_views_tweeters__tweet_status_erb___243049139906053393_2182986540_819796528592706627'
+  app/views/tweeters/_tweet_status.erb:1:in `each'
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___243049139906053393_2182986540_819796528592706627'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3091566890049934395_2182904320__2687193713777973057'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c8eea21e138231bc0000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a49df32c1e1115000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a506f32c1e1117000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a547f32c1e111b000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a560f32c1e111d000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a579f32c1e111e000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a587f32c1e111f000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5b4f32c1e1120000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a5e5f32c1e1123000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a688f32c1e1126000001"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91ab4ef32c1e114c000001"}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({:user=>"4c91a49df32c1e1115000001"}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:38:00 -0300
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/tweeters_controller.rb:18: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:38:01 -0300
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/tweeters_controller.rb:18: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:38:21 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (2.6ms)
+Rendered tweeters/status.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 500ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:43:57 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 21:43:59 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2182944680__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/CCBB_DF" for 127.0.0.1 at 2010-09-16 21:44:03 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"CCBB_DF"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"CCBB_DF"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/CCBB_DF/status" for 127.0.0.1 at 2010-09-16 21:44:05 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"CCBB_DF"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"CCBB_DF"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 363ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/CCBB_DF" for 127.0.0.1 at 2010-09-16 21:44:06 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"CCBB_DF"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"CCBB_DF"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.1ms)
+Rendered tweeters/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 21:44:07 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2181735280__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (58.8ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vegetarianismo" for 127.0.0.1 at 2010-09-16 21:44:09 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"vegetarianismo"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"vegetarianismo"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vegetarianismo/status" for 127.0.0.1 at 2010-09-16 21:44:11 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"vegetarianismo"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"vegetarianismo"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 87ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vegetarianismo" for 127.0.0.1 at 2010-09-16 21:44:13 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"vegetarianismo"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"vegetarianismo"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 21:44:14 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__2612911713778583522_2182372940__2687193713777973057 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:44:16 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.3ms)
+Rendered tweeters/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-09-16 21:44:23 -0300
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (2.5ms)
+Rendered tweeters/status.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 355ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-09-16 21:44:31 -0300
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.2ms)
+Rendered tweeters/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
