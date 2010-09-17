@@ -6749,3 +6749,69 @@ Rendered tweeters/index.html.erb within layouts/application (7.9ms)
 Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms)
   MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
   MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 23:52:28 -0300
+
+LoadError (no such file to load -- sqlite3):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.1ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 23:54:25 -0300
+
+LoadError (no such file to load -- sqlite3):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 23:54:42 -0300
+
+Errno::ENOENT (No such file or directory - /desenv/spider-pig/gaga-pig/config/database.yml):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 23:57:42 -0300
+
+RuntimeError (Please install the  adapter: `gem install activerecord--adapter` (no such file to load -- active_record/connection_adapters/_adapter)):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-16 23:59:50 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb___1063099602754935653_2159879100__594511180714144487 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (409.6ms)
+Completed 200 OK in 415ms (Views: 414.2ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-09-17 00:00:20 -0300
+  Processing by GagaController#new_gaga as HTML
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_gaga_new_gaga_html_erb__511510378993537375_2155067060__1043049388440244999 at /desenv/spider-pig/gaga-pig/app/views/gaga/new_gaga.html.erb:3)
+  MONGODB spider-pig['tweeters'].find({}, {})
+Rendered gaga/new_gaga.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 26ms (Views: 25.3ms)
