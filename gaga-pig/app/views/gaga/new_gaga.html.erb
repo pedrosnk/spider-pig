@@ -1,9 +1,5 @@
 <h1>Tweets cadastrados</h1>
 
-<% form_tag gaga_search_path, :method => :get  do%>
-    <p><%= text_field_tag :search_name %></p>
-    <p><%= submit_tag 'Submit', :name => nil %></p>
-<% end %>
 
 <% @tweeters.each do |t| %>
     <%= link_to t.screen_name, tweeters_index_path(t.screen_name) %> <br />
