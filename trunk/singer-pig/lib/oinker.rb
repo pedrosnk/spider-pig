@@ -2,8 +2,12 @@
 
 require 'twitter.rb'
 require 'mongo'
+require 'logger'
 
 class Oinker
+
+  $logger = Logger.new('oinker.log', 'weekly')
+
 
   def initialize(db_name)
     @db = Mongo::Connection.new.db(db_name)
@@ -16,8 +20,8 @@ class Oinker
     return nil if deep == 0
 
     twitter = Twitter.new(hash)
-    user = twitter.user
-    user_mongo = @user_coll.find_one(:screen_name => user['screen_name'])
+    user = twitter.user  
+    user_mongo = @user_coll.find_one({'screen_name' => user[:screen_name]})
     if (user_mongo)
       update_user(user_mongo['_id'], user)
       return user['_id']

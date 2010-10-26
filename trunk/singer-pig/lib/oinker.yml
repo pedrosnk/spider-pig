@@ -2,7 +2,7 @@
 ---
 
 oinker:
-  deep_level: 3
+  deep_level: 1
   database: spider-pig
   
 
