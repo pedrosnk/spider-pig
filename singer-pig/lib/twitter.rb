@@ -11,22 +11,33 @@ class Twitter
   end
 
   def user
-    user_data = @@client.users.show.json?(@hash)
-    user_data.delete_field('status')
-    user_data.klout = information_about_user_klout(user_data.screen_name)
-    user_data.twittercounter = information_about_user_twittercounter(user_data.screen_name)
+    ret_hash = {}
+    secure_request {
+      user_data = @@client.users.show.json?(@hash)
+      user_data.delete_field('status')
+      user_data.klout = information_about_user_klout(user_data.screen_name)
+      user_data.twittercounter = information_about_user_twittercounter(user_data.screen_name)
 
-    ret_hash = user_data.marshal_dump()
-    ret_hash['tweeter_id'] = user_data.id
+      ret_hash = user_data.marshal_dump()
+      ret_hash[:tweeter_id] = user_data.id
+    }
     ret_hash
   end
 
   def timeline
-    @@client.statuses.user_timeline.json?(@hash)
+    timeline_data = nil
+    secure_request {
+      timeline_data = @@client.statuses.user_timeline.json?(@hash)
+    }
+    timeline_data
   end
 
   def friends
-    @@client.friends.ids.json?(@hash)
+    friends_data = nil
+    secure_request() {
+      friends_data = @@client.friends.ids.json?(@hash)
+    }
+    friends_data
   end
 
 
@@ -92,6 +103,32 @@ class Twitter
       end
 
       klout
+    end
+
+
+    private
+
+    def secure_request &block
+      try_request = true
+      while(try_request)
+        begin
+          try_request = false
+          yield block
+        rescue Grackle::TwitterError => error
+          $logger.warn("Falha na requisicao")
+          $logger.warn("Erro: #{error.status} Mensagem: #{error.respose_body}")
+          case error.status
+          when 400, 403, 420, 502, 503
+            $logger.info("Dormindo por 1h")
+            sleep(3600)
+            try_request = true
+          when 401, 404, 406
+            $logger.info("Prosseguindo")
+          else
+            $logger.fatal("Erro desconhecido")
+          end
+        end
+      end
     end
 
 
