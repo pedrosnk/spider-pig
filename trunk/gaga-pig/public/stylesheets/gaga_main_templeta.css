@@ -1,0 +1,112 @@
+
+body{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-color: #eeeefe;
+}
+
+#gaga_all{
+	width: 760px;
+	margin: auto;
+	text-align: left;
+	background-color: #FFFFFF;
+
+}
+
+#gaga_top{
+	background-color: #35384D;
+	color: #FFFFFF;
+	width: 760px;
+	height: 160px;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+#gaga_pig_title{
+	font-size: 42px;
+}
+
+#gaga_menu_top_registered_users{
+	position: absolute ;
+	bottom: 0px;
+	left: 3px;
+}
+
+#gaga_menu_top_registered_version_number{
+	position: absolute ;
+	bottom: 0px;
+	right: 3px;
+}
+
+#gaga_tweeters_tudo{
+	text-align: left;
+	width: 460px;
+	border: 1px solid #000000;
+	margin: 10px;
+	height: 350px;
+	margin-bottom: 50px;
+}
+
+.gaga_tweeters_box{
+	float: left;
+	margin: 10px;
+	width: 200px;
+	height: 70px;
+	border: 2px solid;
+	padding: 1px;
+}
+
+
+.gaga_image_tweeters_box img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+}
+
+#gaga_publish{
+	float: right;
+	width: 200px;
+	height: 300px;
+	margin-right: 10px;
+	border: 1px solid;
+	
+}
+
+#gaga_regiter_twitter_index{
+	text-align: center;
+	background-color: #eeeeee;
+	border: 1px solid;
+	margin:20px;
+}
+
+#gaga_search{
+	margin: 10px;
+}
+
+
+/*
+*  Influence and stuff
+*/
+
+#status_influence_tudo{
+	text-align: left;
+	width: 460px;
+	border: 1px solid #000000;
+	margin: 10px;
+	height: 400px;
+	margin-bottom: 50px;
+}
+
+#influence_new_message{
+	margin-left: 10px;
+	padding-bottom: 30px;
+}
+
+#influence_new_message span{
+	background-color: #eeeeee;
+	padding: 5px;
+}

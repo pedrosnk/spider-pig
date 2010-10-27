@@ -1,0 +1,7 @@
+<div id="status_influence_tudo">
+	<%= params[:text] unless not params[:text]%>
+	<%= form_tag status_influence_new_msg_path, :method => :get do %>
+		<%= text_area_tag :text %>
+		<%= submit_tag :submit %>
+	<% end %>
+</div>
