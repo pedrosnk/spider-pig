@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="506a21c5-6753-473e-9cd4-3ab0682ab4ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/gaga/new_gaga.html.erb" afterPath="$PROJECT_DIR$/app/views/gaga/new_gaga.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <ignored path="gaga-pig.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="gaga-pig.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <file leaf-file-name="_tweeters.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tweeters/_tweeters.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="77" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-9.714286">
+            <state line="17" column="77" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,7 +83,7 @@
       <file leaf-file-name="_tweet_status.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tweeters/_tweet_status.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="4" selection-start="42" selection-end="42" vertical-scroll-proportion="-1.1428572">
+            <state line="2" column="4" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,7 +101,7 @@
       <file leaf-file-name="new_gaga.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/gaga/new_gaga.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.040268455">
+            <state line="2" column="4" selection-start="29" selection-end="29" vertical-scroll-proportion="0.040268455">
               <folding />
             </state>
           </provider>
@@ -172,6 +171,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -245,28 +245,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tweeters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaga-pig" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gaga-pig" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tweet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -362,9 +340,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="Favorites" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -633,91 +610,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tweeters_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="19" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="23" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="1" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/boot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="63" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="63" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/mongoid.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="34" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="34" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tweeters/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="36" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tweeters/_tweeters.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="77" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-9.714286">
+        <state line="17" column="77" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tweeters/_tweet_status.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="42" selection-end="42" vertical-scroll-proportion="-1.1428572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tweeters/status.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="15" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tweeters/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+        <state line="2" column="4" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tweet/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tweeters/status.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="15" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/gaga/new_gaga.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.040268455">
+        <state line="2" column="4" selection-start="29" selection-end="29" vertical-scroll-proportion="0.040268455">
           <folding />
         </state>
       </provider>

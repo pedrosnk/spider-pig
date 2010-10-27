@@ -1,19 +1,18 @@
 GagaPig::Application.routes.draw do
 
+  get "status_influence/new_msg"
 
-
-
+  get "status_influence/index"
 
   get "tweeters/index"
 
   get "gaga/new_gaga"
 
-  get 'gaga/search'
+  get 'search', :to => 'gaga#search'
 
-  root :to => 'gaga#new_gaga'
+  root :to => 'gaga#index'
 
   match "/:tweet_url" => 'tweeters#index', :as => "tweeters_index"
-
 
   match '/:tweet_url/status' => "tweeters#status", :as => "tweeters_status"
 
