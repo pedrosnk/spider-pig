@@ -1,0 +1,6 @@
+<div id="gaga_tweeters_tudo">
+	<% for i in  0..(@tweeters.size - 1) %>
+		<span id="gaga_tweeters_box"><%= @tweeters[i].name %> 
+		<% if i % 2 == 1 %> <br /> <% end %>
+	<% end %>
+</div>
