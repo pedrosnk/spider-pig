@@ -1,6 +1,12 @@
-<h1>Type the use you wanna to search info about</h1>
-
-<% form_tag gaga_search_path, :method => :get  do%>
-    <p><%= text_field_tag :search_name %></p>
-    <p><%= submit_tag 'Submit', :name => nil %></p>
-<% end %>
+<div id="gaga_tweeters_tudo">
+	<h3>Os 6 tweeters do momento</h3>
+	<% @tweeters.each do |t| %>
+		<div class="gaga_tweeters_box">
+			<span class="gaga_image_tweeters_box"><%= image_tag t.profile_image_url %></span>
+			<span class="gaga_hot_topic_tweet"><%= link_to '@' + t.screen_name, tweeters_index_path(t.screen_name) %> <br />
+				Followers: <%= t.followers_count %> <br />
+				Following: <%= t.friends_count %>
+			</span>
+		</div>
+	<% end %>
+</div>

@@ -1,41 +1,8 @@
-<p>procura por <%= @search_name %></p>
+<h3>Search Result (total: <%= @search_result.size %>)</h3>
 
-<h1>Klout:</h1>
-<p>  Klout Classification: <%= @klout_info %></p>
+<% @search_result.each do |s| %>
 
-<p>
-  Influenced By   [<%=@klout_influencedby.count %>]    <br />
-  <% @klout_influencedby.each do |i| %>
-    <%= i %><br />
-  <% end %>
-</p>
+	<p> <%= link_to '@' + s.screen_name, tweeters_index_path(s.screen_name) %> </p>
 
-<p>
-  Influencer Of [<%=@klout_influencerof.count %>]       <br />
-  <% @klout_influencerof.each do |i| %>
-    <%= i %><br />
-  <% end %>
-</p>
+<% end %>
 
-<p>
-  <h1>Twitter Counter</h1>
-</p>
-
-<p>
-  Followers: <%= @counter_followers %><br />
-  Yesterday: <%= @counter_followers_yesterday %> <br />
-  Average:   <%= @counter_followers_average %>
-
-</p>
-
-<p>
-  Following: <%= @counter_following %><br />
-  Yesterday: <%= @counter_following_yesterday %> <br />
-  Average:   <%= @counter_following_average %>
-</p>
-
-<p>
-  Tweets: <%= @counter_tweets %><br />
-  Yesterday: <%= @counter_tweets_yesterday %> <br />
-  Average:   <%= @counter_tweets_average %>
-</p>

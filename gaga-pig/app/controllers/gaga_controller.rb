@@ -6,13 +6,14 @@ class GagaController < ApplicationController
 #  require 'mechanize'
 
   def search
-    @search_name = params[:search_name]
-    information_about_user_klout(@search_name)
-    information_about_user_twittercounter(@search_name)
 
-    save_tweet
-
-    @search_name = "@" << @search_name
+    search = params[:s]
+    @search_result = nil
+    if search || search != ''
+      search_regex = "(?i)" + search
+      search_regex = Regexp.new(search_regex)
+      @search_result = Tweeters.where(:screen_name => search_regex)
+    end
 
   end
 
@@ -21,7 +22,7 @@ class GagaController < ApplicationController
   end
 
   def index
-    
+    @tweeters = Tweeters.find(:limit => 6)
   end
 
   def salvar_tweet

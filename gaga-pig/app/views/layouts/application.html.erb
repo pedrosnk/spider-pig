@@ -7,8 +7,35 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+<div id="gaga_all">
 
+<div id="gaga_top">
+<span id="gaga_pig_title">Gaga Pig</span> <br />
+<span>Web Crawler</span>
+
+<div id="gaga_menu_top_registered_users">
+	@renatofq && @pesnk
+</div>
+
+<div id="gaga_menu_top_registered_version_number">
+	Versão: <%= current_gaga_version %>
+</div>
+
+</div>
+
+<div id="gaga_search">
+<form method="get" action="/search">
+    <p>Pesquisa: <%= text_field_tag :s %> <%= submit_tag 'search', :name => nil %></p>
+</form>
+</div>
+<div id='gaga_publish'>
+	<div id='gaga_regiter_twitter_index'><a href="/status_influence/index">INFLUENCE</a></div>
+</div>
 <%= yield %>
 
+</div>
+
+
 </body>
+
 </html>
