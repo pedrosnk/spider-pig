@@ -18,7 +18,7 @@ body{
 	background-color: #35384D;
 	color: #FFFFFF;
 	width: 760px;
-	height: 160px;
+	height: 100px;
 	text-align: center;
 	margin: 0px;
 	padding: 0px;
@@ -83,6 +83,11 @@ body{
 	margin:20px;
 }
 
+#gaga_regiter_twitter_index a{
+	color: #000000;
+	text-decoration:none;
+}
+
 #gaga_search{
 	margin: 10px;
 }
@@ -108,5 +113,7 @@ body{
 
 #influence_new_message span{
 	background-color: #eeeeee;
-	padding: 5px;
+	padding: 3px;
+	border: 1px solid;
+	color: #000000;
 }
