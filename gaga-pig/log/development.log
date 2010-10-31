@@ -15353,3 +15353,482 @@ Started GET "/" for 127.0.0.1 at 2010-10-27 03:36:44 -0200
   MONGODB cursor.close 1751075288972802518
 Rendered gaga/index.html.erb within layouts/application (7.8ms)
 Completed 200 OK in 13ms (Views: 12.3ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-27 04:09:33 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 7765553297641850231
+Rendered gaga/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 43ms (Views: 42.8ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 04:29:28 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 04:59:30 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-27 05:21:48 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 4939968109735865335
+Rendered gaga/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 22ms (Views: 21.5ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 05:29:32 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-10-27 05:53:22 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (22.1ms)
+Rendered tweeters/index.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 214ms (Views: 131.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-27 05:53:25 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 6472310551441399016
+Rendered gaga/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 58ms (Views: 57.9ms)
+
+
+Started GET "/Sen_Cristovam" for 127.0.0.1 at 2010-10-27 05:53:27 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"Sen_Cristovam"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"Sen_Cristovam"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.1ms)
+Rendered tweeters/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 13ms (Views: 11.6ms)
+
+
+Started GET "/Sen_Cristovam/status" for 127.0.0.1 at 2010-10-27 05:53:28 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"Sen_Cristovam"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"Sen_Cristovam"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (0.6ms)
+Rendered tweeters/status.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 95ms (Views: 9.3ms)
+
+
+Started GET "/Sen_Cristovam" for 127.0.0.1 at 2010-10-27 05:53:31 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"Sen_Cristovam"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"Sen_Cristovam"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.1ms)
+Rendered tweeters/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 13ms (Views: 11.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-27 05:53:34 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 8897013357482966941
+Rendered gaga/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 11ms (Views: 11.1ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-10-27 05:53:35 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (40.7ms)
+Rendered tweeters/index.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 50ms (Views: 48.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-27 05:53:42 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 2796062616171946070
+Rendered gaga/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 11ms (Views: 10.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 05:53:53 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-10-27 05:53:56 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 05:53:59 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 05:54:14 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 05:54:19 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 6.0ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 05:59:17 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 48ms (Views: 47.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 05:59:35 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 05:59:50 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 05:59:52 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 5.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-10-27 05:59:54 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 05:59:56 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.6ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:00:04 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-10-27 06:00:07 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 7.2ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:00:09 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:00:10 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:00:16 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-10-27 06:00:18 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:00:19 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:00:28 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:00:38 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:00:45 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:00:49 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:00:50 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 6.1ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:00:58 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:01:32 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:01:41 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.2ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:02:43 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:02:53 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:02:56 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-10-27 06:03:37 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7ms (Views: 6.5ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 06:29:38 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 06:59:39 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 08:46:42 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 09:16:44 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 09:46:46 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 10:16:48 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 10:46:50 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 11:16:52 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 11:46:53 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 12:16:55 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 12:46:57 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 13:16:59 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 13:47:01 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 14:17:03 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 14:47:05 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 15:17:06 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 15:47:08 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 16:17:10 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 16:47:12 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 17:17:14 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 17:47:16 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 18:17:18 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-10-27 18:47:20 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
