@@ -15832,3 +15832,3502 @@ ActionController::RoutingError (No route matches "/activity.atom"):
   
 
 Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-01 17:31:05 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 5262592627419374836
+Rendered gaga/index.html.erb within layouts/application (435.6ms)
+Completed 200 OK in 478ms (Views: 477.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-01 17:31:06 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 5479816117447550544
+Rendered gaga/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 11ms (Views: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-01 17:31:06 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 3899688127306655633
+Rendered gaga/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 11ms (Views: 10.9ms)
+
+
+Started GET "/Sen_Cristovam" for 127.0.0.1 at 2010-11-01 17:31:10 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"Sen_Cristovam"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"Sen_Cristovam"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (6.7ms)
+Rendered tweeters/index.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 51ms (Views: 49.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-01 17:31:12 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 776639568969203932
+Rendered gaga/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 11ms (Views: 10.6ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 17:31:14 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 21ms (Views: 20.4ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:31:19 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 58ms (Views: 57.6ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=ads&commit=submit" for 127.0.0.1 at 2010-11-01 17:31:25 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"ads", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=adsdasd&commit=submit" for 127.0.0.1 at 2010-11-01 17:31:28 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"adsdasd", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=Halo%0D%0A&commit=submit" for 127.0.0.1 at 2010-11-01 17:31:33 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"Halo\r\n", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 17:32:48 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 6.0ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:32:55 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:33:54 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:33:55 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:34:28 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:34:29 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 7.0ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:34:45 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:8: invalid multibyte char (US-ASCII)
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:8: invalid multibyte char (US-ASCII)
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:8: syntax error, unexpected $end, expecting keyword_end
+...ensagem Monitorada abaixo está sendo monitorada"
+...                               ^):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:34:49 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:8: invalid multibyte char (US-ASCII)
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:8: invalid multibyte char (US-ASCII)
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:8: syntax error, unexpected $end, expecting keyword_end
+...ensagem Monitorada abaixo está sendo monitorada"
+...                               ^):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:34:56 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:35:02 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:8: invalid multibyte char (US-ASCII)
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:8: invalid multibyte char (US-ASCII)
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:8: syntax error, unexpected $end, expecting keyword_end
+...ensagem Monitorada abaixo esté sendo monitorada"
+...                               ^):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:35:11 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:8: invalid multibyte char (US-ASCII)
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:8: invalid multibyte char (US-ASCII)
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:8: syntax error, unexpected $end, expecting keyword_end
+...ensagem Monitorada abaixo esté sendo monitorada'
+...                               ^):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:35:17 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:38:52 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 17:38:54 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 17:39:02 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (111.2ms)
+Completed 200 OK in 150ms (Views: 149.9ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-01 17:39:03 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.0ms)
+Rendered tweeters/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 13ms (Views: 11.5ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 17:39:05 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (1.8ms)
+Rendered tweeters/status.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 87ms (Views: 45.7ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 17:39:10 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (1.7ms)
+Rendered tweeters/status.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 16ms (Views: 8.7ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 17:39:12 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (1.7ms)
+Rendered tweeters/status.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 51ms (Views: 8.9ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 17:39:13 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (1.7ms)
+Rendered tweeters/status.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 17ms (Views: 9.1ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 17:39:15 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (1.7ms)
+Rendered tweeters/status.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 16ms (Views: 9.1ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 17:39:16 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (1.7ms)
+Rendered tweeters/status.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 16ms (Views: 8.7ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 17:39:16 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (1.6ms)
+Rendered tweeters/status.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 16ms (Views: 8.6ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 17:39:17 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (1.9ms)
+Rendered tweeters/status.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 17ms (Views: 9.4ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 17:44:33 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 18:02:07 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (47.5ms)
+Rendered tweeters/status.html.erb within layouts/application (49.1ms)
+Completed   in 59ms
+
+ActionView::Template::Error (undefined method `screen_name' for #<Statuses:0x00000102fe6fe8>):
+    1: <% @tweet_status.each do |status| %>
+    2: 
+    3:     <h1>Tweet Status for <%= status.text %></h1>
+    4: 	<h2> <%= status.screen_name%> </h2>
+    5: <% end %>
+  app/views/tweeters/_tweet_status.erb:4:in `block in _app_views_tweeters__tweet_status_erb___935924819256015021_2172392940__1257219813917809384'
+  app/views/tweeters/_tweet_status.erb:1:in `each'
+  app/views/tweeters/_tweet_status.erb:1:in `_app_views_tweeters__tweet_status_erb___935924819256015021_2172392940__1257219813917809384'
+  app/views/tweeters/status.html.erb:4:in `_app_views_tweeters_status_html_erb___3769656211801165122_2172478480_937615188433928072'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 18:03:24 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (1.2ms)
+Rendered tweeters/status.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 15ms (Views: 8.4ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 18:03:37 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (0.8ms)
+Rendered tweeters/status.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 15ms (Views: 7.8ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 18:03:41 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (86.8ms)
+Completed 200 OK in 91ms (Views: 90.3ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-01 18:03:42 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.1ms)
+Rendered tweeters/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 13ms (Views: 11.6ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:03:43 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:6: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:16: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:04:06 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:6: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:16: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:04:07 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:6: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:16: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:04:12 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:6: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:15: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:04:12 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:6: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:15: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:04:22 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 18:09:08 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (85.6ms)
+Completed 200 OK in 89ms (Views: 88.9ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 18:09:53 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (85.7ms)
+Completed 200 OK in 89ms (Views: 89.0ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:09:56 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:10:02 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:10:19 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 18:10:21 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:10:22 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 6.1ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:10:50 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:10:51 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:10:53 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:11:33 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:11:34 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 18:13:42 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 6.0ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 18:13:45 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 18:14:01 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 18:14:11 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+ERROR: compiling _app_views_status_influence_new_msg_html_erb__1117181067963058077_2176873000_937615188433928072 RAISED /desenv/spider-pig/gaga-pig/app/views/status_influence/new_msg.html.erb:6: syntax error, unexpected ')', expecting tASSOC
+...t_area_tag :cols => 10, :text );@output_buffer.safe_concat('...
+...                               ^
+/desenv/spider-pig/gaga-pig/app/views/status_influence/new_msg.html.erb:8: syntax error, unexpected keyword_end, expecting ')'
+');	 end 
+   	    ^
+/desenv/spider-pig/gaga-pig/app/views/status_influence/new_msg.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+/desenv/spider-pig/gaga-pig/app/views/status_influence/new_msg.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_status_influence_new_msg_html_erb__1117181067963058077_2176873000_937615188433928072(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "status_influence/new_msg";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div id="status_influence_tudo">
+	');@output_buffer.append= ( params[:text] unless not params[:text]);@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	');@output_buffer.append= ( flash[:notice] );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	
+	');@output_buffer.append=  form_tag status_influence_new_msg_path, :method => :get do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('		');@output_buffer.append= ( text_area_tag :cols => 10, :text );@output_buffer.safe_concat(' <br />
+		');@output_buffer.append= ( submit_tag :submit );@output_buffer.safe_concat('
+');	 end 
+@output_buffer.safe_concat('	
+	<br />
+	
+	');@output_buffer.append= ( );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</div>');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_view/template.rb:255:in `module_eval'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_view/template.rb:255:in `compile'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_view/template.rb:134:in `block in render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/notifications.rb:54:in `instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_view/template.rb:127:in `render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/notifications.rb:52:in `instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_view/render/rendering.rb:26:in `render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/abstract_controller/rendering.rb:92:in `render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/pedrosnk/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/abstract_controller/base.rb:136:in `process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/callbacks.rb:429:in `_run__1138756386573430256__process_action__2977378568685997748__callbacks'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/callbacks.rb:404:in `_run_process_action_callbacks'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/notifications.rb:52:in `instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/abstract_controller/base.rb:105:in `process'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/abstract_controller/rendering.rb:40:in `process'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal.rb:133:in `dispatch'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_controller/metal.rb:173:in `block in action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-mount-0.6.10/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-mount-0.6.10/lib/rack/mount/code_generation.rb:89:in `block in recognize'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-mount-0.6.10/lib/rack/mount/code_generation.rb:66:in `optimized_each'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-mount-0.6.10/lib/rack/mount/code_generation.rb:88:in `recognize'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-mount-0.6.10/lib/rack/mount/route_set.rb:139:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/routing/route_set.rb:489:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/flash.rb:177:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/cookies.rb:268:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/callbacks.rb:410:in `_run_call_callbacks'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0.rc/lib/rails/rack/logger.rb:13:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.0.rc/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0.rc/lib/rails/application.rb:168:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0.rc/lib/rails/application.rb:77:in `method_missing'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.0.rc/lib/rails/rack/log_tailer.rb:15:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/Users/pedrosnk/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/pedrosnk/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/pedrosnk/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered status_influence/new_msg.html.erb within layouts/application (1.1ms)
+Completed   in 5ms
+
+ActionView::Template::Error (/desenv/spider-pig/gaga-pig/app/views/status_influence/new_msg.html.erb:6: syntax error, unexpected ')', expecting tASSOC
+...t_area_tag :cols => 10, :text );@output_buffer.safe_concat('...
+...                               ^
+/desenv/spider-pig/gaga-pig/app/views/status_influence/new_msg.html.erb:8: syntax error, unexpected keyword_end, expecting ')'
+');	 end 
+   	    ^
+/desenv/spider-pig/gaga-pig/app/views/status_influence/new_msg.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+/desenv/spider-pig/gaga-pig/app/views/status_influence/new_msg.html.erb:16: syntax error, unexpected keyword_end, expecting ')'):
+    3: 	<%= flash[:notice] %>
+    4: 	
+    5: 	<%= form_tag status_influence_new_msg_path, :method => :get do %>
+    6: 		<%= text_area_tag :cols => 10, :text %> <br />
+    7: 		<%= submit_tag :submit %>
+    8: 	<% end %>
+    9: 	
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 18:14:35 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 18:15:09 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 18:15:27 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 18:15:40 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 18:15:47 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=Hola%0D%0A&commit=submit" for 127.0.0.1 at 2010-11-01 18:15:53 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"Hola\r\n", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=I+want+to+be+a+milionare&commit=submit" for 127.0.0.1 at 2010-11-01 18:16:02 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"I want to be a milionare", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-01 18:38:02 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 1909756889183891355
+Rendered gaga/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 11ms (Views: 10.9ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 18:44:38 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 19:00:46 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (87.1ms)
+Completed 200 OK in 91ms (Views: 90.4ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 19:14:39 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 19:44:41 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 19:45:27 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (88.3ms)
+Completed 200 OK in 92ms (Views: 91.6ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 19:45:29 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (128.6ms)
+Completed 200 OK in 132ms (Views: 131.9ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 19:45:30 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (132.9ms)
+Completed 200 OK in 137ms (Views: 136.2ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:08:03 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (91.5ms)
+Completed 200 OK in 96ms (Views: 95.3ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:09:57 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (90.2ms)
+Completed 200 OK in 94ms (Views: 93.5ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:10:09 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (90.3ms)
+Completed 200 OK in 94ms (Views: 93.6ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:10:11 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (90.3ms)
+Completed 200 OK in 94ms (Views: 93.7ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:10:30 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (88.5ms)
+Completed 200 OK in 92ms (Views: 91.7ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:10:31 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (88.4ms)
+Completed 200 OK in 92ms (Views: 91.6ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:10:33 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 6.2ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:10:36 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (127.2ms)
+Completed 200 OK in 131ms (Views: 130.5ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:10:38 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.2ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:10:41 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:11:50 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=Halo&commit=submit" for 127.0.0.1 at 2010-11-01 20:11:55 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"Halo", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.0ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:12:07 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:12:10 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-01 20:12:54 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 9172682466605926768
+Rendered gaga/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 12ms (Views: 11.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 20:16:08 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-01 20:19:25 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 5834011174026739631
+Rendered gaga/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 11ms (Views: 10.6ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:19:30 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (91.6ms)
+Completed 200 OK in 96ms (Views: 95.1ms)
+
+
+Started GET "/Sen_Cristovam" for 127.0.0.1 at 2010-11-01 20:19:34 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"Sen_Cristovam"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"Sen_Cristovam"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (2.4ms)
+Rendered tweeters/index.html.erb within layouts/application (4.8ms)
+Completed   in 44ms
+
+ActionView::Template::Error (undefined method `info' for nil:NilClass):
+    32:   <p>profile_link_color: <%= @tweeters.profile_link_color %></p>
+    33: 
+    34: <h1>Klout:</h1>
+    35: <p>  Klout Classification: <%= @tweeters.klout.info %></p>
+    36: 
+    37: 
+    38: <p>
+  app/views/tweeters/_tweeters.html.erb:35:in `_app_views_tweeters__tweeters_html_erb__1519822976816817009_2177940780_322397676915818520'
+  app/views/tweeters/index.html.erb:5:in `_app_views_tweeters_index_html_erb__3187729070377936344_2176946400_937615188433928072'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.8ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:19:47 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (88.0ms)
+Completed 200 OK in 92ms (Views: 91.2ms)
+
+
+Started GET "/LayaneNeves" for 127.0.0.1 at 2010-11-01 20:19:49 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"LayaneNeves"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"LayaneNeves"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.1ms)
+Rendered tweeters/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 13ms (Views: 11.5ms)
+
+
+Started GET "/LayaneNeves/status" for 127.0.0.1 at 2010-11-01 20:19:56 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"LayaneNeves"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"LayaneNeves"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 26ms (Views: 7.9ms)
+
+
+Started GET "/LayaneNeves" for 127.0.0.1 at 2010-11-01 20:19:59 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"LayaneNeves"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"LayaneNeves"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.4ms)
+Rendered tweeters/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 13ms (Views: 11.9ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:20:05 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (89.2ms)
+Completed 200 OK in 93ms (Views: 92.5ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-01 20:20:10 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (2.4ms)
+Rendered tweeters/index.html.erb within layouts/application (4.5ms)
+Completed   in 10ms
+
+ActionView::Template::Error (undefined method `info' for nil:NilClass):
+    32:   <p>profile_link_color: <%= @tweeters.profile_link_color %></p>
+    33: 
+    34: <h1>Klout:</h1>
+    35: <p>  Klout Classification: <%= @tweeters.klout.info %></p>
+    36: 
+    37: 
+    38: <p>
+  app/views/tweeters/_tweeters.html.erb:35:in `_app_views_tweeters__tweeters_html_erb__1519822976816817009_2172151960_322397676915818520'
+  app/views/tweeters/index.html.erb:5:in `_app_views_tweeters_index_html_erb__3187729070377936344_2172186260_937615188433928072'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (44.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (49.8ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:20:12 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (89.5ms)
+Completed 200 OK in 93ms (Views: 92.8ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-01 20:20:17 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (2.3ms)
+Rendered tweeters/index.html.erb within layouts/application (4.3ms)
+Completed   in 9ms
+
+ActionView::Template::Error (undefined method `info' for nil:NilClass):
+    32:   <p>profile_link_color: <%= @tweeters.profile_link_color %></p>
+    33: 
+    34: <h1>Klout:</h1>
+    35: <p>  Klout Classification: <%= @tweeters.klout.info %></p>
+    36: 
+    37: 
+    38: <p>
+  app/views/tweeters/_tweeters.html.erb:35:in `_app_views_tweeters__tweeters_html_erb__1519822976816817009_2171903260_322397676915818520'
+  app/views/tweeters/index.html.erb:5:in `_app_views_tweeters_index_html_erb__3187729070377936344_2172142580_937615188433928072'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:20:19 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (90.4ms)
+Completed 200 OK in 94ms (Views: 93.8ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-01 20:20:25 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (2.4ms)
+Rendered tweeters/index.html.erb within layouts/application (4.5ms)
+Completed   in 9ms
+
+ActionView::Template::Error (undefined method `info' for nil:NilClass):
+    32:   <p>profile_link_color: <%= @tweeters.profile_link_color %></p>
+    33: 
+    34: <h1>Klout:</h1>
+    35: <p>  Klout Classification: <%= @tweeters.klout.info %></p>
+    36: 
+    37: 
+    38: <p>
+  app/views/tweeters/_tweeters.html.erb:35:in `_app_views_tweeters__tweeters_html_erb__1519822976816817009_2176892380_322397676915818520'
+  app/views/tweeters/index.html.erb:5:in `_app_views_tweeters_index_html_erb__3187729070377936344_2176919280_937615188433928072'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-01 20:22:01 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.4ms)
+Rendered tweeters/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 12ms (Views: 10.9ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 20:22:03 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (4.2ms)
+Rendered tweeters/status.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 66ms (Views: 11.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:12 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 20:22:15 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (4.2ms)
+Rendered tweeters/status.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 30ms (Views: 11.3ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:16 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:22:20 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=adasdasd&commit=submit" for 127.0.0.1 at 2010-11-01 20:22:22 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"adasdasd", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:25 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:27 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.6ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:28 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:28 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:28 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:29 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:29 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:29 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 6.0ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:30 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:30 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:30 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 6.0ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:22:31 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (88.7ms)
+Completed 200 OK in 92ms (Views: 92.0ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:33 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 6ms (Views: 6.1ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:22:34 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (89.7ms)
+Completed 200 OK in 93ms (Views: 93.0ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:22:44 -0200
+  Processing by StatusInfluenceController#index as HTML
+Rendered status_influence/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 6.1ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:22:47 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:26:56 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:26:57 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 7.0ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:26:59 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:27:05 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 7ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:28:09 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:28:13 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=&commit=submit" for 127.0.0.1 at 2010-11-01 20:28:15 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:28:19 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 8ms (Views: 7.3ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:33:04 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:11: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:20: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:33:16 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:11: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:20: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:33:34 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:11: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:20: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:33:56 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:11: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:33:57 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:11: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:34:03 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:18: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:34:05 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:18: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:34:06 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:18: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:34:23 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:19: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 20:34:35 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:13: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=&commit=submit" for 127.0.0.1 at 2010-11-01 20:34:44 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:19: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:34:49 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:19: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:35:03 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:35:10 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:35:20 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:35:21 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.0ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=dadsa&commit=submit" for 127.0.0.1 at 2010-11-01 20:35:24 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"dadsa", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=dadasdas&commit=submit" for 127.0.0.1 at 2010-11-01 20:35:26 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"dadasdas", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=dadsa&commit=submit" for 127.0.0.1 at 2010-11-01 20:35:28 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"dadsa", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:35:29 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:35:32 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 20:36:44 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 20:46:10 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/search?s=fqefqefdf" for 127.0.0.1 at 2010-11-01 20:51:18 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>"fqefqefdf"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)fqefqefdf/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)fqefqefdf/}, {})
+Rendered gaga/search.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 9ms (Views: 8.4ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 20:51:22 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (91.4ms)
+Completed 200 OK in 95ms (Views: 94.6ms)
+
+
+Started GET "/search?s=rena" for 127.0.0.1 at 2010-11-01 20:51:32 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>"rena"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)rena/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)rena/}, {})
+Rendered gaga/search.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 10ms (Views: 9.7ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-01 20:51:43 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.5ms)
+Rendered tweeters/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 13ms (Views: 11.2ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-01 20:51:46 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (4.2ms)
+Rendered tweeters/status.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 31ms (Views: 11.4ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-01 20:51:48 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.3ms)
+Rendered tweeters/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 12ms (Views: 10.8ms)
+
+
+Started GET "/search?s=rena" for 127.0.0.1 at 2010-11-01 20:51:49 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>"rena"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)rena/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)rena/}, {})
+Rendered gaga/search.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 11ms (Views: 10.3ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-01 21:06:19 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (90.9ms)
+Completed 200 OK in 95ms (Views: 94.2ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-01 21:06:20 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 8ms (Views: 7.2ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-01 21:06:22 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=as&commit=submit" for 127.0.0.1 at 2010-11-01 21:06:24 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"as", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 21:16:12 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 21:46:14 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-01 22:12:09 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 7781042882943464842
+Rendered gaga/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 37ms (Views: 36.8ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 22:18:07 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 22:48:09 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 23:18:11 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-01 23:46:15 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 7019003010466668215
+Rendered gaga/index.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 80ms (Views: 79.4ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-01 23:48:14 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 00:18:17 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 00:48:19 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 01:18:22 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 01:48:23 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 02:18:25 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 02:48:27 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 03:18:29 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 03:48:31 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 04:18:34 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 04:48:36 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 05:18:38 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 05:48:40 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 06:18:42 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 06:48:44 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 07:18:45 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 07:48:47 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 08:18:49 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 08:48:51 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 09:18:53 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 09:48:55 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 10:18:57 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 10:48:59 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 11:19:01 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 11:49:03 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 12:19:05 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 12:49:07 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 13:19:09 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-02 13:24:33 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 1455247390057466628
+Rendered gaga/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 12ms (Views: 11.4ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 13:49:11 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 14:55:28 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-02 15:03:51 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 7183590094740878060
+Rendered gaga/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 13ms (Views: 12.6ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-02 15:20:20 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 658779716867230691
+Rendered gaga/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 31ms (Views: 30.3ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 15:25:30 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/?oauth_token=iyBfusVkqgfWqguuimGN0IJ5yGl8cc64InQv4bPsTY&oauth_verifier=p1AaCBrtbDhEeAftC1KYBp6pQdPGyu8FLklyGNKS2I" for 127.0.0.1 at 2010-11-02 15:49:09 -0200
+  Processing by GagaController#index as HTML
+  Parameters: {"oauth_token"=>"iyBfusVkqgfWqguuimGN0IJ5yGl8cc64InQv4bPsTY", "oauth_verifier"=>"p1AaCBrtbDhEeAftC1KYBp6pQdPGyu8FLklyGNKS2I"}
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 4064225913971469309
+Rendered gaga/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 27ms (Views: 26.9ms)
+
+
+Started GET "/Sen_Cristovam" for 127.0.0.1 at 2010-11-02 15:51:28 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"Sen_Cristovam"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"Sen_Cristovam"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.5ms)
+Rendered tweeters/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 391ms (Views: 389.9ms)
+
+
+Started GET "/?oauth_token=iyBfusVkqgfWqguuimGN0IJ5yGl8cc64InQv4bPsTY&oauth_verifier=p1AaCBrtbDhEeAftC1KYBp6pQdPGyu8FLklyGNKS2I" for 127.0.0.1 at 2010-11-02 15:51:31 -0200
+  Processing by GagaController#index as HTML
+  Parameters: {"oauth_token"=>"iyBfusVkqgfWqguuimGN0IJ5yGl8cc64InQv4bPsTY", "oauth_verifier"=>"p1AaCBrtbDhEeAftC1KYBp6pQdPGyu8FLklyGNKS2I"}
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 8374998582246709339
+Rendered gaga/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 11ms (Views: 10.5ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 15:55:33 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/CCBB_DF" for 127.0.0.1 at 2010-11-02 16:04:09 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"CCBB_DF"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"CCBB_DF"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.5ms)
+Rendered tweeters/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 54ms (Views: 51.5ms)
+
+
+Started GET "/CCBB_DF/status" for 127.0.0.1 at 2010-11-02 16:04:11 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"CCBB_DF"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"CCBB_DF"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+Rendered tweeters/_tweet_status.erb (0.6ms)
+Rendered tweeters/status.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 133ms (Views: 76.7ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-02 16:04:14 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (136.2ms)
+Completed 200 OK in 180ms (Views: 179.1ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-02 16:04:15 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (93.8ms)
+Completed 200 OK in 98ms (Views: 97.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-02 16:04:31 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 720546491957182020
+Rendered gaga/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 11ms (Views: 11.0ms)
+
+
+Started GET "/Sen_Cristovam" for 127.0.0.1 at 2010-11-02 16:08:10 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"Sen_Cristovam"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"Sen_Cristovam"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.4ms)
+Rendered tweeters/index.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 47ms (Views: 45.6ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-02 17:25:48 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 38ms (Views: 37.1ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-02 17:25:50 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-02 17:25:54 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.0ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-02 17:28:38 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 8ms (Views: 7.5ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-02 17:28:44 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 7.0ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-02 17:28:46 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-02 17:28:48 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-02 17:28:50 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (60.4ms)
+Completed 200 OK in 64ms (Views: 63.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-02 17:28:51 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 7.0ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-02 17:28:52 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 7ms (Views: 7.0ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-02 17:28:53 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 43ms (Views: 42.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-02 17:36:13 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 9160747159540659133
+Rendered gaga/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 12ms (Views: 11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-02 17:43:06 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 8151506372708351700
+Rendered gaga/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 13ms (Views: 12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-02 17:48:53 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+  MONGODB cursor.close 7622769952673663835
+Rendered gaga/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 11ms (Views: 10.4ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 17:55:41 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 18:25:43 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-02 18:33:17 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 48ms (Views: 47.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-02 18:37:51 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 10ms (Views: 10.0ms)
+
+
+Started GET "/assisv" for 127.0.0.1 at 2010-11-02 18:37:57 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"assisv"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"assisv"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.8ms)
+Rendered tweeters/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 68ms (Views: 66.0ms)
+
+
+Started GET "/assisv/status" for 127.0.0.1 at 2010-11-02 18:38:08 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"assisv"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"assisv"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (0.5ms)
+Rendered tweeters/status.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 30ms (Views: 8.1ms)
+
+
+Started GET "/assisv" for 127.0.0.1 at 2010-11-02 18:38:12 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"assisv"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"assisv"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.5ms)
+Rendered tweeters/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 13ms (Views: 11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-02 18:38:12 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 10ms (Views: 9.7ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-02 18:38:14 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.3ms)
+Rendered tweeters/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 12ms (Views: 10.6ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-02 18:38:15 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (8.8ms)
+Rendered tweeters/status.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 72ms (Views: 16.1ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-02 18:38:33 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.4ms)
+Rendered tweeters/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 13ms (Views: 11.2ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-02 18:39:39 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (8.9ms)
+Rendered tweeters/status.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 38ms (Views: 16.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 18:55:46 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-02 19:25:48 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-02 19:31:38 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (9.1ms)
+Rendered tweeters/status.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 81ms (Views: 59.2ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-04 20:03:21 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (413.0ms)
+Completed 200 OK in 458ms (Views: 457.2ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-04 20:03:25 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (4.1ms)
+Rendered tweeters/index.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 87ms (Views: 56.9ms)
+
+
+Started GET "/search?s=re" for 127.0.0.1 at 2010-11-04 20:03:29 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>"re"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)re/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)re/}, {})
+Rendered gaga/search.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 40ms (Views: 39.5ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-04 20:03:31 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.5ms)
+Rendered tweeters/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 12ms (Views: 10.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-04 20:03:40 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 8ms (Views: 8.0ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-04 20:03:41 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 47ms (Views: 46.2ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=pedroca%0D%0A&commit=submit" for 127.0.0.1 at 2010-11-04 20:03:50 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"pedroca\r\n", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-04 20:03:54 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-04 20:03:54 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 7ms (Views: 6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-04 20:04:12 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 10ms (Views: 10.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-04 20:06:51 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.6ms)
+Rendered tweeters/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 13ms (Views: 11.2ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-04 20:07:49 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (9.1ms)
+Rendered tweeters/status.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 443ms (Views: 48.1ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-04 20:08:03 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-04 20:13:40 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-04 20:13:42 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 7ms (Views: 7.1ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-04 20:13:45 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.5ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-04 20:15:20 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 12ms (Views: 12.1ms)
+
+
+Started GET "/junioma" for 127.0.0.1 at 2010-11-04 20:15:22 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"junioma"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"junioma"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.4ms)
+Rendered tweeters/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 12ms (Views: 10.8ms)
+
+
+Started GET "/junioma/status" for 127.0.0.1 at 2010-11-04 20:15:24 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"junioma"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"junioma"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (0.6ms)
+Rendered tweeters/status.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 30ms (Views: 7.8ms)
+
+
+Started GET "/junioma" for 127.0.0.1 at 2010-11-04 20:15:25 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"junioma"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"junioma"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.4ms)
+Rendered tweeters/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 12ms (Views: 10.8ms)
+
+
+Started GET "/search?s=" for 127.0.0.1 at 2010-11-04 20:15:26 -0200
+  Processing by GagaController#search as HTML
+  Parameters: {"s"=>""}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+  MONGODB spider-pig['tweeters'].find({:screen_name=>/(?i)/}, {})
+Rendered gaga/search.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 12ms (Views: 11.3ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-04 20:15:30 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-04 20:16:41 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 10ms (Views: 9.8ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at 2010-11-04 20:29:21 -0200
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-04 20:29:59 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.4ms)
+Rendered tweeters/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 12ms (Views: 11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-04 20:30:02 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 10ms (Views: 9.7ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-04 20:36:27 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.3ms)
+Rendered tweeters/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 12ms (Views: 10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-04 20:36:30 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 10ms (Views: 9.6ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-16 05:38:09 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (625.2ms)
+Completed 200 OK in 681ms (Views: 680.7ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-16 05:38:13 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (6.0ms)
+Rendered tweeters/index.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 183ms (Views: 104.8ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-16 05:38:14 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+  MONGODB spider-pig['statuses'].find({}, {})
+  MONGODB cursor.get_more()
+Rendered tweeters/_tweet_status.erb (13.7ms)
+Rendered tweeters/status.html.erb within layouts/application (50.1ms)
+Completed 200 OK in 215ms (Views: 77.4ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:38:17 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 49ms (Views: 48.3ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-16 05:38:20 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 47ms (Views: 46.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:38:22 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:38:23 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 43ms (Views: 42.1ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-16 05:38:24 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 7ms (Views: 7.1ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:38:28 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-16 05:38:32 -0200
+  Processing by StatusInfluenceController#index as HTML
+  MONGODB spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 7ms (Views: 7.0ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:38:36 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=&commit=submit" for 127.0.0.1 at 2010-11-16 05:38:50 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=adas&commit=submit" for 127.0.0.1 at 2010-11-16 05:38:53 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"adas", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.0ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:22 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:23 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:26 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:28 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.5ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:29 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:30 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:31 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:32 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:33 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:34 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:35 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:36 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.5ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:39:37 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:40:54 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 6.8ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:40:56 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.5ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:40:59 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:41:00 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:42:36 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:42:38 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:42:42 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.5ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:42:43 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:42:44 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:44:22 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:45:47 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:45:48 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:45:59 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (53.9ms)
+Completed   in 58ms
+
+ActionView::Template::Error (undefined method `to_d' for "0.0.1Alpha":String):
+    18: </div>
+    19: 
+    20: <div id="gaga_menu_top_registered_version_number">
+    21: 	Versão: <%= current_gaga_version %>
+    22: </div>
+    23: 
+    24: </div>
+  app/helpers/application_helper.rb:5:in `current_gaga_version'
+  app/views/layouts/application.html.erb:21:in `_app_views_layouts_application_html_erb___2242185599266454547_2170715900_165454100860575147'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.2ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:46:02 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 05:50:24 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=C5nkJmzDAYEvmL7qj2GZdvlh1kld5gUQddaj47ydBA&oauth_verifier=JR5VA7tvFJdi2KmJTBN1drANJLvK6YBCwoe0is7is" for 127.0.0.1 at 2010-11-16 05:50:29 -0200
+
+ActionController::RoutingError (No route matches "/auth/twitter/callback"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 05:53:23 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=iRvQW3pxbNNeVxakt9BWIbMTQZZvfopmJoJ09ulA&oauth_verifier=9UkIMbwQc9dqO4TGRXL8fFv0iNWtCJ7TCb3OK2RIWY" for 127.0.0.1 at 2010-11-16 05:53:26 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"iRvQW3pxbNNeVxakt9BWIbMTQZZvfopmJoJ09ulA", "oauth_verifier"=>"9UkIMbwQc9dqO4TGRXL8fFv0iNWtCJ7TCb3OK2RIWY"}
+Rendered text template (0.0ms)
+Completed 200 OK in 49ms (Views: 39.0ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:54:09 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.3ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 05:54:13 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=tP1ehZFlPUg5y1AlAUSp5C6PCT2CgfqdSqmoQVgMCI&oauth_verifier=Mq8d6xYfBfFb78yeiOvfmwAwRaBKOUyikwFuynZeDeA" for 127.0.0.1 at 2010-11-16 05:54:16 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"tP1ehZFlPUg5y1AlAUSp5C6PCT2CgfqdSqmoQVgMCI", "oauth_verifier"=>"Mq8d6xYfBfFb78yeiOvfmwAwRaBKOUyikwFuynZeDeA"}
+Rendered text template (0.0ms)
+Completed 200 OK in 48ms (Views: 1.1ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 05:54:57 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 05:55:03 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=CD9VGAo06pFmfQSMvvofCw3mYXcmwzsoAmvFDcrtKXY&oauth_verifier=1kmwgyw3DRSAChOzxqKiiBc9riZTk8e080zkzVXEZZY" for 127.0.0.1 at 2010-11-16 05:55:05 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"CD9VGAo06pFmfQSMvvofCw3mYXcmwzsoAmvFDcrtKXY", "oauth_verifier"=>"1kmwgyw3DRSAChOzxqKiiBc9riZTk8e080zkzVXEZZY"}
+Rendered text template (0.0ms)
+Completed 200 OK in 11ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter/" for 127.0.0.1 at 2010-11-16 05:56:15 -0200
+
+ActionController::RoutingError (No route matches "/auth/twitter"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 05:56:19 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=6omfYnROxLYd4IucnwPDnqvff031IaXvsgIWahPRsY&oauth_verifier=9xnCOcM3AXSaN1gvILjFKDA75ZezPBRyKmVZXGRlTc" for 127.0.0.1 at 2010-11-16 05:56:22 -0200
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at 2010-11-16 05:56:23 -0200
+
+ActionController::RoutingError (No route matches "/auth/failure"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 05:56:36 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=zcm3JVVX1qIDJ9kuzxfY0xcRmK4ZRm8dXPwcYOoAJw&oauth_verifier=apoUB2BwHKMVLef7zhpNzD9Q8kD8wfSyxeemAlWlE" for 127.0.0.1 at 2010-11-16 05:56:39 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"zcm3JVVX1qIDJ9kuzxfY0xcRmK4ZRm8dXPwcYOoAJw", "oauth_verifier"=>"apoUB2BwHKMVLef7zhpNzD9Q8kD8wfSyxeemAlWlE"}
+Rendered text template (0.0ms)
+Completed 200 OK in 11ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 05:56:54 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=I2aL6gIKJbWqEAx7hwjXZ8jZ3SfQ77LHxwuBHhVEM&oauth_verifier=nqfKVIEgCr39WlTNkgeAUrv31r06cRdm0YQpp4H6WY" for 127.0.0.1 at 2010-11-16 05:56:57 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"I2aL6gIKJbWqEAx7hwjXZ8jZ3SfQ77LHxwuBHhVEM", "oauth_verifier"=>"nqfKVIEgCr39WlTNkgeAUrv31r06cRdm0YQpp4H6WY"}
+Rendered text template (0.0ms)
+Completed 200 OK in 11ms (Views: 1.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 05:58:07 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=wYwgEB3nYoaApE7gkm6BL1AhNbQFP961hRjllpv2k&oauth_verifier=5ukKuAfmNiFhMteCcw1bhu9WgBWFqcQdN21hwA7r8Q" for 127.0.0.1 at 2010-11-16 05:58:09 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"wYwgEB3nYoaApE7gkm6BL1AhNbQFP961hRjllpv2k", "oauth_verifier"=>"5ukKuAfmNiFhMteCcw1bhu9WgBWFqcQdN21hwA7r8Q"}
+Rendered text template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.9ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 05:59:01 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=S79HDIxbLSTXbVSXNFQWwDbJbnCl5BzS7uECNCM00lI&oauth_verifier=zfre5q0jmecZE8HeANYbs359TSSxdI51ekRbMluy5g" for 127.0.0.1 at 2010-11-16 05:59:04 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"S79HDIxbLSTXbVSXNFQWwDbJbnCl5BzS7uECNCM00lI", "oauth_verifier"=>"zfre5q0jmecZE8HeANYbs359TSSxdI51ekRbMluy5g"}
+Completed   in 5ms
+
+NoMethodError (undefined method `provider' for #<String:0x000001028f5040>):
+  app/controllers/status_influence_controller.rb:9:in `auth'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (53.2ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (60.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 05:59:26 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=4aihahE0D4ul78jXnuuYMuvziHvwo6ImyMkrvsbE1eM&oauth_verifier=aLoZUoLkKIzIKfJwdZItnq3rTlxK58hjvW4m1R6WHQ" for 127.0.0.1 at 2010-11-16 05:59:28 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"4aihahE0D4ul78jXnuuYMuvziHvwo6ImyMkrvsbE1eM", "oauth_verifier"=>"aLoZUoLkKIzIKfJwdZItnq3rTlxK58hjvW4m1R6WHQ"}
+Rendered text template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.9ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:00:28 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=Pq078nmeGmouX30bnnDM2qxV3pTc9cK6scEJbTWyU&oauth_verifier=poEZzmwLhvDuFVZXqZr0t1RrVYRHFBGWXevbYSeSZbU" for 127.0.0.1 at 2010-11-16 06:00:31 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"Pq078nmeGmouX30bnnDM2qxV3pTc9cK6scEJbTWyU", "oauth_verifier"=>"poEZzmwLhvDuFVZXqZr0t1RrVYRHFBGWXevbYSeSZbU"}
+Rendered text template (0.0ms)
+Completed 200 OK in 11ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:00:43 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=jcFUl67CLxVhqQPObRsV9Tz2o1OXQy9vW4ByjphYc&oauth_verifier=5z7gJeR2S6iRcrtLdTJVLkabSjhCMq9X6vOKoj6c" for 127.0.0.1 at 2010-11-16 06:00:46 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"jcFUl67CLxVhqQPObRsV9Tz2o1OXQy9vW4ByjphYc", "oauth_verifier"=>"5z7gJeR2S6iRcrtLdTJVLkabSjhCMq9X6vOKoj6c"}
+Rendered text template (0.0ms)
+Completed 200 OK in 11ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:00:58 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=sbt8w4o5pcbqvHdZPUJZ2PnFC13mkpmCz58JJXlBPU&oauth_verifier=AsyHl59N4WzMtnkS3BE4510afdWCUQyVyT6B8CGMBVA" for 127.0.0.1 at 2010-11-16 06:01:00 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"sbt8w4o5pcbqvHdZPUJZ2PnFC13mkpmCz58JJXlBPU", "oauth_verifier"=>"AsyHl59N4WzMtnkS3BE4510afdWCUQyVyT6B8CGMBVA"}
+Rendered text template (0.0ms)
+Completed 200 OK in 11ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:04:08 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=emHRhmZLEJ2d5hd7tNQwp5xiD9qkE1mg63DqdZ5ZA&oauth_verifier=2iFzVF69XdmO0jXK2Hb4HEvmlSyKKL9YPxoAOO8cGnY" for 127.0.0.1 at 2010-11-16 06:04:11 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"emHRhmZLEJ2d5hd7tNQwp5xiD9qkE1mg63DqdZ5ZA", "oauth_verifier"=>"2iFzVF69XdmO0jXK2Hb4HEvmlSyKKL9YPxoAOO8cGnY"}
+Rendered text template (0.0ms)
+Completed 200 OK in 12ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:04:31 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=g4Ba9bBQ1yJySAtWE3OiitepPDAQC2fL8bsLtOZeQ&oauth_verifier=5JRFepXR51xmpyaz7q1AxzmlwcNIksnl5t8IExXM" for 127.0.0.1 at 2010-11-16 06:04:33 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"g4Ba9bBQ1yJySAtWE3OiitepPDAQC2fL8bsLtOZeQ", "oauth_verifier"=>"5JRFepXR51xmpyaz7q1AxzmlwcNIksnl5t8IExXM"}
+Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:04:52 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=XMUlEU29HK2c2recVa3C4vpVuSLBhfX3h2i8PwuA&oauth_verifier=4Fa7ih5rJWGN2LW581KvffAwgl6kd5x47V8a9Kd6Vw" for 127.0.0.1 at 2010-11-16 06:04:55 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"XMUlEU29HK2c2recVa3C4vpVuSLBhfX3h2i8PwuA", "oauth_verifier"=>"4Fa7ih5rJWGN2LW581KvffAwgl6kd5x47V8a9Kd6Vw"}
+Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:22:08 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=Txl42TgeJEP46VmCqAu8x7LSuIiH0stLK1QHQzDxs7I&oauth_verifier=9rNRViZNrRgXKhlJqaK9Bh8uhSFTF96eNajkPKOOQ" for 127.0.0.1 at 2010-11-16 06:22:11 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"Txl42TgeJEP46VmCqAu8x7LSuIiH0stLK1QHQzDxs7I", "oauth_verifier"=>"9rNRViZNrRgXKhlJqaK9Bh8uhSFTF96eNajkPKOOQ"}
+Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 1.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:22:23 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=dJfR7bV9JNxWGjOtcuCu88JzEUJK78p4YZhKKfPgfI&oauth_verifier=RSvPi6dzGC8N7Wwfg4kRfZJeCRIYDlRDe3hqvC5gbvs" for 127.0.0.1 at 2010-11-16 06:22:26 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"dJfR7bV9JNxWGjOtcuCu88JzEUJK78p4YZhKKfPgfI", "oauth_verifier"=>"RSvPi6dzGC8N7Wwfg4kRfZJeCRIYDlRDe3hqvC5gbvs"}
+Rendered text template (0.0ms)
+Completed 200 OK in 12ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:24:11 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=ehrbK873WJp3mJMnxmPnlHFknME2Q9yat0fCr0IKWs&oauth_verifier=LSPj2WE33iMIFvPgs1odfKsRvHji7j0rmw3Jmaifus" for 127.0.0.1 at 2010-11-16 06:24:14 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"ehrbK873WJp3mJMnxmPnlHFknME2Q9yat0fCr0IKWs", "oauth_verifier"=>"LSPj2WE33iMIFvPgs1odfKsRvHji7j0rmw3Jmaifus"}
+Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:28:20 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=2aDvC7NryC1Pu0fhFZinkSfNwbDUOSy6Iwpz0eonJjU&oauth_verifier=YZWWrepKMdO55wL6IFuEBUgRTUiCVBLwoGV4Ss" for 127.0.0.1 at 2010-11-16 06:28:23 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:24: syntax error, unexpected '\n', expecting tASSOC):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:31:16 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=WZeNkEXc2tWKMWOisZeBNQRZqViDhYNAE7sZCs0nV4&oauth_verifier=5ks0nNyQolCyuJWUtZ3lVaVRbLHcZ962EIA4XEFpz8" for 127.0.0.1 at 2010-11-16 06:31:19 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:28: invalid multibyte char (US-ASCII)
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:28: invalid multibyte char (US-ASCII)
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:28: syntax error, unexpected $end, expecting keyword_end
+        flash[:notice] = 'sem usuário cadastrado'
+                                   ^):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (79.2ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:31:35 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=9X0lVtIBh0kMrz70KoY9gjM9ENkwYi3X8mt5SPJprVs&oauth_verifier=u4YBjErbALx7CFJ6OpUggXbul7jBKlMsA5yF7NlBHzw" for 127.0.0.1 at 2010-11-16 06:31:38 -0200
+
+SyntaxError (/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:28: invalid multibyte char (US-ASCII)
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:28: invalid multibyte char (US-ASCII)
+/desenv/spider-pig/gaga-pig/app/controllers/status_influence_controller.rb:28: syntax error, unexpected $end, expecting keyword_end
+        flash[:notice] = 'sem usuário cadastrado'
+                                   ^):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:32:02 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=PTqlyKQk7hYZm9i7WgQri1CLmTVec1a2lDfGCcFfjM&oauth_verifier=GurPPOFvtbFpoYSoxxLq8yJvgej17gtjqjWcvwrVg" for 127.0.0.1 at 2010-11-16 06:32:05 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"PTqlyKQk7hYZm9i7WgQri1CLmTVec1a2lDfGCcFfjM", "oauth_verifier"=>"GurPPOFvtbFpoYSoxxLq8yJvgej17gtjqjWcvwrVg"}
+Redirected to http://localhost:3000status_influence#new_msg
+Completed 302 Found in 12ms
+
+
+Started GET "/auth/twitter/callback?oauth_token=PTqlyKQk7hYZm9i7WgQri1CLmTVec1a2lDfGCcFfjM&oauth_verifier=GurPPOFvtbFpoYSoxxLq8yJvgej17gtjqjWcvwrVg" for 127.0.0.1 at 2010-11-16 06:32:08 -0200
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at 2010-11-16 06:32:39 -0200
+
+ActionController::RoutingError (No route matches "/auth/failure"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:33:53 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=mUTcsiTnlIOjWB6kvEYD9mkDrQYY2qOby9LDZgtoI&oauth_verifier=1u4xrMoRzghhuwaldbriSp9P1LTR3AXCetmKqWCGI" for 127.0.0.1 at 2010-11-16 06:33:56 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"mUTcsiTnlIOjWB6kvEYD9mkDrQYY2qOby9LDZgtoI", "oauth_verifier"=>"1u4xrMoRzghhuwaldbriSp9P1LTR3AXCetmKqWCGI"}
+Completed   in 14ms
+
+NameError (undefined local variable or method `consumer_data' for #<StatusInfluenceController:0x00000102a3e640>):
+  app/controllers/status_influence_controller.rb:14:in `auth'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (52.6ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.5ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:34:19 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=eB1vH7Asgvs88xvGy6eCuTPxmcjEDzA7U6vf6ZZ5rM&oauth_verifier=KyA3Qkvw9wYs6UWiYElAastYNr5kAfhIOmyZuv7g2Gk" for 127.0.0.1 at 2010-11-16 06:34:22 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"eB1vH7Asgvs88xvGy6eCuTPxmcjEDzA7U6vf6ZZ5rM", "oauth_verifier"=>"KyA3Qkvw9wYs6UWiYElAastYNr5kAfhIOmyZuv7g2Gk"}
+Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:35:02 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=Cq5LJNlKNL6vxPOUCiV9OM4qkSJntWC6poWhR6cU8k&oauth_verifier=sEnTDlpVYnVqgFiVcFEkk1ZCRc4Ceei8ysoGaANcY" for 127.0.0.1 at 2010-11-16 06:35:04 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"Cq5LJNlKNL6vxPOUCiV9OM4qkSJntWC6poWhR6cU8k", "oauth_verifier"=>"sEnTDlpVYnVqgFiVcFEkk1ZCRc4Ceei8ysoGaANcY"}
+Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:35:28 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=arlIlhMvdAAvRkwo9SAo2v5vuWQwxwNbVUg7UsOeI&oauth_verifier=EWYDuzLSsewA9bt5hcKpeIhhMoDn7uvXko2Ul64IOpM" for 127.0.0.1 at 2010-11-16 06:35:30 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"arlIlhMvdAAvRkwo9SAo2v5vuWQwxwNbVUg7UsOeI", "oauth_verifier"=>"EWYDuzLSsewA9bt5hcKpeIhhMoDn7uvXko2Ul64IOpM"}
+Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 1.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:36:36 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=LeznoIwXVU3ErqkNeao7g5Nu5rqoH0VkBfGgzAnA&oauth_verifier=1HXgLDJyPKSKK8ybsUvVCtlVfSBD9GfPqij1ciHc" for 127.0.0.1 at 2010-11-16 06:36:39 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"LeznoIwXVU3ErqkNeao7g5Nu5rqoH0VkBfGgzAnA", "oauth_verifier"=>"1HXgLDJyPKSKK8ybsUvVCtlVfSBD9GfPqij1ciHc"}
+Redirected to http://localhost:3000status_influence#new_msg
+Completed 302 Found in 12ms
+
+
+Started GET "/auth/twitter/callback?oauth_token=LeznoIwXVU3ErqkNeao7g5Nu5rqoH0VkBfGgzAnA&oauth_verifier=1HXgLDJyPKSKK8ybsUvVCtlVfSBD9GfPqij1ciHc" for 127.0.0.1 at 2010-11-16 06:36:41 -0200
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at 2010-11-16 06:36:42 -0200
+
+ActionController::RoutingError (No route matches "/auth/failure"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/auth" for 127.0.0.1 at 2010-11-16 06:37:07 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"auth"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"auth"}, {}).limit(-1)
+Rendered tweeters/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 56ms (Views: 55.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:37:14 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=F1Q88MFmdlqveujp0g3Ep8h4qRBDj9HZoj7Ivy6o&oauth_verifier=ED2zAGPCn0qatqx1JxW16yN55m2WmnTuArWfzv8A34" for 127.0.0.1 at 2010-11-16 06:37:17 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"F1Q88MFmdlqveujp0g3Ep8h4qRBDj9HZoj7Ivy6o", "oauth_verifier"=>"ED2zAGPCn0qatqx1JxW16yN55m2WmnTuArWfzv8A34"}
+Redirected to http://localhost:3000status_influence#new_msg
+Completed 302 Found in 12ms
+
+
+Started GET "/auth/twitter/callback?oauth_token=F1Q88MFmdlqveujp0g3Ep8h4qRBDj9HZoj7Ivy6o&oauth_verifier=ED2zAGPCn0qatqx1JxW16yN55m2WmnTuArWfzv8A34" for 127.0.0.1 at 2010-11-16 06:37:19 -0200
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at 2010-11-16 06:37:21 -0200
+
+ActionController::RoutingError (No route matches "/auth/failure"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:37:27 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=wa9XzjcRLnIgFr3XekYLzsBcqdb3FokM0kxQYFYCZs&oauth_verifier=ioQXwt4acO2VaRaGVjEhroeVXZqjZlIfOF9mywVopYA" for 127.0.0.1 at 2010-11-16 06:37:29 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"wa9XzjcRLnIgFr3XekYLzsBcqdb3FokM0kxQYFYCZs", "oauth_verifier"=>"ioQXwt4acO2VaRaGVjEhroeVXZqjZlIfOF9mywVopYA"}
+Redirected to http://localhost:3000status_influence#new_msg
+Completed 302 Found in 12ms
+
+
+Started GET "/auth/twitter/callback?oauth_token=wa9XzjcRLnIgFr3XekYLzsBcqdb3FokM0kxQYFYCZs&oauth_verifier=ioQXwt4acO2VaRaGVjEhroeVXZqjZlIfOF9mywVopYA" for 127.0.0.1 at 2010-11-16 06:37:32 -0200
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at 2010-11-16 06:37:33 -0200
+
+ActionController::RoutingError (No route matches "/auth/failure"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/auth" for 127.0.0.1 at 2010-11-16 06:37:38 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"auth"}
+  MONGODB spider-pig['tweeters'].find({:screen_name=>"auth"}, {}).limit(-1)
+Rendered tweeters/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.2ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:37:40 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 58ms (Views: 57.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:37:44 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=Bilionario+rocks&commit=submit" for 127.0.0.1 at 2010-11-16 06:37:53 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"Bilionario rocks", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=Bilionario+rocks&commit=submit" for 127.0.0.1 at 2010-11-16 06:38:15 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"Bilionario rocks", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=Quero+ser+um+bilionario&commit=submit" for 127.0.0.1 at 2010-11-16 06:40:17 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"Quero ser um bilionario", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 1250ms (Views: 9.0ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=gosto+de+ficar+apostando+nas+galinhas+de+ouro&commit=submit" for 127.0.0.1 at 2010-11-16 06:43:52 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"gosto de ficar apostando nas galinhas de ouro", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1252ms (Views: 47.3ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:44:38 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-16 06:48:14 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 77ms (Views: 76.3ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:16 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 7.4ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:31 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:31 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:31 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:34 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:35 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:35 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:36 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:36 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:37 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:38 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:38 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:38 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:47 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:47 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:48 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:48:59 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth#twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:49:00 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth#twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:49:00 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000auth#twitter
+Completed 302 Found in 1ms
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:51:06 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:51:06 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=nrYYZ1zDvhFnVMxss0q9jwDd6sR5EMOxRrLik0wc2k&oauth_verifier=OyPU72kNqYMOOxAaUxftmEtnpSXcfyZElQ1W40YpvHw" for 127.0.0.1 at 2010-11-16 06:51:09 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"nrYYZ1zDvhFnVMxss0q9jwDd6sR5EMOxRrLik0wc2k", "oauth_verifier"=>"OyPU72kNqYMOOxAaUxftmEtnpSXcfyZElQ1W40YpvHw"}
+Redirected to http://localhost:3000status_influence#new_msg
+Completed 302 Found in 12ms
+
+
+Started GET "/auth/twitter/callback?oauth_token=nrYYZ1zDvhFnVMxss0q9jwDd6sR5EMOxRrLik0wc2k&oauth_verifier=OyPU72kNqYMOOxAaUxftmEtnpSXcfyZElQ1W40YpvHw" for 127.0.0.1 at 2010-11-16 06:51:12 -0200
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at 2010-11-16 06:51:13 -0200
+
+ActionController::RoutingError (No route matches "/auth/failure"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-16 06:52:12 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 10ms (Views: 9.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:52:14 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:52:14 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=SW371IwfpN11V5pKHfHwOuHjxTwiKJqyGJATZTocWM&oauth_verifier=1y5pN6zqi1p1vQVNg3RcLywH5PL0IJUS5tb0XCpkAs" for 127.0.0.1 at 2010-11-16 06:52:16 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"SW371IwfpN11V5pKHfHwOuHjxTwiKJqyGJATZTocWM", "oauth_verifier"=>"1y5pN6zqi1p1vQVNg3RcLywH5PL0IJUS5tb0XCpkAs"}
+Redirected to http://localhost:3000status_influence#new_msg
+Completed 302 Found in 12ms
+
+
+Started GET "/auth/twitter/callback?oauth_token=SW371IwfpN11V5pKHfHwOuHjxTwiKJqyGJATZTocWM&oauth_verifier=1y5pN6zqi1p1vQVNg3RcLywH5PL0IJUS5tb0XCpkAs" for 127.0.0.1 at 2010-11-16 06:52:20 -0200
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at 2010-11-16 06:52:21 -0200
+
+ActionController::RoutingError (No route matches "/auth/failure"):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-16 06:52:45 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 10ms (Views: 9.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:52:48 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:52:48 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=nPkIFh9j8EAZ63TyVqzeP5qULgv9HFZqKSkAckZfaqs&oauth_verifier=xTBzE0XKaHjNi4W1WoKBa96vqvIMmNr60M4NCZiBHM" for 127.0.0.1 at 2010-11-16 06:52:51 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"nPkIFh9j8EAZ63TyVqzeP5qULgv9HFZqKSkAckZfaqs", "oauth_verifier"=>"xTBzE0XKaHjNi4W1WoKBa96vqvIMmNr60M4NCZiBHM"}
+Rendered text template (0.0ms)
+Completed 200 OK in 22ms (Views: 10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-16 06:53:33 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 10ms (Views: 10.0ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:53:35 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:53:35 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=rowMMHHmePbTSpefD6CLMzydY5KLWrB6is7dmiODch0&oauth_verifier=ipNmtKE4ql3knQSgbbFWML5cT44v5QmNxT4Woqy5g" for 127.0.0.1 at 2010-11-16 06:53:37 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"rowMMHHmePbTSpefD6CLMzydY5KLWrB6is7dmiODch0", "oauth_verifier"=>"ipNmtKE4ql3knQSgbbFWML5cT44v5QmNxT4Woqy5g"}
+Redirected to http://localhost:3000/status_influence/new_msg
+Completed 302 Found in 12ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:53:40 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:53:41 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-16 06:54:22 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 10ms (Views: 9.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:54:26 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=mensgem+para+ser+postada&commit=submit" for 127.0.0.1 at 2010-11-16 06:54:38 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"mensgem para ser postada", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 900ms (Views: 9.3ms)
+  MONGODB admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+  MONGODB admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-16 06:56:04 -0200
+  Processing by GagaController#index as HTML
+  MONGODB spider-pig['tweeters'].find({}, {}).limit(6)
+Rendered gaga/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 12ms (Views: 11.4ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:56:09 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Redirected to http://localhost:3000/auth/twitter
+Completed 302 Found in 1ms
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2010-11-16 06:56:10 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=CfJPFt9yxtY13xg9E6FOc1hf8vqRtmFtybY5AWyKSY&oauth_verifier=daiJDoOZLScF0XB4LPpEJvA4cujnB5ODwORgkPbDRzU" for 127.0.0.1 at 2010-11-16 06:56:41 -0200
+  Processing by StatusInfluenceController#auth as HTML
+  Parameters: {"oauth_token"=>"CfJPFt9yxtY13xg9E6FOc1hf8vqRtmFtybY5AWyKSY", "oauth_verifier"=>"daiJDoOZLScF0XB4LPpEJvA4cujnB5ODwORgkPbDRzU"}
+Redirected to http://localhost:3000/status_influence/new_msg
+Completed 302 Found in 12ms
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-16 06:56:43 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 8ms (Views: 7.1ms)
+
+
+Started GET "/status_influence/new_msg?_snowman=%E2%98%83&text=postando+do+gaga+Pig&commit=submit" for 127.0.0.1 at 2010-11-16 06:56:53 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"_snowman"=>"☃", "text"=>"postando do gaga Pig", "commit"=>"submit"}
+Rendered status_influence/new_msg.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 903ms (Views: 10.4ms)

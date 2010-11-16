@@ -1,6 +1,11 @@
 <h3 style="margin-left:10px;">Mensagens Monitoradas</h3>
 <div id='status_influence_tudo'>
 	
+	
+	<% @status_influence.each do |inf| %>
+		<p><%= inf.text %></p>
+	
+	<% end unless not @status_influence %>
+	
 </div>
 
-<div id="influence_new_message"> <a href="/status_influence/new_msg"><span>nova mensagem</span></a> </div>

@@ -1,7 +1,10 @@
 <div id="status_influence_tudo">
-	<%= params[:text] unless not params[:text]%>
+	<%= flash[:notice] %>
+	
 	<%= form_tag status_influence_new_msg_path, :method => :get do %>
-		<%= text_area_tag :text %>
+		<%= text_area_tag :text, nil, :size => "40x10" %> <br />
 		<%= submit_tag :submit %>
 	<% end %>
+	
+	<br />
 </div>
