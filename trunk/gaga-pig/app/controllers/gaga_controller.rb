@@ -5,6 +5,10 @@ class GagaController < ApplicationController
 
 #  require 'mechanize'
 
+  def oauth
+    
+  end
+
   def search
 
     search = params[:s]

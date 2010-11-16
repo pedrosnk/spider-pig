@@ -6,7 +6,9 @@ gem 'mongoid',      :git => 'git://github.com/mongoid/mongoid.git'
 gem 'bson_ext', '>=1.0'
 gem 'mechanize'
 gem 'grackle'
+gem 'omniauth'
 
+gem 'twitter_oauth'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
