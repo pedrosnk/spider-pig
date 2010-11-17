@@ -1,0 +1,22 @@
+<h1>Twitters Monitorados</h1>
+
+<table>
+  <tr>
+    <th>Screen name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @seeds.each do |seed| %>
+  <tr>
+    <td><%= '@' + seed.screen_name %></td>
+    <td><%= link_to 'editar', edit_seed_path(seed) %></td>
+    <td><%= link_to 'remover', seed, :confirm => 'tem certeza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'cadastrar novo', new_seed_path %>

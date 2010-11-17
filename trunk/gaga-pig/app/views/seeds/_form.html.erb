@@ -1,0 +1,21 @@
+<%= form_for(@seed) do |f| %>
+  <% if @seed.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@seed.errors.count, "error") %> Erro ao salvar:</h2>
+
+      <ul>
+      <% @seed.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label 'nome do twitter' %><br />
+    <%= f.text_field :screen_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
