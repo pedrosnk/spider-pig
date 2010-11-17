@@ -17,8 +17,6 @@ class Twitter
     @relation_coll = @mongo.collection('relationships')
   end
 
-  
-
   def sync(hash)
     @user = query_user(hash)
     mongo_user = @user_coll.find_one({'screen_name' => @user[:screen_name]})
@@ -43,7 +41,7 @@ class Twitter
       $logger.debug("done!")
     }
     user_data.delete_field('status')
-    user_data.klout = information_about_user_klout(user_data.screen_name)
+#    user_data.klout = information_about_user_klout(user_data.screen_name)
     user_data.twittercounter = information_about_user_twittercounter(user_data.screen_name)
     user = user_data.marshal_dump()
     user[:tweeter_id] = user_data.id

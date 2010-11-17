@@ -23,7 +23,8 @@ class StatusInfluenceController < ApplicationController
           :consumer_key=> consumer_data['consumer_key'], :consumer_secret=>consumer_data['consumer_secret'],
           :token=> session[:twitter_token], :token_secret => session[:twitter_token_secret]
         })
-      client.statuses.update! :status=>params[:text]
+      update = client.statuses.update.json! :status=>params[:text]
+      render :text => update.class
     else
       flash[:notice] = 'escreva uma msg para o bilionariodf usar'
       redirect_to 'http://localhost:3000/auth/twitter' unless session[:twitter_token]
