@@ -1,5 +1,7 @@
 GagaPig::Application.routes.draw do
 
+  resources :seeds
+
   match "/auth/twitter/callback" => "status_influence#auth"
 
   get "gaga/oauth"
