@@ -10,7 +10,13 @@ seeds = YAML.load_file('seeds.yml')
 
 oinker = Oinker.new(config['oinker']['database'])
 
-seeds.each { |seed|  oinker.syncronize({:screen_name => seed}, config['oinker']['deep_level']) }
+
+@mongo_conn = Mongo::Connection.new.db(config['oinker']['database'])
+@seeds = @mongo_conn.collection('seeds')
+
+@seeds.find().each { |seed| oinker.syncronize({:screen_name => seed['screen_name']}, config['oinker']['deep_level'])}
+
+#seeds.each { |seed|  oinker.syncronize({:screen_name => seed}, config['oinker']['deep_level']) }
 
 puts 'terminou'
   
