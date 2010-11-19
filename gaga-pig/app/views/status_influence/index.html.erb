@@ -1,11 +1,10 @@
 <h3 style="margin-left:10px;">Mensagens Monitoradas</h3>
 <div id='status_influence_tudo'>
 	
-	
 	<% @status_influence.each do |inf| %>
-		<p><%= inf.text %></p>
-	
-	<% end unless not @status_influence %>
+		<p><%= '@'+ inf.statuses.user_name %></p>
+		<p><%= link_to inf.statuses.text, influence_msg_path(inf.statuses.id_str) %></p>
+	<% end %>
 	
 </div>
 
