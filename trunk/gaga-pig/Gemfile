@@ -8,4 +8,6 @@ gem 'mechanize'
 gem 'grackle'
 gem 'omniauth'
 
+gem 'ruby-debug19'
+
 # gem 'twitter_oauth'

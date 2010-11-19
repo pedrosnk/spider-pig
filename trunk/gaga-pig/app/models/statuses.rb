@@ -13,8 +13,10 @@ class Statuses
   field :place
   field :coordinates
   field :user
+  field :user_name
   field :favorited
   field :geo
   field :text
+  field :id_str
 
 end

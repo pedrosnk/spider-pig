@@ -4,23 +4,23 @@ GagaPig::Application.routes.draw do
 
   match "/auth/twitter/callback" => "status_influence#auth"
 
-  get "gaga/oauth"
 
   get "status_influence/new_msg"
-
   get "status_influence/index"
 
   get "tweeters/index"
 
+  get "gaga/oauth"
   get "gaga/new_gaga"
 
   get 'search', :to => 'gaga#search'
 
-  root :to => 'gaga#index'
-
   match "/:tweet_url" => 'tweeters#index', :as => "tweeters_index"
 
   match '/:tweet_url/status' => "tweeters#status", :as => "tweeters_status"
+  match "/status_influence/:id_str" => "status_influence#msg", :as => "influence_msg"
+  
+  root :to => 'gaga#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
