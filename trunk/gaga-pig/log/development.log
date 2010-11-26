@@ -22588,3 +22588,1341 @@ MONGODB spider-pig['status_influences'].insert([{"_id"=>"5587599636828161", "sta
 spider-pig['status_influences'].find({:_id=>"5587599636828161"}, {}).limit(-1)
 Rendered status_influence/msg.html.erb within layouts/application (3.8ms)
 Completed 200 OK in 966ms (Views: 8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-19 17:27:33 -0200
+  Processing by GagaController#index as HTML
+spider-pig['tweeters'].find({}, {}).limit(6)
+MONGODB cursor.close 379187821750722187
+Rendered gaga/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 21ms (Views: 20.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-19 17:27:39 -0200
+  Processing by StatusInfluenceController#index as HTML
+spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 11ms (Views: 10.9ms)
+
+
+Started GET "/status_influence/5587599636828161" for 127.0.0.1 at 2010-11-19 17:27:41 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587599636828161"}
+spider-pig['status_influences'].find({:_id=>"5587599636828161"}, {}).limit(-1)
+Completed   in 46572ms
+
+NameError (undefined local variable or method `status_influnece' for #<StatusInfluenceController:0x000001044c5a68>):
+  app/controllers/status_influence_controller.rb:80:in `update_status_influence'
+  app/controllers/status_influence_controller.rb:10:in `msg'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/status_influence/5587599636828161" for 127.0.0.1 at 2010-11-19 17:29:28 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587599636828161"}
+spider-pig['status_influences'].find({:_id=>"5587599636828161"}, {}).limit(-1)
+ERROR: compiling _app_views_status_influence_msg_html_erb__4473498000484905143_2183083100__1178801646945919155 RAISED /desenv/spider-pig/gaga-pig/app/views/status_influence/msg.html.erb:40: syntax error, unexpected keyword_else, expecting ')'
+...nce.statuses.retweet_count else 0  );@output_buffer.safe_con...
+...                               ^
+Function body:           def _app_views_status_influence_msg_html_erb__4473498000484905143_2183083100__1178801646945919155(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "status_influence/msg";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('
+<p>
+	<h2>status ');@output_buffer.append= ( @status_influence.statuses.text );@output_buffer.safe_concat('</h2>
+</p>
+
+	<h2 style=\'color:#ff0000\'>status ');@output_buffer.append= ( @status_influence.influence_number );@output_buffer.safe_concat('</h2>
+<p>
+	in_reply_to_screen_name ');@output_buffer.append= ( @status_influence.statuses.in_reply_to_screen_name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+	retweeted ');@output_buffer.append= ( @status_influence.statuses.retweeted );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+	
+<p>
+	truncated ');@output_buffer.append= ( @status_influence.statuses.truncated );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+	
+<p>
+	created_at ');@output_buffer.append= ( @status_influence.statuses.created_at );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+	
+<p>
+	in_reply_to_user_id ');@output_buffer.append= ( @status_influence.statuses.in_reply_to_user_id );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+	
+<p>
+	source ');@output_buffer.append= ( @status_influence.statuses.source );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+	
+<p>
+	contributors ');@output_buffer.append= ( @status_influence.statuses.contributors );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+	
+<p>
+	in_reply_to_status_id ');@output_buffer.append= ( @status_influence.statuses.in_reply_to_status_id );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+	
+<p>
+	retweet_count ');@output_buffer.append= ( @status_influence.statuses.retweet_count if @status_influence.statuses.retweet_count else 0  );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+	
+<p>
+	favorited: ');@output_buffer.append= ( 'tweet não foi favoritado por ninguem'  if not @status_influence.statuses.favorited  );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_view/template.rb:255:in `module_eval'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_view/template.rb:255:in `compile'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_view/template.rb:134:in `block in render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/notifications.rb:54:in `instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_view/template.rb:127:in `render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_view/render/rendering.rb:26:in `render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:92:in `render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/pedrosnk/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:435:in `_run__1982507089123842751__process_action__1121272310929400741__callbacks'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/notifications.rb:52:in `instrument'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/abstract_controller/base.rb:119:in `process'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/abstract_controller/rendering.rb:40:in `process'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal.rb:133:in `dispatch'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_controller/metal.rb:173:in `block in action'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/oa-core-0.1.6/lib/omniauth/strategy.rb:50:in `call_app!'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/oa-core-0.1.6/lib/omniauth/strategy.rb:32:in `call!'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/oa-core-0.1.6/lib/omniauth/strategy.rb:19:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/oa-core-0.1.6/lib/omniauth/builder.rb:30:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.1/lib/rails/rack/logger.rb:13:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/activesupport-3.0.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.1/lib/rails/application.rb:168:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.1/lib/rails/application.rb:77:in `method_missing'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/railties-3.0.1/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/Users/pedrosnk/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/pedrosnk/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/pedrosnk/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered status_influence/msg.html.erb within layouts/application (1.6ms)
+Completed   in 875ms
+
+ActionView::Template::Error (/desenv/spider-pig/gaga-pig/app/views/status_influence/msg.html.erb:40: syntax error, unexpected keyword_else, expecting ')'
+...nce.statuses.retweet_count else 0  );@output_buffer.safe_con...
+...                               ^):
+    37: </p>
+    38: 	
+    39: <p>
+    40: 	retweet_count <%= @status_influence.statuses.retweet_count if @status_influence.statuses.retweet_count else 0  %>
+    41: </p>
+    42: 	
+    43: <p>
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/status_influence/5587599636828161" for 127.0.0.1 at 2010-11-19 17:31:18 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587599636828161"}
+spider-pig['status_influences'].find({:_id=>"5587599636828161"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 591ms (Views: 10.2ms)
+
+
+Started GET "/status_influence/5587599636828161" for 127.0.0.1 at 2010-11-19 17:31:21 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587599636828161"}
+spider-pig['status_influences'].find({:_id=>"5587599636828161"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 668ms (Views: 10.6ms)
+
+
+Started GET "/status_influence/5587599636828161" for 127.0.0.1 at 2010-11-19 17:31:22 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587599636828161"}
+spider-pig['status_influences'].find({:_id=>"5587599636828161"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 680ms (Views: 10.5ms)
+
+
+Started GET "/status_influence/5587599636828161" for 127.0.0.1 at 2010-11-19 17:31:53 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587599636828161"}
+spider-pig['status_influences'].find({:_id=>"5587599636828161"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 133908ms (Views: 21.2ms)
+
+
+Started GET "/status_influence/5587599636828161" for 127.0.0.1 at 2010-11-19 17:34:07 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587599636828161"}
+spider-pig['status_influences'].find({:_id=>"5587599636828161"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 5409ms (Views: 15.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-19 17:42:58 -0200
+  Processing by GagaController#index as HTML
+spider-pig['tweeters'].find({}, {}).limit(6)
+MONGODB cursor.close 8882974105757367680
+Rendered gaga/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 16ms (Views: 15.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-19 17:43:01 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 12ms (Views: 10.8ms)
+
+
+Started GET "/status_influence/new_msg?utf8=%E2%9C%93&text=FFFF+OOOO+DDDD&commit=submit" for 127.0.0.1 at 2010-11-19 17:43:11 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"utf8"=>"✓", "text"=>"FFFF OOOO DDDD", "commit"=>"submit"}
+spider-pig['status_influences'].find({:_id=>"210929105"}, {}).limit(-1)
+MONGODB spider-pig['status_influences'].insert([{"_id"=>"5707684485537792", "statuses"=>{"_id"=>BSON::ObjectId('4ce6d350f32c1e05fe000056'), "text"=>"FFFF OOOO DDDD", "geo"=>nil, "favorited"=>"false", "in_reply_to_status_id"=>nil, "in_reply_to_user_id"=>nil, "contributors"=>nil, "in_reply_to_screen_name"=>nil, "created_at"=>"Fri Nov 19 19:43:12 +0000 2010", "id_str"=>"5707684485537792", "retweet_count"=>nil, "coordinates"=>nil, "retweeted"=>nil, "place"=>nil, "user"=>"210929105", "user_name"=>"bilionariodf"}, "influence_number"=>"21", "created_at"=>2010-11-19 19:43:12 UTC, "updated_at"=>2010-11-19 19:43:12 UTC}])
+Rendered status_influence/new_msg.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 1071ms (Views: 11.0ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-19 17:43:14 -0200
+  Processing by StatusInfluenceController#index as HTML
+spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 16ms (Views: 15.8ms)
+
+
+Started GET "/status_influence/5707684485537792" for 127.0.0.1 at 2010-11-19 17:43:16 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5707684485537792"}
+spider-pig['status_influences'].find({:_id=>"5707684485537792"}, {}).limit(-1)
+spider-pig['status_influences'].find({:_id=>"210929105"}, {}).limit(-1)
+MONGODB spider-pig['status_influences'].insert([{"_id"=>"5707684485537792", "statuses"=>{"_id"=>BSON::ObjectId('4ce6d355f32c1e05fe000058'), "text"=>"FFFF OOOO DDDD", "geo"=>nil, "favorited"=>"false", "in_reply_to_status_id"=>nil, "in_reply_to_user_id"=>nil, "contributors"=>nil, "in_reply_to_screen_name"=>nil, "created_at"=>"Fri Nov 19 19:43:12 +0000 2010", "id_str"=>"5707684485537792", "retweet_count"=>nil, "coordinates"=>nil, "retweeted"=>nil, "place"=>nil, "user"=>"210929105", "user_name"=>"bilionariodf"}, "influence_number"=>"21", "created_at"=>2010-11-19 19:43:17 UTC, "updated_at"=>2010-11-19 19:43:17 UTC}])
+Rendered status_influence/msg.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 659ms (Views: 11.5ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-19 17:43:23 -0200
+  Processing by StatusInfluenceController#index as HTML
+spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 16ms (Views: 15.9ms)
+
+
+Started GET "/status_influence/5587599636828161" for 127.0.0.1 at 2010-11-19 17:43:25 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587599636828161"}
+spider-pig['status_influences'].find({:_id=>"5587599636828161"}, {}).limit(-1)
+spider-pig['status_influences'].find({:_id=>"210929105"}, {}).limit(-1)
+MONGODB spider-pig['status_influences'].insert([{"_id"=>"5587599636828161", "statuses"=>{"_id"=>BSON::ObjectId('4ce6d35ff32c1e05fe00005a'), "text"=>"ffeeqww", "geo"=>nil, "favorited"=>"false", "in_reply_to_status_id"=>nil, "in_reply_to_user_id"=>nil, "contributors"=>nil, "in_reply_to_screen_name"=>nil, "created_at"=>"Fri Nov 19 11:46:02 +0000 2010", "id_str"=>"5587599636828161", "retweet_count"=>nil, "coordinates"=>nil, "retweeted"=>nil, "place"=>nil, "user"=>"210929105", "user_name"=>"bilionariodf"}, "influence_number"=>"19", "created_at"=>2010-11-19 19:43:27 UTC, "updated_at"=>2010-11-19 19:43:27 UTC}])
+Rendered status_influence/msg.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 946ms (Views: 11.5ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-19 17:43:29 -0200
+  Processing by StatusInfluenceController#index as HTML
+spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 16ms (Views: 15.7ms)
+
+
+Started GET "/status_influence/5587368874606592" for 127.0.0.1 at 2010-11-19 17:43:31 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587368874606592"}
+spider-pig['status_influences'].find({:_id=>"5587368874606592"}, {}).limit(-1)
+spider-pig['status_influences'].find({:_id=>"210929105"}, {}).limit(-1)
+MONGODB spider-pig['status_influences'].insert([{"_id"=>"5587368874606592", "statuses"=>{"_id"=>BSON::ObjectId('4ce6d364f32c1e05fe00005c'), "text"=>"kampf mich", "geo"=>nil, "favorited"=>"false", "in_reply_to_status_id"=>nil, "in_reply_to_user_id"=>nil, "contributors"=>nil, "in_reply_to_screen_name"=>nil, "created_at"=>"Fri Nov 19 11:45:07 +0000 2010", "id_str"=>"5587368874606592", "retweet_count"=>"0", "coordinates"=>nil, "retweeted"=>nil, "place"=>nil, "user"=>"210929105", "user_name"=>"bilionariodf"}, "influence_number"=>"19", "created_at"=>2010-11-19 19:43:32 UTC, "updated_at"=>2010-11-19 19:43:32 UTC}])
+Rendered status_influence/msg.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 616ms (Views: 12.9ms)
+
+
+Started GET "/status_influence/5587368874606592" for 127.0.0.1 at 2010-11-19 17:43:46 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587368874606592"}
+spider-pig['status_influences'].find({:_id=>"5587368874606592"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 295962ms (Views: 20.7ms)
+
+
+Started GET "/status_influence/5587368874606592" for 127.0.0.1 at 2010-11-19 17:48:42 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587368874606592"}
+spider-pig['status_influences'].find({:_id=>"5587368874606592"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 3845ms (Views: 16.6ms)
+
+
+Started GET "/status_influence/5587368874606592" for 127.0.0.1 at 2010-11-19 17:49:51 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587368874606592"}
+spider-pig['status_influences'].find({:_id=>"5587368874606592"}, {}).limit(-1)
+Completed   in 1559ms
+
+Grackle::TwitterError (Unable to decode response: 705: unexpected token at '<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta charset="utf-8" />
+
+    <script type="text/javascript" charset="utf-8">
+      // this must be set absolutely before any other script on the app is loaded for IE7
+      document.domain = 'twitter.com';
+    </script>
+
+    <script>if(window.top!==window.self){document.write="";window.top.location=window.self.location;setTimeout(function(){document.body.innerHTML=""},1);window.self.onload=function(){document.body.innerHTML=""}};</script>
+
+    <link href="/phoenix/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" charset="utf-8">
+      if (!window.twttr) {
+        window.twttr = window.twttr || {};
+      }
+
+      twttr.conditionalTemplates = {};
+
+
+      twttr.pageLocale = 'en';
+      twttr.currentUserScreenName = 'bilionariodf';
+      twttr._initialDeciderFeatures = {'tweet_stream_favorites':1,'people_stream_friends':1,'promo_component':1,'tweet_stream_list':1,'flock':1,'html5Routing':1,'contact_import_stream':1,'tweet_stream_mentions_polling':1,'list_stream_memberships':1,'phoenix_first_time':1,'whotofollow_recommendations':1,'tweet_stream_retweets_by_you':1,'inline_media_component':1,'geo_show_similar_places':1,'tweet_streams_polling':1,'list_stream_own_lists':1,'in_reply_to_component':1,'geo_autocomplete':1,'people_streams':1,'people_stream_people_search':1,'tweet_stream_retweets_by_you_polling':1,'tweet_stream_user_polling':1,'tweet_stream_mentions':1,'tweet_stream_user':1,'tweet_streams':1,'tweet_geo_component':1,'phoenix_scribe':1,'tweet_stream_search':1,'dashboard_activity_following':1,'people_stream_list_followers':1,'retweeters_component':1,'more_lists_component':1,'place_users_stream':1,'message_stream':1,'dashboard_activity_favorites':1,'dashboard_activity_listed':1,'tweet_stream_home':1,'list_streams':1,'tweet_stream_your_tweets_retweeted_polling':1,'tweet_stream_list_polling':1,'tweet_stream_retweets_by_others':1,'phoenix_puffin':1,'people_stream_follower_requests':1,'tweet_stream_home_polling':1,'trends_component':1,'tweet_stream_your_tweets_retweeted':1,'dashboard_activity_followers':1,'place_people_component':1,'list_stream_subscriptions':1,'place_tweets_component':1,'tweet_stream_retweets_by_others_polling':1,'geo_more_places':1,'people_stream_list_members':1,'whotofollow_similarities':1,'tweet_stream_search_polling':1,'japanese_ad_component':1,'infinite_scroll':1,'tweet_stream_favorites_polling':1,'geo_allow_set_location_manually':1,'people_stream_followers':1,'recent_tweets_component':1,'related_tweets_component':1,'conversations':1,'geo_place_creation':1,'suggestion_categories_streams':1,'phoenix_autocomplete':1,'onebox_user_search':1,'newest_list_members_component':1,'geo_ui':1};
+      twttr._initialAbDeciderBuckets = {"Autofollow-15":{"version":1,"experiment_key":"Autofollow-15","bucket":"control"},"Welcome_Contact_Import-14":{"version":1,"experiment_key":"Welcome_Contact_Import-14","bucket":"help_dialog"},"whotofollow_topnav-17":{"version":3,"experiment_key":"whotofollow_topnav-17","bucket":"control"}};
+    </script>
+
+    <title>Twitter / ?</title>
+    <script>
+      var TIME = +new Date;
+      if (!window.console) {
+        var names = ["log", "debug", "info", "warn", "error", "assert", "dir", "dirxml",
+          "group", "groupEnd", "time", "timeEnd", "count", "trace", "profile", "profileEnd"];
+        window.console = {};
+        for (var i = 0; i < names.length; ++i)
+          window.console[names[i]] = function() {}
+      }
+    </script>
+
+    <link rel="stylesheet" href="http://a1.twimg.com/a/1290123564/stylesheets/phoenix.bundle.css" type="text/css" media="screen" />
+    <noscript>
+        <meta http-equiv=refresh content="0; URL=/1/user/show/210929105.json?_twitter_noscript=1" />
+      </noscript>
+    <!-- basic RSS hoopla -->
+      <link rel="http://oexchange.org/spec/0.8/rel/related-target" href="http://twitter.com/oexchange.xrd" type="application/xrd+xml" />
+      <link rel="alternate" href="http://twitter.com/favorites/210929105.rss" title="Your Twitter Favorites" type="application/rss+xml" />
+    <!--
+    this MUST be the last include before the closing <head> tag
+    http://code.google.com/intl/en-US/apis/analytics/docs/tracking/asyncTracking.html
+    -->
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30775-6']);
+  _gaq.push(
+    ['_trackPageview'],
+    ['_setDomainName', 'twitter.com']
+  );
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  }());
+
+  twttr.trackPageView = function(pathName) {
+    var event = ['_trackPageview'];
+    if (pathName) {
+      event.push(pathName);
+    }
+    _gaq.push(event);
+  };
+
+</script>
+  </head>
+  <body class="en user-style-twttr loading-body">
+
+    <div id="doc">
+      <div id="top-stuff">
+        <div id="banners" style="clear:both;">
+          </div>
+        <div id="top-bar-outer">
+          <div id="top-bar-bg"></div>
+          <div id="top-bar">
+            <div class="top-bar-inside">
+              <div class="static-links">
+                <div id="logo">
+                  <a href="/">Twitter</a>
+                </div>
+                <form id="search-form" action="/search" method="GET">
+                  <span class="glass"><i></i></span>
+                  <input value="" placeholder="Search" name="q" id="search-query" type="text" />
+                </form>
+                <div id="global-nav">
+                  <ul>
+                    <li id="global-nav-home"><a href="/">Home</a></li>
+                      <li id="global-nav-profile"><a href="/bilionariodf">Profile</a></li>
+                      <li id="global-nav-messages"><a href="/messages">Messages</a></li>
+                      </ul>
+                </div>
+                <div id="sections"></div>
+              </div>
+              <div class="active-links">
+                <div id="session" class="loggedin">
+                    <a class="profile-links" href="#">
+                      <span id="profile-image"><img src="http://a0.twimg.com/profile_images/1157547896/billionaire_normal.jpg" /></span>
+                    </a>
+                    <span id="screen-name">
+  bilionariodf
+</span>
+<ul class="profile-dropdown">
+  <li><a href="/settings/account">Settings</a></li>
+    <li><a href="http://support.twitter.com">Help</a></li>
+    <li><a href="/#!/who_to_follow">Who to follow</a></li>
+
+    <li><a href="/account/use_phx?setting=false&amp;format=html">Leave preview</a></li>
+    <li>
+      <form class="signout-form" action="/logout" method="POST">
+        <a class="signout-button" href="#">Sign out</a>
+        <input type='hidden' value='075acccfbfef407a6b1f0633b5a007f89e3e388f' name='authenticity_token'/>
+      </form>
+    </li>
+
+    </ul>
+                </div>
+                <span class="vr"></span>
+                <a id="new-tweet" title="New Tweet"><span>New Tweet</span></a>
+                </div>
+            </div>
+          </div>
+          <div id="message-drawer"></div>
+        </div>
+      </div>
+
+      <div id="page-outer">
+        <div id="page-container" class="fof-container">
+
+              <div class="four-oh-four">
+  </div>
+              </div>
+      </div>
+
+      <div id="message-notifications"></div>
+    </div>
+
+    <script text='text/javascript' src="http://a4.twimg.com/a/1290123564/javascripts/base.bundle.js"></script>
+<script src="/easyXDM.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+  $LAB.setGlobalDefaults({
+    AlwaysPreserveOrder: true,
+    UsePreloading: false,
+    UseLocalXHR: false,
+    UseCachePreload: false
+  });
+
+  if (!window.twttr) {
+    window.twttr = window.twttr || {};
+  }
+
+  twttr.appStartTime = new Date().getTime();
+
+  twttr.remoteIP = '187.21.51.81';
+
+  twttr.loaded = (function() {
+    var waitingFor = 2;
+    return function () {
+      waitingFor--;
+
+      if (waitingFor === 0) {
+
+        // Manually trigger ready event, avoiding race condition where it never fires due to iframe thingy
+        // This should be safe based on how our script loading is done
+        jQuery.ready();
+        twttr.setup();
+      }
+    };
+  }());
+
+
+  /* -------------------- prepare canned places for experiment -------------------- */
+
+  twttr.cannedPlaces = "http://a0.twimg.com/a/1290123564/javascripts/canned.bundle.js";
+  /* -------------------- Initialize API Method -------------------- */
+
+  function _initAPI() {
+
+    twttr.anywhere.api.initialize();
+
+    twttr.API = {};
+
+    twttr.aug(twttr.API, twttr.anywhere.api.models);
+    twttr.aug(twttr.API, {
+      globalEvents: twttr.anywhere.api.globalEvents
+    });
+
+    twttr.API.setConfig = twttr.anywhere.api.updateConfig;
+    twttr.API.getConfig = function() {
+      return twttr.anywhere.api.config;
+    };
+
+    if (!twttr.API.util) {
+      twttr.API.util = {};
+    }
+
+    twttr.aug(twttr.API.util, twttr.anywhere.api.util);
+
+    if (!twttr.API._requestCache) {
+      twttr.API._requestCache = twttr.anywhere.api.cache;
+    }
+
+    twttr.API.setConfig({
+      cacheObjects: true,
+      postAuthenticityToken: '075acccfbfef407a6b1f0633b5a007f89e3e388f'
+    });
+
+    if ( twttr.currentUserScreenName ) {
+      twttr.API._requestCache.inject("account/verify_credentials", [{}], {"states":{"detached_email":false,"pending_email":false,"bouncing_email":false,"needs_employee_email_update":false,"suspended":false},"description":"quero ser um bilion\u00e1rio ","listed_count":0,"profile_background_image_url":"http:\/\/s.twimg.com\/a\/1289849896\/images\/themes\/theme1\/bg.png","profile_text_color":"333333","url":null,"status":{"favorited":false,"in_reply_to_status_id_str":null,"contributors":null,"in_reply_to_screen_name":null,"in_reply_to_user_id_str":null,"in_reply_to_status_id":null,"created_at":"Fri Nov 19 19:43:12 +0000 2010","geo":null,"retweet_count":null,"source":"\u003Ca href=\"http:\/\/www.ucb.br\" rel=\"nofollow\"\u003Egagatwitt\u003C\/a\u003E","coordinates":null,"retweeted":false,"in_reply_to_user_id":null,"id_str":"5707684485537792","place":null,"truncated":false,"id":5707684485537792,"text":"FFFF OOOO DDDD"},"statuses_count":31,"show_all_inline_media":true,"lang":"en","profile_background_tile":false,"favourites_count":0,"created_at":"Mon Nov 01 20:31:01 +0000 2010","profile_link_color":"0084B4","location":"","contributors_enabled":false,"notifications":false,"profile_sidebar_fill_color":"DDEEF6","following":false,"time_zone":"Greenland","friends_count":21,"profile_sidebar_border_color":"C0DEED","protected":false,"id_str":"210929105","follow_request_sent":false,"followers_count":0,"profile_image_url":"http:\/\/a0.twimg.com\/profile_images\/1157547896\/billionaire_normal.jpg","name":"Bilionario","verified":false,"id":210929105,"geo_enabled":false,"profile_use_background_image":true,"utc_offset":-10800,"profile_background_color":"C0DEED","screen_name":"bilionariodf"}, 1);
+      } else {
+      twttr.loggedIn = false;
+    }
+
+    twttr.recentPlaces = [];
+
+    twttr.extendAPI();
+  }
+
+  /* -------------------- Init CurrentUser Method -------------------- */
+
+  var _initCurrentUser = function() {
+
+    twttr.API.User.current({
+      //pull from current user loaded server side
+      useRequestCache: true,
+
+      success: function (user) {
+        twttr.currentUser = user;
+        twttr.currentUser.sync("deviceSetup", false);
+        twttr.currentUser.sync("emailAddress", "&quot;bilionariodf@gmail.com&quot;");
+        twttr.currentUser.sync("deviceAddress", "");
+        twttr.currentUser.sync("emailDiscoverabilitySet", true);
+        twttr.currentUser.sync("discoverableByEmail", false);
+        twttr.currentUser.sync("mobilePhoneDiscoverabilitySet", false);
+        twttr.currentUser.sync("discoverableByMobilePhone", false);
+        twttr.loggedIn = true;
+        twttr.loaded();
+      },
+
+      error: function () {
+        twttr.loggedIn = false;
+        twttr.loaded();
+      }
+    });
+
+  };
+
+
+  /* -------------------- Setting up Domains -------------------- */
+
+
+
+
+
+  twttr.proto = window.location.protocol.match(/s\:$/) ? 'https' : 'http';
+
+  twttr.domains = {
+    local: 'twitter.com',
+    remote: 'api.twitter.com'
+  }
+
+  var match = window.location.hostname.match(/^(staging\d+\.local)\.twitter\.com$/i);
+
+  if (match) {
+    twttr.domains.local = match[1] + '.twitter.com';
+    twttr.domains.remote = 'api-' + match[1] + '.twitter.com'
+  }
+
+  if (document.location.hostname === "localhost.twitter.com") {
+    twttr.domains.local = 'localhost.twitter.com:3000';
+      twttr.domains.remote = 'api.localhost.twitter.com:3000';
+    }
+
+  twttr.hosts = {
+    local: twttr.proto + "://" + twttr.domains.local,
+    remote: twttr.proto + "://" + twttr.domains.remote
+  };
+
+  var pReceiverURL = twttr.hosts.remote + '/p_receiver.html';
+
+  /* -------------------- Iframe Creator Method -------------------- */
+
+  var userAgent = navigator.userAgent.toLowerCase();
+  var isIE = (/msie/gi.test( userAgent ) && !/opera/gi.test( userAgent ));
+  var IFRAME_TEMPLATE = '<iframe tabindex="-1" role="presentation" style="position:absolute;top:-9999px;" src="' + pReceiverURL + '"></iframe>';
+
+  function _bind(scope, fn) {
+    return function() {
+      return fn.apply(scope, arguments);
+    };
+  }
+
+  function createIFrame(complete) {
+
+    var frag = document.createElement('div');
+    frag.innerHTML = IFRAME_TEMPLATE;
+
+    var iframe = frag.firstChild;
+    var fnComplete = function() {
+          complete.apply(iframe, arguments);
+        };
+
+    if (isIE) {
+      var loaded = false;
+
+      iframe.attachEvent('onload', function() {
+        if (loaded) {
+          return;
+        }
+
+        loaded = true;
+
+        fnComplete();
+      });
+    } else {
+      iframe.addEventListener('load', fnComplete, false);
+    }
+
+    //  Avoid "operation aborted" error in IE that can be caused by
+    //  appending a new element to the body via body.appendChild
+    //  by a script that is not a direct descendant of the <body>.
+
+    document.body.insertBefore(iframe, document.body.firstChild);
+
+    return iframe;
+  }
+
+  var _dependencyReady = (function() {
+    var waitingFor = 2;
+    return function() {
+      waitingFor--;
+      if (waitingFor > 0) {
+        return;
+      }
+
+      var remoteWindow = twttr.anywhere.remote.server.contentWindow;
+      remoteWindow.jQuery = remoteWindow.$ = window.jQuery;
+      remoteWindow.JSON = window.JSON;
+      remoteWindow.onJQueryLoaded();
+    };
+  }());
+
+  /* -------------------- Start Asset Fetching -------------------- */
+
+  var baseLab = $LAB;
+
+  baseLab
+    .wait(function() {
+
+      /* -------------------- fetch phoenix assets -------------------- */
+
+      var phxLab = $LAB;
+
+      phxLab
+        .script("http://a1.twimg.com/a/1290123564/javascripts/phoenix.bundle.js")
+        .wait(function() {
+          _dependencyReady();
+          twttr.loaded();
+        });
+
+
+      /* -------------------- fetch api assets -------------------- */
+      var apiLab = $LAB;
+
+      apiLab
+        .script("http://a4.twimg.com/a/1290123564/javascripts/api.bundle.js")
+        .wait(function() {
+
+          twttr.anywhere = twttr.anywhere || {};
+          twttr.anywhere.remote = twttr.anywhere.remote || {};
+
+          _initAPI();
+
+          /* -------------------- create remote iframe -------------------- */
+
+          createIFrame(function() {
+            var that = this;
+
+            function thing() {
+              twttr.anywhere.remote.server = this;
+
+              if (this.contentWindow.ready) {
+                _initCurrentUser();
+                _dependencyReady();
+              } else if (this.contentWindow.addCallback) {
+                this.contentWindow.addCallback(_initCurrentUser);
+                _dependencyReady();
+              } else {
+                thing.call(that);
+              }
+            }
+
+            thing.call(this);
+          });
+        });
+
+    });
+
+</script>
+
+<!--[if lte IE 6]>
+<script src="http://a0.twimg.com/a/1290123564/javascripts/phoenix/phxie6.bundle.js"></script>
+<![endif]-->
+
+    </body>
+</html>
+'):
+  app/controllers/status_influence_controller.rb:82:in `update_status_influence'
+  app/controllers/status_influence_controller.rb:10:in `msg'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+
+
+Started GET "/status_influence/5587368874606592" for 127.0.0.1 at 2010-11-19 17:50:10 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587368874606592"}
+spider-pig['status_influences'].find({:_id=>"5587368874606592"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 238326ms (Views: 16.1ms)
+
+
+Started GET "/status_influence/5587368874606592" for 127.0.0.1 at 2010-11-19 17:54:12 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587368874606592"}
+spider-pig['status_influences'].find({:_id=>"5587368874606592"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 1557ms (Views: 11.8ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-19 17:54:17 -0200
+  Processing by StatusInfluenceController#index as HTML
+spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 18ms (Views: 17.0ms)
+
+
+Started GET "/status_influence/5585412005306368" for 127.0.0.1 at 2010-11-19 17:54:19 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5585412005306368"}
+spider-pig['status_influences'].find({:_id=>"5585412005306368"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 1197ms (Views: 12.2ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-19 17:54:22 -0200
+  Processing by StatusInfluenceController#index as HTML
+spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 17ms (Views: 16.4ms)
+
+
+Started GET "/status_influence/5583195667955712" for 127.0.0.1 at 2010-11-19 17:54:24 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5583195667955712"}
+spider-pig['status_influences'].find({:_id=>"5583195667955712"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 1465ms (Views: 14.4ms)
+
+
+Started GET "/status_influence/5587599636828161" for 127.0.0.1 at 2010-11-19 20:20:11 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587599636828161"}
+spider-pig['status_influences'].find({:_id=>"5587599636828161"}, {}).limit(-1)
+Completed   in 106ms
+
+Grackle::TwitterError (Unexpected failure making request: getaddrinfo: nodename nor servname provided, or not known):
+  app/controllers/status_influence_controller.rb:81:in `update_status_influence'
+  app/controllers/status_influence_controller.rb:10:in `msg'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (75.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-19 20:20:58 -0200
+  Processing by GagaController#index as HTML
+spider-pig['tweeters'].find({}, {}).limit(6)
+MONGODB cursor.close 6646032843111261050
+Rendered gaga/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 16ms (Views: 15.7ms)
+
+
+Started GET "/status_influence/5587599636828161" for 127.0.0.1 at 2010-11-19 20:21:13 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5587599636828161"}
+spider-pig['status_influences'].find({:_id=>"5587599636828161"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 4307ms (Views: 13.2ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-19 20:21:25 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 12ms (Views: 10.8ms)
+
+
+Started GET "/status_influence/new_msg?utf8=%E2%9C%93&text=renato+rocks&commit=submit" for 127.0.0.1 at 2010-11-19 20:21:34 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"utf8"=>"✓", "text"=>"renato rocks", "commit"=>"submit"}
+spider-pig['status_influences'].find({:_id=>"210929105"}, {}).limit(-1)
+MONGODB spider-pig['status_influences'].insert([{"_id"=>"5747551370219520", "statuses"=>{"_id"=>BSON::ObjectId('4ce6f870f32c1e05fe000060'), "text"=>"renato rocks", "geo"=>nil, "favorited"=>nil, "in_reply_to_status_id"=>nil, "in_reply_to_user_id"=>nil, "contributors"=>nil, "in_reply_to_screen_name"=>nil, "created_at"=>"Fri Nov 19 22:21:37 +0000 2010", "id_str"=>"5747551370219520", "retweet_count"=>nil, "coordinates"=>nil, "retweeted"=>nil, "place"=>nil, "user"=>"210929105", "user_name"=>"bilionariodf"}, "influence_number"=>"21", "created_at"=>2010-11-19 22:21:36 UTC, "updated_at"=>2010-11-19 22:21:36 UTC}])
+Rendered status_influence/new_msg.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1414ms (Views: 11.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-19 20:22:12 -0200
+  Processing by StatusInfluenceController#index as HTML
+spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 17ms (Views: 16.5ms)
+
+
+Started GET "/status_influence/5747551370219520" for 127.0.0.1 at 2010-11-19 20:22:22 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5747551370219520"}
+spider-pig['status_influences'].find({:_id=>"5747551370219520"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 1793ms (Views: 13.0ms)
+
+
+Started GET "/status_influence/5747551370219520" for 127.0.0.1 at 2010-11-19 20:22:52 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5747551370219520"}
+spider-pig['status_influences'].find({:_id=>"5747551370219520"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 1770ms (Views: 12.7ms)
+
+
+Started GET "/seeds" for 127.0.0.1 at 2010-11-19 20:23:04 -0200
+  Processing by SeedsController#index as HTML
+spider-pig['seeds'].find({}, {})
+Rendered seeds/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 15ms (Views: 14.8ms)
+
+
+Started GET "/seeds/new" for 127.0.0.1 at 2010-11-19 20:23:07 -0200
+  Processing by SeedsController#new as HTML
+Rendered seeds/_form.html.erb (5.3ms)
+Rendered seeds/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 18ms (Views: 17.4ms)
+
+
+Started POST "/seeds" for 127.0.0.1 at 2010-11-19 20:23:14 -0200
+  Processing by SeedsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CF5HUZJDHRWHBD+HuqygT7yIYQWqhrfEJkdmSjc1ztY=", "seed"=>{"screen_name"=>"pesnk"}, "commit"=>"Create Seed"}
+spider-pig['$cmd'].find({"count"=>"seeds", "query"=>{:screen_name=>"pesnk"}, "fields"=>nil}, {}).limit(-1)
+MONGODB spider-pig['seeds'].insert([{"screen_name"=>"pesnk", "_id"=>BSON::ObjectId('4ce6f8d2f32c1e05fe000062'), "created_at"=>2010-11-19 22:23:14 UTC, "updated_at"=>2010-11-19 22:23:14 UTC}])
+Redirected to http://localhost:3000/seeds
+Completed 302 Found in 44ms
+
+
+Started GET "/seeds" for 127.0.0.1 at 2010-11-19 20:23:14 -0200
+  Processing by SeedsController#index as HTML
+spider-pig['seeds'].find({}, {})
+Rendered seeds/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 16ms (Views: 15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-19 20:27:50 -0200
+  Processing by GagaController#index as HTML
+spider-pig['tweeters'].find({}, {}).limit(6)
+MONGODB cursor.close 4838636104452157350
+Rendered gaga/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 17ms (Views: 16.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-19 20:28:09 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (5.8ms)
+Rendered tweeters/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 20ms (Views: 18.3ms)
+
+
+Started GET "/seeds" for 127.0.0.1 at 2010-11-19 20:28:19 -0200
+  Processing by SeedsController#index as HTML
+spider-pig['seeds'].find({}, {})
+Rendered seeds/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 16ms (Views: 15.1ms)
+
+
+Started POST "/seeds/4ce6f8d2f32c1e05fe000062" for 127.0.0.1 at 2010-11-19 20:28:23 -0200
+  Processing by SeedsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CF5HUZJDHRWHBD+HuqygT7yIYQWqhrfEJkdmSjc1ztY=", "id"=>"4ce6f8d2f32c1e05fe000062"}
+spider-pig['seeds'].find({:_id=>BSON::ObjectId('4ce6f8d2f32c1e05fe000062')}, {}).limit(-1)
+MONGODB spider-pig['seeds'].remove({:_id=>BSON::ObjectId('4ce6f8d2f32c1e05fe000062')})
+Redirected to http://localhost:3000/seeds
+Completed 302 Found in 3ms
+
+
+Started GET "/seeds" for 127.0.0.1 at 2010-11-19 20:28:23 -0200
+  Processing by SeedsController#index as HTML
+spider-pig['seeds'].find({}, {})
+Rendered seeds/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 15ms (Views: 13.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-19 20:31:08 -0200
+  Processing by GagaController#index as HTML
+spider-pig['tweeters'].find({}, {}).limit(6)
+MONGODB cursor.close 1360889398551589454
+Rendered gaga/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 17ms (Views: 16.0ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-19 20:31:28 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (5.9ms)
+Rendered tweeters/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 19ms (Views: 17.5ms)
+
+
+Started GET "/renatofq/status" for 127.0.0.1 at 2010-11-19 20:31:32 -0200
+  Processing by TweetersController#status as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {})
+spider-pig['statuses'].find({}, {})
+MONGODB cursor.refresh() for cursor 7728808963315307080
+Rendered tweeters/_tweet_status.erb (22.6ms)
+Rendered tweeters/status.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 55ms (Views: 34.2ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-19 20:31:36 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (5.7ms)
+Rendered tweeters/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 19ms (Views: 17.1ms)
+
+
+Started GET "/seeds" for 127.0.0.1 at 2010-11-19 20:31:41 -0200
+  Processing by SeedsController#index as HTML
+spider-pig['seeds'].find({}, {})
+Rendered seeds/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 14ms (Views: 13.5ms)
+
+
+Started GET "/seeds/new" for 127.0.0.1 at 2010-11-19 20:32:13 -0200
+  Processing by SeedsController#new as HTML
+Rendered seeds/_form.html.erb (5.4ms)
+Rendered seeds/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms)
+
+
+Started POST "/seeds" for 127.0.0.1 at 2010-11-19 20:32:17 -0200
+  Processing by SeedsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CF5HUZJDHRWHBD+HuqygT7yIYQWqhrfEJkdmSjc1ztY=", "seed"=>{"screen_name"=>"pesnk"}, "commit"=>"Create Seed"}
+spider-pig['$cmd'].find({"count"=>"seeds", "query"=>{:screen_name=>"pesnk"}, "fields"=>nil}, {}).limit(-1)
+MONGODB spider-pig['seeds'].insert([{"screen_name"=>"pesnk", "_id"=>BSON::ObjectId('4ce6faf2f32c1e05fe000067'), "created_at"=>2010-11-19 22:32:18 UTC, "updated_at"=>2010-11-19 22:32:18 UTC}])
+Redirected to http://localhost:3000/seeds
+Completed 302 Found in 4ms
+
+
+Started GET "/seeds" for 127.0.0.1 at 2010-11-19 20:32:18 -0200
+  Processing by SeedsController#index as HTML
+spider-pig['seeds'].find({}, {})
+Rendered seeds/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 16ms (Views: 15.4ms)
+
+
+Started GET "/seeds/new" for 127.0.0.1 at 2010-11-19 20:32:20 -0200
+  Processing by SeedsController#new as HTML
+Rendered seeds/_form.html.erb (5.2ms)
+Rendered seeds/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 17ms (Views: 16.5ms)
+
+
+Started POST "/seeds" for 127.0.0.1 at 2010-11-19 20:32:25 -0200
+  Processing by SeedsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CF5HUZJDHRWHBD+HuqygT7yIYQWqhrfEJkdmSjc1ztY=", "seed"=>{"screen_name"=>"ucb"}, "commit"=>"Create Seed"}
+spider-pig['$cmd'].find({"count"=>"seeds", "query"=>{:screen_name=>"ucb"}, "fields"=>nil}, {}).limit(-1)
+MONGODB spider-pig['seeds'].insert([{"screen_name"=>"ucb", "_id"=>BSON::ObjectId('4ce6faf9f32c1e05fe000069'), "created_at"=>2010-11-19 22:32:25 UTC, "updated_at"=>2010-11-19 22:32:25 UTC}])
+Redirected to http://localhost:3000/seeds
+Completed 302 Found in 4ms
+
+
+Started GET "/seeds" for 127.0.0.1 at 2010-11-19 20:32:25 -0200
+  Processing by SeedsController#index as HTML
+spider-pig['seeds'].find({}, {})
+Rendered seeds/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 18ms (Views: 17.7ms)
+
+
+Started GET "/seeds/4ce6faf9f32c1e05fe000069/edit" for 127.0.0.1 at 2010-11-19 20:32:29 -0200
+  Processing by SeedsController#edit as HTML
+  Parameters: {"id"=>"4ce6faf9f32c1e05fe000069"}
+spider-pig['seeds'].find({:_id=>BSON::ObjectId('4ce6faf9f32c1e05fe000069')}, {}).limit(-1)
+Rendered seeds/_form.html.erb (6.5ms)
+Rendered seeds/edit.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 20ms (Views: 18.4ms)
+
+
+Started POST "/seeds/4ce6faf9f32c1e05fe000069" for 127.0.0.1 at 2010-11-19 20:32:32 -0200
+  Processing by SeedsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CF5HUZJDHRWHBD+HuqygT7yIYQWqhrfEJkdmSjc1ztY=", "seed"=>{"screen_name"=>"ucbdf"}, "commit"=>"Update Seed", "id"=>"4ce6faf9f32c1e05fe000069"}
+spider-pig['seeds'].find({:_id=>BSON::ObjectId('4ce6faf9f32c1e05fe000069')}, {}).limit(-1)
+spider-pig['$cmd'].find({"count"=>"seeds", "query"=>{:screen_name=>"ucbdf", :_id=>{"$ne"=>BSON::ObjectId('4ce6faf9f32c1e05fe000069')}}, "fields"=>nil}, {}).limit(-1)
+MONGODB spider-pig['seeds'].update({"_id"=>BSON::ObjectId('4ce6faf9f32c1e05fe000069')}, {"$set"=>{"screen_name"=>"ucbdf", "updated_at"=>2010-11-19 22:32:32 UTC}})
+Redirected to http://localhost:3000/seeds
+Completed 302 Found in 51ms
+
+
+Started GET "/seeds" for 127.0.0.1 at 2010-11-19 20:32:32 -0200
+  Processing by SeedsController#index as HTML
+spider-pig['seeds'].find({}, {})
+Rendered seeds/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 18ms (Views: 17.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-19 20:32:44 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 12ms (Views: 11.2ms)
+
+
+Started GET "/status_influence/new_msg?utf8=%E2%9C%93&text=corrup%C3%A7%C3%A3o+em+brasilia&commit=submit" for 127.0.0.1 at 2010-11-19 20:33:00 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"utf8"=>"✓", "text"=>"corrupção em brasilia", "commit"=>"submit"}
+spider-pig['status_influences'].find({:_id=>"210929105"}, {}).limit(-1)
+MONGODB spider-pig['status_influences'].insert([{"_id"=>"5750434308292608", "statuses"=>{"_id"=>BSON::ObjectId('4ce6fb20f32c1e05fe00006d'), "text"=>"corrupção em brasilia", "geo"=>nil, "favorited"=>nil, "in_reply_to_status_id"=>nil, "in_reply_to_user_id"=>nil, "contributors"=>nil, "in_reply_to_screen_name"=>nil, "created_at"=>"Fri Nov 19 22:33:05 +0000 2010", "id_str"=>"5750434308292608", "retweet_count"=>nil, "coordinates"=>nil, "retweeted"=>nil, "place"=>nil, "user"=>"210929105", "user_name"=>"bilionariodf"}, "influence_number"=>"21", "created_at"=>2010-11-19 22:33:04 UTC, "updated_at"=>2010-11-19 22:33:04 UTC}])
+Rendered status_influence/new_msg.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 2801ms (Views: 11.0ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-19 20:36:51 -0200
+  Processing by StatusInfluenceController#index as HTML
+spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 19ms (Views: 18.1ms)
+
+
+Started GET "/status_influence/5750434308292608" for 127.0.0.1 at 2010-11-19 20:37:24 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"5750434308292608"}
+spider-pig['status_influences'].find({:_id=>"5750434308292608"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 3333ms (Views: 13.1ms)
+admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-23 07:59:56 -0200
+  Processing by GagaController#index as HTML
+Completed   in 58ms
+
+ActionView::MissingTemplate (Missing template gaga/index with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths ):
+  
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-23 07:59:57 -0200
+  Processing by GagaController#index as HTML
+spider-pig['tweeters'].find({}, {}).limit(6)
+MONGODB cursor.close 8672885145128986947
+Rendered gaga/index.html.erb within layouts/application (402.6ms)
+Completed 200 OK in 482ms (Views: 481.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-23 07:59:59 -0200
+  Processing by GagaController#index as HTML
+spider-pig['tweeters'].find({}, {}).limit(6)
+MONGODB cursor.close 8232354812049289730
+Rendered gaga/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 11ms (Views: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-23 08:00:01 -0200
+  Processing by GagaController#index as HTML
+spider-pig['tweeters'].find({}, {}).limit(6)
+MONGODB cursor.close 1383416854506960930
+Rendered gaga/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 11ms (Views: 10.8ms)
+
+
+Started GET "/renatofq" for 127.0.0.1 at 2010-11-23 08:00:09 -0200
+  Processing by TweetersController#index as HTML
+  Parameters: {"tweet_url"=>"renatofq"}
+spider-pig['tweeters'].find({:screen_name=>"renatofq"}, {}).limit(-1)
+Rendered tweeters/_tweeters.html.erb (3.6ms)
+Rendered tweeters/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 45ms (Views: 43.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-11-23 08:00:13 -0200
+  Processing by GagaController#index as HTML
+spider-pig['tweeters'].find({}, {}).limit(6)
+MONGODB cursor.close 8189502819530516192
+Rendered gaga/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 11ms (Views: 10.4ms)
+
+
+Started GET "/seeds" for 127.0.0.1 at 2010-11-23 08:00:19 -0200
+  Processing by SeedsController#index as HTML
+spider-pig['seeds'].find({}, {})
+Rendered seeds/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 45ms (Views: 44.2ms)
+
+
+Started POST "/seeds/4ce6faf9f32c1e05fe000069" for 127.0.0.1 at 2010-11-23 08:00:24 -0200
+  Processing by SeedsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"APzxUTI8jkvQyRA3f4Z9Z4lfUjmoCudUmUPyKlP4ILg=", "id"=>"4ce6faf9f32c1e05fe000069"}
+spider-pig['seeds'].find({:_id=>BSON::ObjectId('4ce6faf9f32c1e05fe000069')}, {}).limit(-1)
+MONGODB spider-pig['seeds'].remove({:_id=>BSON::ObjectId('4ce6faf9f32c1e05fe000069')})
+Redirected to http://localhost:3000/seeds
+Completed 302 Found in 37ms
+
+
+Started GET "/seeds" for 127.0.0.1 at 2010-11-23 08:00:25 -0200
+  Processing by SeedsController#index as HTML
+spider-pig['seeds'].find({}, {})
+Rendered seeds/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 11ms (Views: 10.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:00:26 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 28ms (Views: 27.3ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:02:31 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.6ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:02:43 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 9ms (Views: 8.1ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:02:58 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 9ms (Views: 8.0ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:02:59 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 9ms (Views: 8.1ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:03:06 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 7.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:03:12 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:03:16 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 9ms (Views: 7.9ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:03:21 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:03:30 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.7ms)
+admin['$cmd'].find({:ismaster=>1}, {}).limit(-1)
+admin['$cmd'].find({:buildinfo=>1}, {}).limit(-1)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:22:15 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 10ms (Views: 9.1ms)
+
+
+Started GET "/status_influence/new_msg?utf8=%E2%9C%93&text=t%C3%A3o+me+recebendo%3F&tweets_to_send_to=BarackObama%3Bpresidente_lula%3Bdilmabr&commit=submit" for 127.0.0.1 at 2010-11-23 08:22:36 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"utf8"=>"✓", "text"=>"tão me recebendo?", "tweets_to_send_to"=>"BarackObama;presidente_lula;dilmabr", "commit"=>"submit"}
+Completed   in 1ms
+
+NoMethodError (undefined method `empty?' for #<Enumerator: "BarackObama;presidente_lula;dilmabr":gsub(";")>):
+  app/controllers/status_influence_controller.rb:31:in `new_msg'
+
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Users/pedrosnk/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:22:51 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.7ms)
+
+
+Started GET "/status_influence/new_msg?utf8=%E2%9C%93&text=t%C3%A3o+me+recebendo%3F&tweets_to_send_to=BarackObama%3Bpresidente_lula%3Bdilmabr&commit=submit" for 127.0.0.1 at 2010-11-23 08:22:53 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"utf8"=>"✓", "text"=>"tão me recebendo?", "tweets_to_send_to"=>"BarackObama;presidente_lula;dilmabr", "commit"=>"submit"}
+spider-pig['status_influences'].find({:_id=>"210929105"}, {}).limit(-1)
+MONGODB spider-pig['status_influences'].insert([{"_id"=>"7016248672002048", "statuses"=>{"_id"=>BSON::ObjectId('4ceb9602f32c1e01ce000011'), "text"=>"tão me recebendo? - @BarackObama - @presidente_lula - @dilmabr", "geo"=>nil, "favorited"=>nil, "in_reply_to_status_id"=>nil, "in_reply_to_user_id"=>nil, "contributors"=>nil, "in_reply_to_screen_name"=>nil, "created_at"=>"Tue Nov 23 10:22:58 +0000 2010", "id_str"=>"7016248672002048", "retweet_count"=>nil, "coordinates"=>nil, "retweeted"=>nil, "place"=>nil, "user"=>"210929105", "user_name"=>"bilionariodf"}, "influence_number"=>"21", "created_at"=>2010-11-23 10:22:58 UTC, "updated_at"=>2010-11-23 10:22:58 UTC}])
+Rendered status_influence/new_msg.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 4939ms (Views: 9.3ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-23 08:23:11 -0200
+  Processing by StatusInfluenceController#index as HTML
+spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 54ms (Views: 53.2ms)
+
+
+Started GET "/status_influence/7016248672002048" for 127.0.0.1 at 2010-11-23 08:23:18 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"7016248672002048"}
+spider-pig['status_influences'].find({:_id=>"7016248672002048"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 4225ms (Views: 52.9ms)
+
+
+Started GET "/seeds" for 127.0.0.1 at 2010-11-23 08:27:45 -0200
+  Processing by SeedsController#index as HTML
+spider-pig['seeds'].find({}, {})
+Rendered seeds/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 12ms (Views: 11.2ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:27:48 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 9ms (Views: 8.1ms)
+
+
+Started GET "/status_influence/new_msg?utf8=%E2%9C%93&text=%23miley18&tweets_to_send_to=BarackObama%3Bpresidente_lula%3Bdilmabr&commit=submit" for 127.0.0.1 at 2010-11-23 08:28:02 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"utf8"=>"✓", "text"=>"#miley18", "tweets_to_send_to"=>"BarackObama;presidente_lula;dilmabr", "commit"=>"submit"}
+spider-pig['status_influences'].find({:_id=>"210929105"}, {}).limit(-1)
+MONGODB spider-pig['status_influences'].insert([{"_id"=>"7017549233397760", "statuses"=>{"_id"=>BSON::ObjectId('4ceb9739f32c1e01ce000015'), "text"=>"#miley18 - @dilmabr", "geo"=>nil, "favorited"=>nil, "in_reply_to_status_id"=>nil, "in_reply_to_user_id"=>nil, "contributors"=>nil, "in_reply_to_screen_name"=>nil, "created_at"=>"Tue Nov 23 10:28:08 +0000 2010", "id_str"=>"7017549233397760", "retweet_count"=>nil, "coordinates"=>nil, "retweeted"=>nil, "place"=>nil, "user"=>"210929105", "user_name"=>"bilionariodf"}, "influence_number"=>"21", "created_at"=>2010-11-23 10:28:09 UTC, "updated_at"=>2010-11-23 10:28:09 UTC}])
+Rendered status_influence/new_msg.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 6562ms (Views: 8.3ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-23 08:29:57 -0200
+  Processing by StatusInfluenceController#index as HTML
+spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 60ms (Views: 59.7ms)
+
+
+Started GET "/status_influence/new_msg" for 127.0.0.1 at 2010-11-23 08:30:49 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+Rendered status_influence/new_msg.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 9ms (Views: 8.6ms)
+
+
+Started GET "/status_influence/new_msg?utf8=%E2%9C%93&text=education+is+everything&tweets_to_send_to=BarackObama%3Bpresidente_lula%3Bdilmabr&commit=submit" for 127.0.0.1 at 2010-11-23 08:31:30 -0200
+  Processing by StatusInfluenceController#new_msg as HTML
+  Parameters: {"utf8"=>"✓", "text"=>"education is everything", "tweets_to_send_to"=>"BarackObama;presidente_lula;dilmabr", "commit"=>"submit"}
+spider-pig['status_influences'].find({:_id=>"210929105"}, {}).limit(-1)
+MONGODB spider-pig['status_influences'].insert([{"_id"=>"7018400400281600", "statuses"=>{"_id"=>BSON::ObjectId('4ceb9803f32c1e01ce000019'), "text"=>"education is everything - @BarackObama", "geo"=>nil, "favorited"=>nil, "in_reply_to_status_id"=>nil, "in_reply_to_user_id"=>nil, "contributors"=>nil, "in_reply_to_screen_name"=>nil, "created_at"=>"Tue Nov 23 10:31:31 +0000 2010", "id_str"=>"7018400400281600", "retweet_count"=>nil, "coordinates"=>nil, "retweeted"=>nil, "place"=>nil, "user"=>"210929105", "user_name"=>"bilionariodf"}, "influence_number"=>"21", "created_at"=>2010-11-23 10:31:31 UTC, "updated_at"=>2010-11-23 10:31:31 UTC}])
+spider-pig['status_influences'].find({:_id=>"210929105"}, {}).limit(-1)
+MONGODB spider-pig['status_influences'].insert([{"_id"=>"7018405869658112", "statuses"=>{"_id"=>BSON::ObjectId('4ceb9805f32c1e01ce00001b'), "text"=>"education is everything - @presidente_lula", "geo"=>nil, "favorited"=>nil, "in_reply_to_status_id"=>nil, "in_reply_to_user_id"=>nil, "contributors"=>nil, "in_reply_to_screen_name"=>nil, "created_at"=>"Tue Nov 23 10:31:33 +0000 2010", "id_str"=>"7018405869658112", "retweet_count"=>nil, "coordinates"=>nil, "retweeted"=>nil, "place"=>nil, "user"=>"210929105", "user_name"=>"bilionariodf"}, "influence_number"=>"21", "created_at"=>2010-11-23 10:31:33 UTC, "updated_at"=>2010-11-23 10:31:33 UTC}])
+spider-pig['status_influences'].find({:_id=>"210929105"}, {}).limit(-1)
+MONGODB spider-pig['status_influences'].insert([{"_id"=>"7018411414519808", "statuses"=>{"_id"=>BSON::ObjectId('4ceb9806f32c1e01ce00001d'), "text"=>"education is everything - @dilmabr", "geo"=>nil, "favorited"=>nil, "in_reply_to_status_id"=>nil, "in_reply_to_user_id"=>nil, "contributors"=>nil, "in_reply_to_screen_name"=>nil, "created_at"=>"Tue Nov 23 10:31:34 +0000 2010", "id_str"=>"7018411414519808", "retweet_count"=>nil, "coordinates"=>nil, "retweeted"=>nil, "place"=>nil, "user"=>"210929105", "user_name"=>"bilionariodf"}, "influence_number"=>"21", "created_at"=>2010-11-23 10:31:34 UTC, "updated_at"=>2010-11-23 10:31:34 UTC}])
+Rendered status_influence/new_msg.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 3988ms (Views: 9.9ms)
+
+
+Started GET "/status_influence/index" for 127.0.0.1 at 2010-11-23 08:31:39 -0200
+  Processing by StatusInfluenceController#index as HTML
+spider-pig['status_influences'].find({}, {})
+Rendered status_influence/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 13ms (Views: 13.0ms)
+
+
+Started GET "/status_influence/7018400400281600" for 127.0.0.1 at 2010-11-23 08:31:44 -0200
+  Processing by StatusInfluenceController#msg as HTML
+  Parameters: {"id_str"=>"7018400400281600"}
+spider-pig['status_influences'].find({:_id=>"7018400400281600"}, {}).limit(-1)
+Rendered status_influence/msg.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 4670ms (Views: 10.9ms)
