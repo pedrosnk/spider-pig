@@ -7,8 +7,7 @@ class StatusInfluenceController < ApplicationController
   
   def msg
     @status_influence = StatusInfluence.find(:first, :conditions => {:_id => params[:id_str]})
-    update_status_influence @status_influence
-    @status_influence = StatusInfluence.find(:first, :conditions => {:_id => params[:id_str]})
+    @status_influence = update_status_influence @status_influence
   end
 
   def auth
@@ -27,12 +26,24 @@ class StatusInfluenceController < ApplicationController
     
     if params[:text]
       flash[:notice] = 'tentando salvar mensagem'
+      tweets_recivers = params[:tweets_to_send_to].split(';')
       client = get_grackle_client
-      update = client.statuses.update! :status=>params[:text]
-      if createStatusInfluence(update)
-        flash[:notice] = 'Mensagem cadastrada'
+      if tweets_recivers.empty?
+        update = client.statuses.update! :status=>params[:text]
+        if createStatusInfluence(update)
+          flash[:notice] = 'Mensagem cadastrada'
+        else
+          flash[:notice] = 'falha no processo'
+        end
       else
-        flash[:notice] = 'falha no processo'
+        tweets_recivers.each do |tweets|
+          update = client.statuses.update! :status=> params[:text] + " - @#{tweets}"
+          if createStatusInfluence(update)
+            flash[:notice] = 'Mensagem cadastrada'
+          else
+            flash[:notice] = 'falha no processo'
+          end
+        end
       end
     else
       flash[:notice] = 'escreva uma msg para o bilionariodf usar'
@@ -54,7 +65,7 @@ class StatusInfluenceController < ApplicationController
     end
     statuses.text                       = update_tweet.text
     statuses.geo                        = update_tweet.geo
-    statuses.favorited                  = update_tweet.favorited
+    statuses.favorited                  = update_tweet.favorited_count
     statuses.in_reply_to_status_id      = update_tweet.in_reply_to_status_id_str
     statuses.in_reply_to_user_id        = update_tweet.in_reply_to_user_id
     statuses.contributors               = update_tweet.contributors
@@ -63,23 +74,26 @@ class StatusInfluenceController < ApplicationController
     statuses.id_str                     = update_tweet.id_str
     statuses.retweet_count              = update_tweet.retweet_count
     statuses.coordinates                = update_tweet.coordinates
-    statuses.retweeted                  = update_tweet.retweeted
+    statuses.retweeted                  = update_tweet.retweeted_countttt
     statuses.place                      = update_tweet.place
     statuses.user                       = update_tweet.user.id_str
     statuses.user_name                  = update_tweet.user.screen_name
     status_influence.statuses           = statuses
     status_influence._id                = statuses.id_str 
-    status_influence.influence_number   = update_tweet.user.friends
+    status_influence.influence_number   = update_tweet.user.friends_count
     
     status_influence.save
-#    status_influence.update_attributes(status_influence)
+    
+    status_influence
 
   end
 
   def update_status_influence(status_influence)
      client = get_grackle_client
      update = client.statuses.show.json? :id => status_influence.statuses.id_str
-     createStatusInfluence(update)
+     update_user = client.users.show.json? :screen_name => update.user.screen_name
+     status_influence.influence_number  = update_user.friends_count
+     status_influence
   end
   
   def get_grackle_client

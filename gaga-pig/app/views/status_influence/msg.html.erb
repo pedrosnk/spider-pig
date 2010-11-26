@@ -3,11 +3,7 @@
 	<h2>status <%= @status_influence.statuses.text %></h2>
 </p>
 
-<!--
-<p>
 	<h2 style='color:#ff0000'>status <%= @status_influence.influence_number %></h2>
-</p>
--->
 <p>
 	in_reply_to_screen_name <%= @status_influence.statuses.in_reply_to_screen_name %>
 </p>
@@ -41,21 +37,9 @@
 </p>
 	
 <p>
-	retweet_count <%= @status_influence.statuses.retweet_count %>
+	retweet_count <%= 0 if @status_influence.statuses.retweet_count == nil  %> <%= @status_influence.statuses.retweet_count if @status_influence.statuses.retweet_count   %>
 </p>
 	
 <p>
-	place <%= @status_influence.statuses.place %>
+	favorited: <%= 'tweet não foi favoritado por ninguem'  if not @status_influence.statuses.favorited  %>
 </p>
-	
-<p>
-	coordinates <%= @status_influence.statuses.coordinates %>
-</p>
-
-<p>
-	favorited <%= @status_influence.statuses.favorited %>
-</p>
-<p>
-	geo <%= @status_influence.statuses.geo %>
-</p>
-	

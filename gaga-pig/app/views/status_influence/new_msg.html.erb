@@ -3,8 +3,15 @@
 	
 	<%= form_tag status_influence_new_msg_path, :method => :get do %>
 		<%= text_area_tag :text, nil, :size => "40x10" %> <br />
+		<p>Digite os tweets que deseja enviar essa mensagem separados por ';' (ponto e virgula)</p>
+		<p>e.g. BarackObama;presidente_lula;dilmabr</p>
+		<br />
+		<%= text_field_tag :tweets_to_send_to, nil, :size => '80' %>
+		<br />
 		<%= submit_tag :submit %>
 	<% end %>
+	
+
 	
 	<br />
 </div>
